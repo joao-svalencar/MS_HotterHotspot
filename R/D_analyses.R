@@ -1,0 +1,108 @@
+library(ggplot2)
+
+head(list)
+analyses <- list[,c(1,8,11:19)]
+
+head(analyses)
+
+analyses$threatened <- NA
+analyses$threatened[analyses$icmbio.cat%in%c("LC", "NT")] <- "No"
+analyses$threatened[analyses$icmbio.cat%in%c("VU", "EN", "CR")] <- "Yes"
+
+analyses <- analyses[analyses$icmbio.cat!="-"&analyses$icmbio.cat!="DD",]
+analyses <- analyses[analyses$icmbio.cat!="-",]
+
+analyses$taxa <- factor(analyses$taxa, levels = c("Amphibians", "Reptiles", "Birds", "Mammals"))
+analyses$icmbio.cat <- factor(analyses$icmbio.cat, levels = c("CR","EN","VU","DD", "NT","LC"))
+analyses$range.cat <- factor(analyses$range.cat, levels = c("Restricted","Partial","Wide"))
+
+str(analyses)
+
+
+# Range size versus class: Supp 1 -----------------------------------------
+
+kruskal.test(rangesize~taxa, data=list)
+
+# Chisquared test of classes and ICMBio categories ------------------------
+
+chisq.test(analyses$taxa, analyses$icmbio.cat) #including DD
+chisq.test(analyses$taxa, analyses$threatened)
+
+#capture.output(chisq, file = here::here("outputs", "tests", "chisq_class_threat.txt"))
+
+table(analyses$taxa, analyses$icmbio.cat)
+table(analyses$taxa, analyses$IUCN)
+
+a <- table(analyses$taxa, analyses$threatened)
+
+#threatened
+a[1,2]/(a[1,1]+a[1,2]) #prop amphibians 0.03389831
+a[2,2]/(a[2,1]+a[2,2]) #prop reptiles 0.07826087
+a[3,2]/(a[3,1]+a[3,2]) #prop birds 0.422222
+a[4,2]/(a[4,1]+a[4,2]) #prop mammals 0.3783784
+
+#data-deficient ICMBio
+11/(1+0+3+11+5+98) #amphibians 0.09322034
+18/(1+5+3+18+7+81) #reptiles 0.1565217
+0 #birds
+4/(1+9+4+4+1+18) #mammals 0.1081081
+
+#data-deficient IUCN
+36/(3+36+0+0+41+2+0) #amphibians 0.4390244
+17/(3+17+5+0+20+8+9) #reptiles 0.2741935
+0 #birds
+7/(6+0+7+5+1+15+2+1) #mammals 0.1891892
+
+
+# Espécies diferentes tamanho de range tendem a ter diferentes categorias de ameaça?
+
+kruskal.test(rangesize~icmbio.cat, data=analyses)
+kruskal.test(rangesize~threatened, data=analyses)
+
+?kruskal.test
+
+# Espécies ameçadas x não ameaçadas tendem a ter menos habitat remanescente?
+
+kruskal.test(percNat~icmbio.cat, data=analyses)
+kruskal.test(percNat~threatened, data=analyses)
+
+# Ou menos area protegida?
+
+kruskal.test(prot_perc~icmbio.cat, data=analyses)
+kruskal.test(prot_perc~threatened, data=analyses)
+
+# Espécies descritas recentemente tendem a ter maior probabilidade de extinção?
+
+mod <- lm(log(rangesize)~year, data=analyses)
+summary(mod)
+
+## Outra pergunta seria testar se as sp ameacadas diferem ou não em termos de data de descrição.
+  ## tb da pra usar DD X Dados Suficientes, em outra pergunta. As DDs tendem a ser as sp descritas agora (provavel que sim)
+
+
+##############################################################################################################
+##############################################################################################################
+head(list)
+gap$prop <- cbind(sucess = gap$protected_range, fail = gap$rangesize-gap$protected_range)
+
+mod <- glm(prop~icmbio.cat, family=binomial, data=gap)
+
+summary(mod)
+
+##############################################################################################################
+##############################################################################################################
+
+head(kba)
+kba_rich <- as.data.frame(table(kba$NAME))
+kba_unique <- kba[!duplicated(kba$NAME),]
+
+names(kba_rich)[1] <- "NAME"
+
+kba_merge <- merge(kba_rich, kba_unique, by="NAME", )
+head(kba_merge)
+
+kba_merge <- kba_merge[,c(1,2,5:11)]
+names(kba_merge)[2] <- "richness"
+
+write.csv(kba_merge, here::here("outputs", "tables", "kbas.csv"), row.names=FALSE, fileEncoding = "mac")
+?write.csv

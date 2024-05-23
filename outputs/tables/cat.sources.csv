@@ -1,0 +1,53 @@
+"","class","source","category","Freq","labelN"
+"1","Amphibians"," ICMBio","CR",1,118
+"2","Amphibians"," ICMBio","NT",5,118
+"3","Amphibians"," ICMBio","DD",11,118
+"4","Amphibians"," ICMBio","VU",3,118
+"5","Amphibians"," ICMBio","EN",0,118
+"6","Amphibians"," ICMBio","LC",98,118
+"7","Amphibians","IUCN","CR",3,82
+"8","Amphibians","IUCN","LC",41,82
+"9","Amphibians","IUCN","DD",36,82
+"10","Amphibians","IUCN","NT",2,82
+"11","Amphibians","IUCN","EN",0,82
+"12","Amphibians","IUCN","VU",0,82
+"13","Amphibians","IUCN","EX",0,82
+"14","Birds"," ICMBio","CR",1,45
+"15","Birds"," ICMBio","DD",0,45
+"16","Birds"," ICMBio","EN",12,45
+"17","Birds"," ICMBio","LC",24,45
+"18","Birds"," ICMBio","NT",2,45
+"19","Birds"," ICMBio","VU",6,45
+"20","Birds","IUCN","CR",1,43
+"21","Birds","IUCN","DD",0,43
+"22","Birds","IUCN","EN",5,43
+"23","Birds","IUCN","EX",0,43
+"24","Birds","IUCN","LC",20,43
+"25","Birds","IUCN","NT",8,43
+"26","Birds","IUCN","VU",9,43
+"27","Mammals"," ICMBio","CR",1,37
+"28","Mammals"," ICMBio","DD",4,37
+"29","Mammals"," ICMBio","EN",9,37
+"30","Mammals"," ICMBio","LC",18,37
+"31","Mammals"," ICMBio","NT",1,37
+"32","Mammals"," ICMBio","VU",4,37
+"33","Mammals","IUCN","CR",0,34
+"34","Mammals","IUCN","DD",9,34
+"35","Mammals","IUCN","EN",5,34
+"36","Mammals","IUCN","EX",1,34
+"37","Mammals","IUCN","LC",16,34
+"38","Mammals","IUCN","NT",2,34
+"39","Mammals","IUCN","VU",1,34
+"40","Reptiles"," ICMBio","EN",5,115
+"41","Reptiles"," ICMBio","LC",81,115
+"42","Reptiles"," ICMBio","CR",1,115
+"43","Reptiles"," ICMBio","NT",7,115
+"44","Reptiles"," ICMBio","DD",18,115
+"45","Reptiles"," ICMBio","VU",3,115
+"46","Reptiles","IUCN","EX",0,106
+"47","Reptiles","IUCN","CR",3,106
+"48","Reptiles","IUCN","LC",70,106
+"49","Reptiles","IUCN","DD",18,106
+"50","Reptiles","IUCN","NT",3,106
+"51","Reptiles","IUCN","EN",5,106
+"52","Reptiles","IUCN","VU",7,106

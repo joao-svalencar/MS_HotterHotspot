@@ -1,0 +1,17 @@
+﻿class,end,richness,year,lab
+Amphibians,n.end,105,2000,NA
+Amphibians,n.end,168,2020,NA
+Amphibians,endemic,45,2000,0.3000
+Amphibians,endemic,124,2020,0.4247
+Reptiles,n.end,96,2000,NA
+Reptiles,n.end,290,2020,NA
+Reptiles,endemic,24,2000,0.2000
+Reptiles,endemic,129,2020,0.3079
+Birds,n.end,808,2000,NA
+Birds,n.end,937,2020,NA
+Birds,endemic,29,2000,0.0346
+Birds,endemic,45,2020,0.0458
+Mammals,n.end,142,2000,NA
+Mammals,n.end,312,2020,NA
+Mammals,endemic,19,2000,0.1180
+Mammals,endemic,42,2020,0.1186

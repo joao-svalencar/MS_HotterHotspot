@@ -1,0 +1,6 @@
+
+	Pearson's Chi-squared test
+
+data:  analyses$taxa and analyses$threatened
+X-squared = 54.52, df = 3, p-value = 8.692e-12
+

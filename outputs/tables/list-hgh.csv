@@ -1,0 +1,341 @@
+taxa,family,genus,species,species_author,year,IUCN,icmbio.cat,rangesize,range.cat,rangeNat_2000,rangeNat_2020,loss00_20,perc_loss00_20,percNat,percNatCat,prot_range,prot_perc,prot_perc_cat
+Amphibians,Leptodactylidae,Adenomera,Adenomera cotuba,"Adenomera cotuba* Carvalho & Giaretta, 2013b",2013,-,LC,206241,Partial,128349,112972,15377,0.119806154,0.6047,<80%,3399,0.0165,<5%
+Amphibians,Leptodactylidae,Adenomera,Adenomera saci,"Adenomera saci Carvalho & Giaretta, 2013a",2013,-,LC,731210,Partial,411612,371462,40150,0.097543317,0.5656,<80%,29189,0.0399,<5%
+Mammals,Cricetidae,Akodon,Akodon kadiweu,"Akodon kadiweu Brandão et al., 2021",2021,-,DD,356,Restricted,322,324,-2,-0.00621118,0.9076,>80%,93,0.2612,>17%
+Mammals,Cricetidae,Akodon,Akodon lindberghi,"Akodon lindberghi Hershkovitz, 1990",1990,DD,LC,2844,Partial,570,574,-4,-0.007017544,0.6385,<80%,569,0.2001,>17%
+Birds,Tyrannidae,Alectrurus,Alectrurus tricolor,"Alectrurus tricolor (Vieillot, 1816)",1816,VU,VU,2797153,Partial,480721,437702,43019,0.089488497,0.3756,<50%,31263,0.0112,<5%
+Birds,Psittacidae ,Alipiopsitta,Alipiopsitta xanthops,"Alipiopsitta xanthops (Spix, 1824)",1824,NT,LC,2950314,Wide,981708,877060,104648,0.106597889,0.5196,<80%,69436,0.0235,<5%
+Amphibians,Aromobatidae,Allobates,Allobates brunneus,"Allobates brunneus (Cope, 1887)",1887,LC,NT,373,Restricted,240,229,11,0.045833333,0.6139,<80%,0,0,0%
+Amphibians,Aromobatidae,Allobates,Allobates goianus,"Allobates goianus (Bokermann, 1975)",1975,DD,NT,16216,Restricted,11267,10651,616,0.054672939,0.659,<80%,312,0.0192,<5%
+Reptiles,Alopoglossidae,Alopoglossus,Alopoglossus collii,"Alopoglossus collii* Ribeiro-Junior et al., 2020",2020,-,-,1112,Restricted,576,552,24,0.041666667,0.4964,<50%,0,0,0%
+Amphibians,Dendrobatoidea,Ameerega,Ameerega berohoka,"Ameerega berohoka Vaz-Silva et al., 2011",2011,LC,LC,110480,Partial,46535,41319,5216,0.112087676,0.3899,<50%,669,0.0061,<1%
+Amphibians,Dendrobatoidea,Ameerega,Ameerega braccata,"Ameerega braccata (Steindachner, 1864)",1864,LC,LC,600,Restricted,469,474,-5,-0.010660981,0.79,<80%,133,0.2217,>17%
+Amphibians,Dendrobatoidea,Ameerega,Ameerega flavopicta,"Ameerega flavopicta (Lutz, 1925)",1925,LC,LC,868222,Partial,307455,279326,28129,0.091489812,0.5133,<80%,18023,0.0208,<5%
+Amphibians,Dendrobatoidea,Ameerega,Ameerega picta,"Ameerega picta (Tschudi, 1838)",1838,LC,LC,5921,Restricted,2362,2283,79,0.033446232,0.5778,<80%,397,0.067,<17%
+Reptiles,Teiidae,Ameiva,Ameiva jacuba,"Ameiva jacuba Giugliano et al., 2013",2013,-,-,1264,Restricted,916,861,55,0.060043668,0.6812,<80%,570,0.4509,>17%
+Reptiles,Teiidae,Ameiva,Ameiva parecis,"Ameiva parecis (Colli et al., 2003)",2003,VU,EN,372,Restricted,338,312,26,0.076923077,0.841,>80%,0,0,0%
+Reptiles,Teiidae,Ameivula,Ameivula cipoensis,"Ameivula cipoensis* Arias et al., 2014a",2014,-,-,1157,Restricted,515,521,-6,-0.011650485,0.7719,<80%,246,0.2126,>17%
+Reptiles,Teiidae,Ameivula,Ameivula jalapensis,"Ameivula jalapensis (Colli et al., 2009)",2009,LC,LC,745,Restricted,744,743,1,0.001344086,0.9987,>80%,98,0.1315,<17%
+Reptiles,Teiidae,Ameivula,Ameivula mumbuca,"Ameivula mumbuca (Colli et al., 2003)",2003,LC,LC,747,Restricted,727,718,9,0.012379642,0.9625,>80%,130,0.174,>17%
+Reptiles,Teiidae,Ameivula,Ameivula xacriaba,"Ameivula xacriaba* Arias et al., 2014b ",2014,-,LC,42875,Restricted,40120,36962,3158,0.078713858,0.8791,>80%,4082,0.0952,<17%
+Reptiles,Amphisbaenidae,Amphisbaena,Amphisbaena absaberi,"Amphisbaena absaberi (Strüssmann & Carvalho, 2001)",2001,DD,DD,366,Restricted,162,115,47,0.290123457,0.3952,<50%,0,0,0%
+Reptiles,Amphisbaenidae,Amphisbaena,Amphisbaena acrobeles,"Amphisbaena acrobeles (Ribeiro et al., 2009)",2009,LC,LC,374,Restricted,374,375,-1,-0.002673797,1,>80%,140,0.3743,>17%
+Reptiles,Amphisbaenidae,Amphisbaena,Amphisbaena anaemariae,"Amphisbaena anaemariae Vanzolini, 1997",1997,LC,LC,346771,Partial,92464,84609,7855,0.084951981,0.2977,<30%,1397,0.004,<1%
+Reptiles,Amphisbaenidae,Amphisbaena,Amphisbaena bedai,"Amphisbaena bedai (Vanzolini, 1991)",1991,LC,LC,1543,Restricted,419,351,68,0.162291169,0.2273,<30%,0,0,0%
+Reptiles,Amphisbaenidae,Amphisbaena,Amphisbaena brevis,"Amphisbaena brevis Strüssmann & Mott, 2009",2009,DD,DD,368,Restricted,292,287,5,0.017123288,0.7842,<80%,0,0,0%
+Reptiles,Amphisbaenidae,Amphisbaena,Amphisbaena carli,"Amphisbaena carli Pinna et al., 2010",2010,LC,LC,1478,Restricted,1340,734,606,0.452238806,0.4966,<50%,59,0.0399,<5%
+Reptiles,Amphisbaenidae,Amphisbaena,Amphisbaena crisae,"Amphisbaena crisae Vanzolini, 1997",1997,DD,LC,1479,Partial,1235,1205,30,0.024291498,0.8415,>80%,328,0.2218,>17%
+Reptiles,Amphisbaenidae,Amphisbaena,Amphisbaena cuiabana,"Amphisbaena cuiabana (Strüssmann & Carvalho, 2001)",2001,LC,LC,30163,Restricted,9022,7893,1129,0.12513855,0.5735,<80%,201,0.0067,<1%
+Reptiles,Amphisbaenidae,Amphisbaena,Amphisbaena filiformis,"Amphisbaena filiformis* Ribeiro et al., 2016",2016,-,DD,755,Restricted,506,451,55,0.108695652,0.6632,<80%,0,0,0%
+Reptiles,Amphisbaenidae,Amphisbaena,Amphisbaena kraoh,"Amphisbaena kraoh (Vanzolini, 1971)",1971,LC,LC,14095,Restricted,12895,11923,972,0.075378054,0.8719,>80%,1531,0.1086,<17%
+Reptiles,Amphisbaenidae,Amphisbaena,Amphisbaena leeseri,"Amphisbaena leeseri Gans, 1964",1964,LC,LC,141174,Restricted,35072,31608,3464,0.098768248,0.2891,<30%,990,0.007,<1%
+Reptiles,Amphisbaenidae,Amphisbaena,Amphisbaena maranhensis,"Amphisbaena maranhensis Gomes & Maciel, 2012",2012,DD,DD,377,Restricted,349,332,17,0.048710602,0.8783,>80%,0,0,0%
+Reptiles,Amphisbaenidae,Amphisbaena,Amphisbaena mebengokre,"Amphisbaena mebengokre* Ribeiro et al., 2019",2019,-,DD,365,Restricted,136,128,8,0.058823529,0.3497,<50%,0,0,0%
+Reptiles,Amphisbaenidae,Amphisbaena,Amphisbaena neglecta,"Amphisbaena neglecta Dunn & Piatt, 1936",1936,DD,DD,367,Restricted,275,274,1,0.003636364,0.7486,<80%,5,0.0136,<5%
+Reptiles,Amphisbaenidae,Amphisbaena,Amphisbaena persephone,"Amphisbaena persephone* Pinna et al., 2014",2014,-,-,370,Restricted,370,207,163,0.440540541,0.561,<80%,0,0,0%
+Reptiles,Amphisbaenidae,Amphisbaena,Amphisbaena sanctaeritae,"Amphisbaena sanctaeritae Vanzolini, 1994",1994,CR,DD,602,Restricted,91,99,-8,-0.087912088,0.1645,<30%,8,0.0133,<5%
+Reptiles,Amphisbaenidae,Amphisbaena,Amphisbaena saxosa,"Amphisbaena saxosa (Castro-Mello, 2003)",2003,NT,NT,375,Restricted,41,40,1,0.024390244,0.9091,>80%,0,0,0%
+Reptiles,Amphisbaenidae,Amphisbaena,Amphisbaena silvestrii,"Amphisbaena silvestrii Boulenger, 1902",1902,LC,LC,895546,Partial,260313,231363,28950,0.111212271,0.5353,<80%,9471,0.0106,<5%
+Reptiles,Amphisbaenidae,Amphisbaena,Amphisbaena steindachneri,"Amphisbaena steindachneri Strauch, 1881",1881,LC,LC,1477,Restricted,210,205,5,0.023809524,0.7244,<80%,153,0.1036,<17%
+Reptiles,Amphisbaenidae,Amphisbaena,Amphisbaena talisiae,"Amphisbaena talisiae Vanzolini, 1995",1995,LC,LC,103006,Partial,41840,38538,3302,0.078919694,0.4231,<50%,1314,0.0128,<5%
+Reptiles,Dactyloidae,Anolis,Anolis meridionalis,"Anolis meridionalis Boettger, 1885",1885,LC,LC,2579006,Wide,715321,639976,75345,0.105330334,0.4546,<50%,58501,0.0227,<5%
+Birds,Tyrannidae,Antilophia,Antilophia galeata,"Antilophia galeata (Lichtenstein, 1823)",1823,LC,LC,2692714,Wide,958996,858751,100245,0.104531197,0.499,<50%,58635,0.0218,<5%
+Amphibians,Hylidae,Aplastodiscus,Aplastodiscus lutzorum,"Aplastodiscus lutzorum* Berneck et al., 2017",2017,-,LC,20219,Restricted,11365,10643,722,0.063528377,0.5251,<80%,703,0.0348,<5%
+Reptiles,Dipsadidae,Apostolepis,Apostolepis adhara,"Apostolepis adhara* França et al., 2018",2018,-,DD,371,Restricted,277,309,-32,-0.115523466,0.8329,>80%,0,0,0%
+Reptiles,Dipsadidae,Apostolepis,Apostolepis albicollaris,"Apostolepis albicollaris Lema, 2002",2002,LC,LC,52589,Restricted,20060,18549,1511,0.075324028,0.3821,<50%,651,0.0124,<5%
+Reptiles,Dipsadidae,Apostolepis,Apostolepis assimilis,"Apostolepis assimilis* (Reinhardt, 1861)",1861,LC,LC,1601004,Partial,313465,291905,21560,0.068779609,0.3257,<50%,12789,0.008,<1%
+Reptiles,Dipsadidae,Apostolepis,Apostolepis barrioi,Apostolepis barrioi* Lema 1978,1978,-,-,535264,Partial,42693,41757,936,0.021923969,0.1837,<30%,405,8.00E-04,<1%
+Reptiles,Dipsadidae,Apostolepis,Apostolepis cerradoensis,"Apostolepis cerradoensis Lema, 2003",2003,DD,-,370,Restricted,336,315,21,0.0625,0.8491,>80%,0,0,0%
+Reptiles,Dipsadidae,Apostolepis,Apostolepis christineae,"Apostolepis christineae Lema, 2002",2002,DD,LC,367,Restricted,310,297,13,0.041935484,0.8093,>80%,134,0.3651,>17%
+Reptiles,Dipsadidae,Apostolepis,Apostolepis flavotorquata,"Apostolepis flavotorquata (Duméril et al., 1854)",1854,LC,LC,1256330,Partial,484969,437609,47360,0.097655726,0.4657,<50%,23339,0.0186,<5%
+Reptiles,Dipsadidae,Apostolepis,Apostolepis goiasensis,"Apostolepis goiasensis Prado, 1942",1942,LC,LC,470835,Partial,144119,133385,10734,0.074480117,0.3363,<50%,5366,0.0114,<5%
+Reptiles,Dipsadidae,Apostolepis,Apostolepis intermedia,"Apostolepis intermedia Koslowsky, 1898",1898,LC,LC,1425,Partial,540,524,16,0.02962963,0.5092,<80%,330,0.2316,>17%
+Reptiles,Dipsadidae,Apostolepis,Apostolepis kikoi,"Apostolepis kikoi* Santos et al., 2018",2018,-,DD,1240,Restricted,442,441,1,0.002262443,0.3556,<50%,0,0,0%
+Reptiles,Dipsadidae,Apostolepis,Apostolepis lineata,"Apostolepis lineata Cope, 1887",1887,DD,DD,367,Restricted,266,263,3,0.011278195,0.7205,<80%,0,0,0%
+Reptiles,Dipsadidae,Apostolepis,Apostolepis longicaudata,"Apostolepis longicaudata Amaral, 1921",1921,LC,LC,27040,Restricted,24615,23371,1244,0.05053829,0.9227,>80%,2496,0.0923,<17%
+Reptiles,Dipsadidae,Apostolepis,Apostolepis nelsonjorgei,"Apostolepis nelsonjorgei Lema & Renner, 2004",2004,LC,LC,73372,Partial,47160,42189,4971,0.105407125,0.7561,<80%,2925,0.0399,<5%
+Reptiles,Dipsadidae,Apostolepis,Apostolepis phillipsae,"Apostolepis phillipsae* Harvey, 1999",1999,VU,-,736,Restricted,281,237,44,0.15658363,0.5537,<80%,393,0.534,>17%
+Reptiles,Dipsadidae,Apostolepis,Apostolepis polylepis,"Apostolepis polylepis Amaral, 1921",1921,LC,LC,108297,Partial,98432,85168,13264,0.134752926,0.8117,>80%,13842,0.1278,<17%
+Reptiles,Dipsadidae,Apostolepis,Apostolepis sanctaeritae,"Apostolepis sanctaeritae* Werner, 1924",2005,-,LC,673293,Partial,384081,343056,41025,0.106813407,0.5582,<80%,21821,0.0324,<5%
+Reptiles,Dipsadidae,Apostolepis,Apostolepis serrana,"Apostolepis serrana Lema & Renner, 2006",2006,EN,DD,371,Restricted,154,130,24,0.155844156,0.52,<80%,0,0,0%
+Reptiles,Dipsadidae,Apostolepis,Apostolepis striata,"Apostolepis striata Lema, 2004",2004,CR,EN,371,Restricted,172,145,27,0.156976744,0.3994,<50%,0,0,0%
+Reptiles,Dipsadidae,Apostolepis,Apostolepis tertulianobeui,"Apostolepis tertulianobeui* Lema, 2004",2004,LC,LC,1453,Partial,636,622,14,0.022012579,0.5649,<80%,0,0,0%
+Reptiles,Dipsadidae,Apostolepis,Apostolepis vittata,"Apostolepis vittata (Cope, 1887)",1887,VU,LC,1474,Restricted,1019,980,39,0.038272816,0.7243,<80%,12,0.0081,<1%
+Birds,Passerellidae,Arremon,Arremon flavirostris,"Arremon flavirostris Swainson, 1838",1838,LC,LC,1473172,Partial,376534,346476,30058,0.079828116,0.3512,<50%,15613,0.0106,<5%
+Birds,Furnariidae,Asthenes,Asthenes luizae,"Asthenes luizae Vielliard, 1990",1990,NT,EN,24900,Restricted,13487,12703,784,0.058130051,0.7747,<80%,1989,0.0799,<17%
+Reptiles,Dipsadidae,Atractus,Atractus albuquerquei,"Atractus albuquerquei Cunha & Nascimento, 1983",1983,LC,LC,2711519,Partial,519934,464376,55558,0.10685587,0.4909,<50%,33701,0.0124,<5%
+Reptiles,Dipsadidae,Atractus,Atractus edioi,"Atractus edioi Silva Jr. et al., 2005",2005,DD,DD,370,Restricted,267,267,0,0,0.7236,<80%,0,0,0%
+Reptiles,Dipsadidae,Atractus,Atractus pantostictus,"Atractus pantostictus* Fernandes and Puorto, 1993",1993,LC,LC,940260,Partial,348087,316870,31217,0.089681603,0.4434,<50%,19639,0.0209,<5%
+Reptiles,Dipsadidae,Atractus,Atractus spinalis,"Atractus spinalis Passos et al., 2013",2013,DD,DD,763,Restricted,436,433,3,0.006880734,0.9021,>80%,249,0.3263,>17%
+Reptiles,Dipsadidae,Atractus,Atractus stygius,"Atractus stygius* Passos et al., 2019",2019,-,LC,115675,Partial,35503,31020,4483,0.126271019,0.6602,<80%,5,0,0%
+Birds,Trochilidae,Augastes,Augastes scutatus,"Augastes scutatus (Temminck, 1824)",1824,LC,LC,53428,Restricted,21296,20239,1057,0.049633734,0.6077,<80%,3537,0.0662,<17%
+Reptiles,Gymnophthalmidae,Bachia,Bachia bresslaui,"Bachia bresslaui (Amaral, 1935)",1935,VU,LC,535404,Partial,133468,121436,12032,0.09014895,0.2773,<30%,2949,0.0055,<1%
+Reptiles,Gymnophthalmidae,Bachia,Bachia cacerensis,"Bachia cacerensis Castrillon & Strüssmann, 1998",1998,DD,DD,365,Restricted,346,333,13,0.037572254,0.9148,>80%,0,0,0%
+Reptiles,Gymnophthalmidae,Bachia,Bachia didactyla,"Bachia didactyla Freitas et al., 2011",2011,EN,EN,6466,Restricted,4931,4382,549,0.111336443,0.722,<80%,0,0,0%
+Reptiles,Gymnophthalmidae,Bachia,Bachia geralista,"Bachia geralista Teixeira et al., 2012",2012,DD,NT,26232,Restricted,25295,22314,2981,0.117849377,0.8543,>80%,2542,0.0969,<17%
+Reptiles,Gymnophthalmidae,Bachia,Bachia micromela,"Bachia micromela Rodrigues et al., 2007",2007,DD,DD,376,Restricted,219,217,2,0.00913242,0.9731,>80%,0,0,0%
+Reptiles,Gymnophthalmidae,Bachia,Bachia oxyrhina,"Bachia oxyrhina Rodrigues et al., 2008",2008,LC,LC,309,Restricted,308,309,-1,-0.003246753,1,>80%,309,1,>17%
+Reptiles,Gymnophthalmidae,Bachia,Bachia psamophila,"Bachia psamophila Rodrigues et al., 2007",2007,CR,CR,375,Restricted,312,327,-15,-0.048076923,0.872,>80%,0,0,0%
+Amphibians,Craugastoridae,Barycholos,Barycholos ternetzi,"Barycholos ternetzi (Miranda-Ribeiro, 1937)",1937,LC,LC,724474,Partial,370547,334957,35590,0.096047195,0.5159,<80%,22695,0.0313,<5%
+Amphibians,Hylidae,Boana,Boana botumirim,"Boana botumirim Caramaschi et al., 2009",2009,-,LC,364,Restricted,352,349,3,0.008522727,0.9562,>80%,121,0.3324,>17%
+Amphibians,Hylidae,Boana,Boana buriti,"Boana buriti (Caramaschi & Cruz, 1999)",1999,DD,VU,15413,Restricted,6765,6138,627,0.092682927,0.3985,<50%,43,0.0028,<1%
+Amphibians,Hylidae,Boana,Boana caiapo,"Boana caiapo* Pinheiro et al., 2018",2018,-,LC,262878,Restricted,126058,113969,12089,0.0959003,0.61,<80%,9377,0.0357,<5%
+Amphibians,Hylidae,Boana,Boana cipoensis,"Boana cipoensis (Lutz,1968)",1968,NT,LC,7857,Restricted,4610,4393,217,0.047071584,0.7826,<80%,374,0.0476,<5%
+Amphibians,Hylidae,Boana,Boana ericae,"Boana ericae (Caramaschi & Cruz, 2000)",2000,DD,LC,963,Restricted,905,901,4,0.00441989,0.9346,>80%,197,0.2046,>17%
+Amphibians,Hylidae,Boana,Boana goiana,"Boana goiana (Lutz, 1968)",1968,LC,LC,35423,Restricted,18218,16960,1258,0.069052585,0.4779,<50%,731,0.0206,<5%
+Amphibians,Hylidae,Boana,Boana jaguariaivensis,"Boana jaguariaivensis Caramaschi et al., 2010",2010,-,LC,1041,Restricted,217,249,-32,-0.147465438,0.4743,<50%,2,0.0019,<1%
+Amphibians,Hylidae,Boana,Boana lundii,"Boana lundii (Burmeister, 1856)",1856,LC,LC,988264,Partial,337416,311550,25866,0.07665908,0.3823,<50%,13841,0.014,<5%
+Amphibians,Hylidae,Boana,Boana stenocephala,"Boana stenocephala (Caramaschi & Cruz, 1999)",1999,DD,LC,712,Restricted,162,177,-15,-0.092592593,0.2486,<30%,0,0,0%
+Amphibians,Hylidae,Bokermannohyla,Bokermannohyla alvarengai,"Bokermannohyla alvarengai (Bokermann, 1956)",1956,LC,LC,28510,Restricted,14447,13590,857,0.059320274,0.7389,<80%,1510,0.053,<17%
+Amphibians,Hylidae,Bokermannohyla,Bokermannohyla ibitiguara,"Bokermannohyla ibitiguara (Cardoso, 1983)",1983,DD,LC,1499,Restricted,678,695,-17,-0.025073746,0.4646,<50%,891,0.5944,>17%
+Amphibians,Hylidae,Bokermannohyla,Bokermannohyla izecksohni,"Bokermannohyla izecksohni (Jim and Caramaschi, 1979)",1979,CR,DD,351,Restricted,69,71,-2,-0.028985507,0.2029,<30%,0,0,0%
+Amphibians,Hylidae,Bokermannohyla,Bokermannohyla nanuzae,"Bokermannohyla nanuzae (Bokermann & Sazima, 1973)",1973,LC,LC,9366,Restricted,2080,2061,19,0.009134615,0.6475,<80%,552,0.0589,<17%
+Amphibians,Hylidae,Bokermannohyla,Bokermannohyla napolii,"Bokermannohyla napolii Carvalho et al., 2012",2012,-,VU,904,Restricted,259,240,19,0.073359073,0.2658,<30%,0,0,0%
+Amphibians,Hylidae,Bokermannohyla,Bokermannohyla pseudopseudis,"Bokermannohyla pseudopseudis (Miranda-Ribeiro, 1937)",1937,LC,LC,19647,Partial,15829,15047,782,0.049402995,0.7661,<80%,2069,0.1053,<17%
+Amphibians,Hylidae,Bokermannohyla,Bokermannohyla ravida,"Bokermannohyla ravida (Caramaschi et al., 2001)",2001,DD,DD,361,Restricted,160,156,4,0.025,0.4309,<50%,0,0,0%
+Amphibians,Hylidae,Bokermannohyla,Bokermannohyla sagarana,"Bokermannohyla sagarana Leite et al., 2011",2011,NT,NT,63,Restricted,43,42,1,0.023255814,0.913,>80%,3,0.0476,<5%
+Amphibians,Hylidae,Bokermannohyla,Bokermannohyla sapiranga,"Bokermannohyla sapiranga Brandão et al., 2012",2012,-,LC,32737,Restricted,13721,11913,1808,0.131768822,0.3645,<50%,497,0.0152,<5%
+Amphibians,Hylidae,Bokermannohyla,Bokermannohyla saxicola,"Bokermannohyla saxicola (Bokermann, 1964)",1964,LC,LC,33627,Restricted,18429,17381,1048,0.056866895,0.7493,<80%,2731,0.0812,<17%
+Amphibians,Hylidae,Bokermannohyla,Bokermannohyla sazimai,"Bokermannohyla sazimai (Cardoso & Andrade, 1982)",1982,DD,LC,9364,Restricted,2431,2499,-68,-0.027972028,0.2704,<30%,66,0.007,<1%
+Reptiles,Viperidae,Bothrops,Bothrops itapetiningae,"Bothrops itapetiningae (Boulenger, 1907)",1907,VU,NT,675437,Partial,104262,99012,5250,0.050353916,0.2394,<30%,3188,0.0047,<1%
+Reptiles,Viperidae,Bothrops,Bothrops marmoratus,"Bothrops marmoratus Silva & Rodrigues, 2008",2008,LC,LC,383515,Partial,191336,172233,19103,0.099840072,0.4846,<50%,6706,0.0175,<5%
+Reptiles,Viperidae,Bothrops,Bothrops moojeni,"Bothrops moojeni Hoge, 1966",1866,LC,LC,2686680,Wide,892999,797500,95499,0.106941889,0.4825,<50%,56071,0.0209,<5%
+Reptiles,Viperidae,Bothrops,Bothrops pauloensis,"Bothrops pauloensis Amaral, 1925",1925,LC,LC,1776108,Partial,428354,388691,39663,0.092593976,0.3608,<50%,16073,0.009,<1%
+Mammals,Cricetidae,Calassomys,Calassomys apicalis,"Calassomys apicalis Pardiñas et al., 2014",2014,-,NT,584,Restricted,575,575,0,0,0.9846,>80%,412,0.7055,>17%
+Mammals,Callithrichidae,Callithrix,Callithrix penicillata,"Callithrix penicillata (Geoffroy, 1812)",1812,LC,LC,1301874,Partial,420573,380919,39654,0.094285653,0.4725,<50%,21794,0.0167,<5%
+Mammals,Cricetidae,Calomys,Calomys tocantinsi,"Calomys tocantinsi Bonvicino et al., 2003",2003,LC,LC,155446,Partial,61853,58034,3819,0.061743165,0.831,>80%,9269,0.0596,<17%
+Mammals,Echimyidae,Carterodon,Carterodon sulcidens,"Carterodon sulcidens (Lund, 1838)",1838,DD,DD,1099681,Partial,394486,354934,39552,0.100262113,0.3956,<50%,5637,0.0051,<1%
+Birds,Picidae,Celeus,Celeus obrieni,"Celeus obrieni Short, 1973",1973,VU,VU,825273,Restricted,478330,422126,56204,0.11750047,0.6704,<80%,31799,0.0385,<5%
+Birds,Thamnophilidae,Cercomacra,Cercomacra ferdinandi,"Cercomacra ferdinandi Snethlage, 1928",1928,NT,NT,269082,Partial,93759,83782,9977,0.106411118,0.7492,<80%,9616,0.0357,<5%
+Mammals,Cricetidae,Cerradomys,Cerradomys akroai,"Cerradomys akroai Bonvicino et al., 2014",2014,-,DD,748,Restricted,722,693,29,0.040166205,0.9252,>80%,275,0.3676,>17%
+Mammals,Cricetidae,Cerradomys,Cerradomys marinhus,"Cerradomys marinhus (Bonvicino, 2003)",2003,LC,LC,291448,Partial,133048,118434,14614,0.109840058,0.4466,<50%,7898,0.0271,<5%
+Mammals,Cricetidae,Cerradomys,Cerradomys scotti,"Cerradomys scotti (Langguth & Bonvicino, 2002)",2002,LC,LC,2281453,Wide,722350,649403,72947,0.100985672,0.4525,<50%,46800,0.0205,<5%
+Birds,Thraupidae,Charitospiza,Charitospiza eucosma,"Charitospiza eucosma Oberholser, 1905",1905,NT,LC,3270074,Wide,1067750,959545,108205,0.101339265,0.5228,<80%,59197,0.0181,<5%
+Amphibians,Microhylidae,Chiasmocleis,Chiasmocleis albopunctata,"Chiasmocleis albopunctata (Boettger, 1885)",1885,LC,LC,2062226,Wide,751051,675047,76004,0.101196856,0.4624,<50%,41764,0.0203,<5%
+Amphibians,Microhylidae,Chiasmocleis,Chiasmocleis centralis,"Chiasmocleis centralis Bokermann, 1952",1952,DD,DD,368,Partial,190,149,41,0.215789474,0.4038,<50%,0,0,0%
+Reptiles,Colubridae,Chironius,Chironius brazili,"Chironius brazili* Hamdan & Fernandes, 2015",2015,-,LC,1108760,Partial,178334,169352,8982,0.050366167,0.3389,<50%,8463,0.0076,<1%
+Birds,Furnariidae,Cinclodes,Cinclodes espinhacensis,"Cinclodes espinhacensis Freitas et al., 2012",2012,-,EN,2941,Restricted,1441,1442,-1,-0.000693963,0.6735,<80%,454,0.1544,<17%
+Birds,Furnariidae,Clibanornis,Clibanornis rectirostris,"Clibanornis rectirostris (Wied, 1831)",1831,LC,LC,1678654,Partial,434936,399466,35470,0.081552228,0.376,<50%,20477,0.0122,<5%
+Mammals,Echimyidae,Clyomys,Clyomys laticeps,"Clyomys laticeps (Thomas, 1909)",1909,LC,LC,1373496,Partial,370852,340536,30316,0.081746896,0.3446,<50%,13027,0.0095,<1%
+Reptiles,Sphaerodactylidae,Coleodactylus,Coleodactylus brachystoma,"Coleodactylus brachystoma (Amaral, 1935)",1935,LC,LC,477642,Partial,255519,227210,28309,0.110790196,0.5163,<80%,19979,0.0418,<5%
+Reptiles,Gymnophthalmidae,Colobosaura,Colobosaura modesta,"﻿Colobosaura modesta (Reinhardt & Lütken, 1862)",1862,LC,LC,3352590,Wide,943917,844865,99052,0.104937193,0.5393,<80%,51953,0.0155,<5%
+Birds,Columbidae,Columbina,Columbina cyanopis,"Columbina cyanopis (Pelzeln, 1870)",1870,CR,CR,2172,Partial,897,833,64,0.071348941,0.5336,<80%,264,0.1215,<17%
+Birds,Thraupidae,Conothraups,Conothraupis mesoleuca,"Conothraupis mesoleuca (Berlioz, 1939)",1939,EN,EN,144734,Partial,69491,62536,6955,0.100084903,0.5009,<80%,1853,0.0128,<5%
+Birds,Thraupidae,Coryphaspiza,Coryphaspiza melanotis,"Coryphaspiza melanotis (Temminck, 1822)",1822,VU,VU,3576856,Partial,944067,852145,91922,0.097368089,0.5149,<80%,55246,0.0154,<5%
+Amphibians,Hylodidae,Crossodactylus,Crossodactylus franciscanus,Crossodactylus franciscanus* Pimenta et al. 2015,2015,-,CR,714,Restricted,137,138,-1,-0.00729927,0.21,<30%,91,0.1275,<17%
+Amphibians,Hylodidae,Crossodactylus,Crossodactylus trachystomus,"Crossodactylus trachystomus (Reinhardt & Lütken, 1862)",1862,DD,LC,33530,Restricted,13959,13244,715,0.051221434,0.665,<80%,2490,0.0743,<17%
+Mammals,Ctenomyidae,Ctenomys,Ctenomys bicolor,"Ctenomys bicolor Miranda-Ribeiro, 1914",1914,-,EN,108826,Partial,57887,49839,8048,0.139029488,0.594,<80%,5,0,0%
+Mammals,Ctenomyidae,Ctenomys,Ctenomys nattereri,"Ctenomys nattereri Wagner, 1848",1848,LC,LC,195476,Partial,37284,33118,4166,0.111736938,0.629,<80%,15090,0.0772,<17%
+Birds,Corvidae,Cyanocorax,Cyanocorax cristatellus,"Cyanocorax cristatellus (Temminck, 1823)",1823,LC,LC,4033939,Wide,1091882,982901,108981,0.099810236,0.5202,<80%,69579,0.0172,<5%
+Amphibians,Hylidae,Dendropsophus,Dendropsophus anataliasiasi,"Dendropsophus anataliasiasi (Bokermann, 1972)",1972,LC,LC,400550,Partial,214093,190107,23986,0.112035424,0.6175,<80%,10619,0.0265,<5%
+Amphibians,Hylidae,Dendropsophus,Dendropsophus araguaya,"Dendropsophus araguaya (Napoli & Caramaschi, 1998)",1998,DD,LC,2451,Restricted,1142,1052,90,0.078809107,0.4292,<50%,0,0,0%
+Amphibians,Hylidae,Dendropsophus,Dendropsophus cerradensis,"Dendropsophus cerradensis (Napoli & Caramaschi, 1998)",1998,DD,DD,714,Restricted,166,159,7,0.042168675,0.2221,<30%,0,0,0%
+Amphibians,Hylidae,Dendropsophus,Dendropsophus cruzi,"Dendropsophus cruzi (Pombal & Bastos, 1998)",1998,LC,LC,944655,Partial,431582,388771,42811,0.099195518,0.5313,<80%,25152,0.0266,<5%
+Amphibians,Hylidae,Dendropsophus,Dendropsophus elianeae,"Dendropsophus elianeae (Napoli & Caramaschi, 2000)",2000,LC,LC,980367,Partial,218925,203858,15067,0.068822656,0.2832,<30%,6428,0.0066,<1%
+Amphibians,Hylidae,Dendropsophus,Dendropsophus jimi,"Dendropsophus jimi (Napoli & Caramaschi, 1999)",1999,LC,LC,828098,Partial,149135,141123,8012,0.053723137,0.2543,<30%,4985,0.006,<1%
+Amphibians,Hylidae,Dendropsophus,Dendropsophus rhea,"Dendropsophus rhea (Napoli & Caramaschi, 1999)",1999,DD,DD,420,Restricted,59,64,-5,-0.084745763,0.1513,<30%,0,0,0%
+Amphibians,Hylidae,Dendropsophus,Dendropsophus rubicundulus,"Dendropsophus rubicundulus (Reinhardt & Lütken, 1862)",1862,LC,LC,1479361,Partial,705618,635401,70217,0.09951135,0.5695,<80%,44925,0.0304,<5%
+Amphibians,Hylidae,Dendropsophus,Dendropsophus tritaeniatus,"Dendropsophus tritaeniatus (Bokermann, 1965)",1965,LC,LC,1460,Restricted,673,610,63,0.093610698,0.4175,<50%,75,0.0514,<17%
+Reptiles,Colubridae,Drymoluber,Drymoluber brazili,"Drymoluber brazili (Gomes, 1918)",1918,LC,LC,3738607,Wide,968392,869782,98610,0.101828598,0.5027,<80%,55857,0.0149,<5%
+Amphibians,Microhylidae,Elachistocleis,Elachistocleis bumbameuboi,"Elachistocleis bumbameuboi Caramaschi, 2010",2010,DD,LC,757,Restricted,323,251,72,0.222910217,0.6658,<80%,0,0,0%
+Amphibians,Microhylidae,Elachistocleis,Elachistocleis matogrosso,"Elachistocleis matogrosso Caramaschi, 2010",2010,LC,LC,158207,Partial,28656,25882,2774,0.096803462,0.4661,<50%,1085,0.0069,<1%
+Birds,Thraupidae,Embernagra,Embernagra longicauda,"Embernagra longicauda Strickland, 1844",1844,LC,LC,218284,Partial,35864,34351,1513,0.042187151,0.6206,<80%,3818,0.0175,<5%
+Reptiles,Leiosauridae,Enyalius,Enyalius capetinga,"Enyalius capetinga* Breitman et al., 2018",2018,-,-,2536,Restricted,1513,1467,46,0.030403173,0.5773,<80%,439,0.1731,>17%
+Reptiles,Boidae,Epicrates,Epicrates crassus,"Epicrates crassus Cope, 1862",1862,LC,LC,4378535,Wide,923239,830493,92746,0.100457195,0.4884,<50%,69196,0.0158,<5%
+Reptiles,Leptotyphlopidae,Epictia,Epictia clinorostris,"Epictia clinorostris* Arredondo & Zaher, 2010",2010,VU,LC,28685,Restricted,16650,14959,1691,0.101561562,0.5223,<80%,110,0.0038,<1%
+Reptiles,Dipsadidae,Erythrolamprus,Erythrolamprus maryellenae,"Erythrolamprus maryellenae (Dixon, 1985)",1985,LC,LC,1096089,Partial,483771,436682,47089,0.097337377,0.4892,<50%,24325,0.0222,<5%
+Reptiles,Tropiduridae,Eurolophosaurus,Eurolophosaurus nanuzae,"Eurolophosaurus nanuzae (Rodrigues, 1981)",1981,LC,LC,21992,Restricted,7154,6674,480,0.067095331,0.672,<80%,483,0.022,<5%
+Mammals,Cricetidae,Euryoryzomys,Euryoryzomys lamia,"Euryoryzomys lamia (Thomas, 1901)",1901,VU,EN,45977,Restricted,22486,20836,1650,0.073378991,0.4566,<50%,731,0.0159,<5%
+Birds,Tyrannidae,Euscarthmus,Euscarthmus rufomarginatus,"Euscarthmus rufomarginatus  (Pelzeln, 1868)",1868,NT,LC,3904841,Wide,962972,858020,104952,0.108987593,0.5358,<80%,60224,0.0154,<5%
+Mammals,Caviidae,Galea,Galea flavidens,"Galea flavidens (Brandt, 1835)",1835,LC,-,1324021,Partial,704416,625150,79266,0.112527257,0.5706,<80%,38848,0.0293,<5%
+Birds,Scleruridae,Geositta,Geositta poeciloptera,"Geositta poeciloptera (Wied, 1830)",1830,VU,VU,1987612,Partial,600880,545566,55314,0.092054986,0.4153,<50%,25237,0.0127,<5%
+Birds,Tyrannidae,Guyramemua,Guyramemua affine,"Guyramemua affine (Burmeister, 1856)",1856,NT,LC,1104,Partial,846691,754012,92679,0.10946024,0.5315,<80%,57811,0.0242,<5%
+Mammals,Cricetidae,Gyldenstolpia,Gyldenstolpia planaltensis,"Gyldenstolpia planaltensis (Avila-Pires, 1972)",1972,-,EN,609460,Restricted,504,456,48,0.095238095,0.4882,<50%,167,0.1513,<17%
+Reptiles,Phyllodactylidae,Gymnodactylus,Gymnodactylus amarali,"Gymnodactylus amarali Barbour, 1925",1925,LC,LC,362,Partial,366236,322631,43605,0.119062572,0.6106,<80%,28995,0.0476,<5%
+Reptiles,Phyllodactylidae,Gymnodactylus,Gymnodactylus guttulatus,"Gymnodactylus guttulatus Vanzolini, 1982",1982,LC,LC,365,Restricted,331,327,4,0.012084592,0.9033,>80%,27,0.0746,<17%
+Reptiles,Dipsadidae,Helicops,Helicops boitata,"Helicops boitata* Moraes-da-Silva et al., 2019",2019,-,LC,413583,Restricted,326,302,24,0.073619632,0.8251,>80%,0,0,0%
+Reptiles,Dipsadidae,Helicops,Helicops gomesi,"Helicops gomesi* Amaral, 1921",1921,LC,LC,88053,Partial,60766,60073,693,0.011404404,0.2083,<30%,2688,0.0065,<1%
+Reptiles,Dipsadidae,Helicops,Helicops phantasma,"Helicops phantasma* Moraes-da-Silva et al., 2021 ",2021,-,LC,2359869,Partial,55561,49465,6096,0.109717248,0.7467,<80%,2697,0.0306,<5%
+Birds,Thamnophilidae,Herpsilochmus,Herpsilochmus longirostris,"Herpsilochmus longirostris Pelzeln, 1868",1868,LC,LC,34452,Partial,807127,727067,80060,0.099191329,0.4818,<50%,46636,0.0198,<5%
+Reptiles,Gymnophthalmidae,Heterodactylus,Heterodactylus lundii,"Heterodactylus lundii Reinhardt & Luetken, 1862",1862,EN,VU,668490,Restricted,10410,9892,518,0.049759846,0.2907,<30%,124,0.0036,<1%
+Mammals,Cricetidae,Holochilus,Holochilus sciureus,"Holochilus sciureus Wagner, 1842",1842,LC,LC,2749462,Partial,408680,358233,50447,0.123438876,0.6181,<80%,32800,0.0491,<5%
+Reptiles,Hoplocercidae,Hoplocercus,Hoplocercus spinosus,"Hoplocercus spinosus Fitzinger, 1843",1843,LC,LC,1108625,Partial,811809,717075,94734,0.116694937,0.5495,<80%,58908,0.0214,<5%
+Birds,Caprimulgidae,Hydropsalis,Hydropsalis candicans,"Hydropsalis candicans (Pelzeln, 1867)",1867,VU,EN,63007,Partial,127648,118294,9354,0.073279644,0.2682,<30%,6128,0.0055,<1%
+Mammals,Cricetidae,Hylaeamys,Hylaeamys acritus,"Hylaeamys acritus (Emmons & Patton, 2005)",2005,DD,-,375,Partial,NA,NA,NA,NA,NA,NA,6940,0.1101,<17%
+Amphibians,Hylodidae,Hylodes,Hylodes otavioi,"Hylodes otavioi Sazima & Bokermann, 1983",1983,DD,NT,45228,Restricted,159,160,-1,-0.006289308,0.7407,<80%,74,0.1973,>17%
+Amphibians,Brachycephalidae,Ischnocnema,Ischnocnema penaxavantinho,"Ischnocnema penaxavantinho Giaretta et al., 2007",2007,DD,LC,366,Restricted,14682,13259,1423,0.0969214,0.3008,<50%,55,0.0012,<1%
+Mammals,Cricetidae,Juscelinomys,Juscelinomys candango,"Juscelinomys candango Moojen, 1965",1965,EX,CR,1201,Restricted,162,146,16,0.098765432,0.4,<50%,83,0.2268,>17%
+Mammals,Cricetidae,Juscelinomys,Juscelinomys huanchacae,"Juscelinomys huanchacae Emmons, 1999",1999,DD,-,892348,Restricted,NA,NA,NA,NA,NA,NA,1201,1,>17%
+Reptiles,Teiidae,Kentropyx,Kentropyx paulensis,"Kentropyx paulensis Boettger, 1893",1893,LC,LC,668452,Partial,298826,275725,23101,0.077305857,0.3721,<50%,10957,0.0123,<5%
+Reptiles,Teiidae,Kentropyx,Kentropyx vanzoi,"Kentropyx vanzoi Gallagher & Dixon, 1980",1980,NT,VU,6089,Partial,254191,224753,29438,0.115810552,0.4678,<50%,5750,0.0086,<1%
+Mammals,Caviidae,Kerodon,Kerodon acrobata,"Kerodon acrobata Moojen et al., 1997",1997,DD,VU,250655,Restricted,4202,3513,689,0.163969538,0.5768,<80%,0,0,0%
+Birds,Tyrannidae,Knipolegus,Knipolegus franciscanus,"Knipolegus franciscanus Snethlage, 1928",1928,LC,VU,3560689,Partial,142756,125976,16780,0.117543221,0.5866,<80%,7248,0.0289,<5%
+Mammals,Cricetidae,Kunsia,Kunsia tomentosus,"Kunsia tomentosus (Lichtenstein, 1830)",1830,LC,LC,835712,Partial,450627,408600,42027,0.093263386,0.3767,<50%,30019,0.0084,<1%
+Birds,Rallidae,Laterallus,Laterallus xenopterus,"Laterallus xenopterus Conover, 1934",1934,VU,EN,361,Partial,287436,262674,24762,0.086147873,0.3621,<50%,14436,0.0173,<5%
+Reptiles,Amphisbaenidae,Leposternon,Leposternon cerradensis,"Leposternon cerradensis Ribeiro et al., 2008",2008,DD,DD,853,Restricted,72,96,-24,-0.333333333,0.2652,<30%,0,0,0%
+Reptiles,Amphisbaenidae,Leposternon,Leposternon maximus,"Leposternon maximus Ribeiro et al., 2011",2011,LC,LC,726,Restricted,767,738,29,0.037809648,0.8662,>80%,259,0.3036,>17%
+Reptiles,Amphisbaenidae,Leposternon,Leposternon mineiro,"Leposternon mineiro* Ribeiro et al., 2018",2018,-,-,207024,Restricted,329,278,51,0.155015198,0.3829,<50%,0,0,0%
+Amphibians,Leptodactylidae,Leptodactylus,Leptodactylus brevipes,"Leptodactylus brevipes* Cope, 1887",1887,-,-,12495,Partial,94928,80886,14042,0.147922636,0.4888,<50%,568,0.0027,<1%
+Amphibians,Leptodactylidae,Leptodactylus,Leptodactylus camaquara,"Leptodactylus camaquara Sazima & Bokermann, 1978",1978,DD,LC,42533,Restricted,6725,6352,373,0.055464684,0.7973,<80%,892,0.0714,<17%
+Amphibians,Leptodactylidae,Leptodactylus,Leptodactylus cunicularius,"Leptodactylus cunicularius Sazima & Bokermann, 1978",1978,LC,LC,1856186,Restricted,5859,5927,-68,-0.011606076,0.3202,<50%,494,0.0116,<5%
+Amphibians,Leptodactylidae,Leptodactylus,Leptodactylus furnarius,"Leptodactylus furnarius Sazima & Bokermann, 1978",1978,LC,LC,32359,Partial,648092,585617,62475,0.096398351,0.4485,<50%,28313,0.0153,<5%
+Amphibians,Leptodactylidae,Leptodactylus,Leptodactylus kilombo,"Leptodactylus kilombo* Silva et al., 2020",2020,-,-,1805011,Restricted,20589,15893,4696,0.228082957,0.5481,<80%,601,0.0186,<5%
+Amphibians,Leptodactylidae,Leptodactylus,Leptodactylus pustulatus,"Leptodactylus pustulatus (Peters, 1870)",1970,LC,LC,1955949,Partial,696634,612020,84614,0.121461198,0.6464,<80%,39705,0.022,<5%
+Amphibians,Leptodactylidae,Leptodactylus,Leptodactylus sertanejo,"Leptodactylus sertanejo Giaretta & Costa, 2007",2007,LC,LC,369,Wide,765103,686055,79048,0.103316808,0.4688,<50%,41134,0.021,<5%
+Amphibians,Leptodactylidae,Leptodactylus,Leptodactylus tapiti,"Leptodactylus tapiti Sazima & Bokermann, 1978",1978,DD,LC,709,Restricted,335,332,3,0.008955224,0.8973,>80%,73,0.1978,>17%
+Reptiles,Anomalepididae,Liotyphlops,Liotyphlops schubarti,"Liotyphlops schubarti Vanzolini, 1948",1948,DD,DD,367,Restricted,146,144,2,0.01369863,0.2031,<30%,0,0,0%
+Reptiles,Anomalepididae,Liotyphlops,Liotyphlops taylori,"Liotyphlops taylori* Marra-Santos & Reis, 2018",2018,-,LC,33611,Restricted,309,296,13,0.042071197,0.8087,>80%,135,0.3678,>17%
+Mammals,Phyllostomidae,Lonchophylla,Lonchophylla bokermanni,"Lonchophylla bokermanni Sazima et al., 1978",1978,EN,VU,1888936,Restricted,10385,9878,507,0.048820414,0.8016,>80%,1197,0.0356,<5%
+Mammals,Phyllostomidae,Lonchophylla,Lonchophylla dekeyseri,"Lonchophylla dekeyseri Taddei et al., 1983",1983,EN,EN,2865103,Partial,843453,752400,91053,0.107952666,0.61,<80%,54623,0.0289,<5%
+Mammals,Canidae,Lycalopex,Lycalopex vetulus,"Lycalopex vetulus (Lund, 1842)",1842,NT,VU,2337650,Wide,1018134,916241,101893,0.100078182,0.5232,<80%,55754,0.0195,<5%
+Reptiles,Dipsadidae,Lygophis,Lygophis paucidens,"Lygophis paucidens (Hoge, 1953)",1953,LC,LC,36218,Partial,904410,807705,96705,0.106926062,0.5473,<80%,51135,0.0219,<5%
+Amphibians,Hylidae,Lysapsus,Lysapsus caraya,"Lysapsus caraya Gallardo, 1964",1964,LC,LC,1791497,Restricted,28711,27590,1121,0.039044269,0.847,>80%,7269,0.2007,>17%
+Reptiles,Scincidae,Maciola,Manciola guaporicola,"Manciola guaporicola (Dunn, 1935)",1935,LC,LC,3451937,Partial,439087,396033,43054,0.098053461,0.426,<50%,27639,0.0154,<5%
+Birds,Melanopareiidae,Melanopareia,Melanopareia torquata,"Melanopareia torquata (Wied, 1831)",1831,LC,LC,1165723,Wide,1017597,913971,103626,0.101834027,0.5088,<80%,58797,0.017,<5%
+Reptiles,Gymnophthalmidae,Micrablepharus,Micrablepharus atticolus,"Micrablepharus atticolus Rodrigues, 1996",1996,LC,LC,733,Partial,418853,380022,38831,0.092707943,0.4347,<50%,9664,0.0083,<1%
+Mammals,Cricetidae,Microakodontomys,Microakodontomys transitorius,"Microakodontomys transitorius Hershkovitz, 1993",1993,EN,EN,626550,Restricted,517,508,9,0.017408124,0.693,<80%,318,0.4338,>17%
+Birds,Thraupidae,Microspingus,Microspingus cinereus,"Microspingus cinereus Bonaparte, 1850",1850,LC,LC,197935,Partial,331291,305178,26113,0.078821942,0.3784,<50%,13734,0.0127,<5%
+Reptiles,Elapidae,Micrurus,Micrurus brasiliensis,"Micrurus brasiliensis Roze, 1967",1967,LC,LC,3347924,Partial,385014,342342,42672,0.110832333,0.7054,<80%,28962,0.0462,<5%
+Reptiles,Elapidae,Micrurus,Micrurus tricolor,"Micrurus tricolor Hoge, 1956",1956,LC,LC,734,Partial,28945,26513,2432,0.08402142,0.4686,<50%,1083,0.0055,<1%
+Mammals,Didelphidae,Monodelphis,Monodelphis kunsi,"Monodelphis kunsi Pine, 1975",1975,LC,LC,1694948,Partial,668384,604014,64370,0.096306913,0.433,<50%,43365,0.013,<5%
+Mammals,Didelphidae,Monodelphis,Monodelphis sanctaerosae,"Monodelphis sanctaerosae Voss et al., 2012",2012,-,-,4017704,Restricted,305,290,15,0.049180328,0.7859,<80%,0,0,0%
+Birds,Parulidae,Myiothlypis,Myiothlypis leucophrys,"Myiothlypis leucophrys (Pelzeln, 1868)",1868,LC,LC,1222422,Partial,636994,572190,64804,0.101734082,0.4424,<50%,27987,0.0165,<5%
+Birds,Thraupidae,Neothraupis,Neothraupis fasciata,"Neothraupis fasciata (Lichtenstein, 1823)",1823,NT,LC,47687,Wide,1039613,932760,106853,0.102781516,0.5118,<80%,72913,0.0181,<5%
+Birds,Tinamidae,Nothura,Nothura minor,"Nothura minor (Spix, 1825)",1825,VU,EN,263013,Partial,281814,261373,20441,0.072533657,0.3081,<50%,6810,0.0056,<1%
+Birds,Caprimulgidae,Nyctiprogne,Nyctiprogne vielliardi,"Nyctiprogne vielliardi (Lencioni-Neto, 1994)",1994,LC,EN,602779,Restricted,23606,22173,1433,0.060704906,0.6429,<80%,864,0.0181,<5%
+Birds,Bucconidae,Nystalus,Nystalus striatipectus,Nystalus striatipectus (Sclater 1854),1854,-,LC,43994,Partial,48573,43668,4905,0.100982027,0.2832,<30%,1112,0.0042,<1%
+Amphibians,Odontophrynidae,Odontophrynus,Odontophrynus cultripes,"Odontophrynus cultripes Reinhardt & Lütken, 1862",1862,LC,LC,358,Partial,152655,144132,8523,0.055831778,0.3068,<50%,5950,0.0099,<1%
+Amphibians,Odontophrynidae,Odontophrynus,Odontophrynus juquinha,Odontophrynus juquinha* Rocha et al. 2017,2017,-,LC,833008,Restricted,19956,18769,1187,0.059480858,0.7003,<80%,3026,0.0688,<17%
+Amphibians,Odontophrynidae,Odontophrynus,Odontophrynus monachus,"Odontophrynus monachus Caramaschi & Napoli, 2012",2012,-,LC,297359,Restricted,154,161,-7,-0.045454545,0.451,<50%,186,0.5196,>17%
+Mammals,Cricetidae,Oecomys,Oecomys cleberi,"Oecomys cleberi Locks, 1981",1981,DD,LC,1470,Partial,221133,201750,19383,0.087653132,0.3215,<50%,4694,0.0056,<1%
+Mammals,Cricetidae,Oligoryzomys,Oligoryzomys moojeni,"Oligoryzomys moojeni Weksler & Bonvicino, 2005",2005,DD,LC,1286,Partial,200570,175394,25176,0.125522262,0.6323,<80%,21823,0.0734,<17%
+Mammals,Cricetidae,Oligoryzomys,Oligoryzomys rupestris,"Oligoryzomys rupestris Weksler & Bonvicino, 2005",2005,DD,EN,16557,Partial,472,472,0,0,0.9833,>80%,401,0.2728,>17%
+Amphibians,Craugastoridae,Oreobates,Oreobates antrum,Oreobates antrum* Vaz-Lima et al. 2018,2018,-,LC,933,Restricted,817,763,54,0.066095471,0.5938,<80%,24,0.0187,<5%
+Amphibians,Craugastoridae,Oreobates,Oreobates heterodactylus,"Oreobates heterodactylus (Miranda-Ribeiro, 1937)",1937,DD,LC,2415453,Restricted,11872,10771,1101,0.092739218,0.6514,<80%,524,0.0316,<5%
+Amphibians,Craugastoridae,Oreobates,Oreobates remotus,"Oreobates remotus Teixeira Jr. et al., 2012",2012,-,LC,1045,Restricted,806,775,31,0.038461538,0.8315,>80%,389,0.4169,>17%
+Mammals,Cricetidae,Oxymycterus,Oxymycterus delator,"Oxymycterus delator Thomas, 1903",1903,LC,LC,83135,Wide,787419,715046,72373,0.091911676,0.4799,<50%,48077,0.0199,<5%
+Mammals,Cricetidae,Oxymycterus,Oxymycterus itapeby,"Oxymycterus itapeby Peçanha et al., 2019",2019,-,DD,1054646,Restricted,168,178,-10,-0.05952381,0.2977,<30%,0,0,0%
+Birds,Thraupidae,Paroaria,Paroaria baeri,"Paroaria baeri Hellmayr, 1907",1907,LC,LC,2109777,Partial,64101,59668,4433,0.069156487,0.739,<80%,9157,0.1101,<17%
+Birds,Cracidae,Penelope,Penelope ochrogaster,"Penelope ochrogaster Pelzeln, 1870",1870,VU,NT,368,Partial,486470,437183,49287,0.1013156,0.5245,<80%,24593,0.0233,<5%
+Birds,Trochilidae,Phaethornis,Phaethornis nattereri,"Phaethornis nattereri Berlepsch, 1887",1887,LC,LC,17642,Partial,646737,571652,75085,0.116098198,0.6594,<80%,42917,0.0203,<5%
+Reptiles,Dipsadidae,Phalotris,Phalotris cerradensis,"Phalotris cerradensis* Silveira, 2020",2020,-,-,49626,Restricted,357,291,66,0.18487395,0.7929,<80%,97,0.2636,>17%
+Reptiles,Dipsadidae,Phalotris,Phalotris concolor,"Phalotris concolor Ferrarezzi, 1994",1994,DD,NT,122868,Restricted,10487,9640,847,0.080766663,0.6023,<80%,154,0.0087,<1%
+Reptiles,Dipsadidae,Phalotris,Phalotris labiomaculatus,"Phalotris labiomaculatus Lema, 2002",2002,LC,LC,841607,Restricted,43625,39953,3672,0.08417192,0.8711,>80%,1296,0.0261,<5%
+Reptiles,Dipsadidae,Phalotris,Phalotris lativittatus,"Phalotris lativittatus Ferrarezzi, 1994",1994,NT,NT,634842,Partial,9690,10216,-526,-0.054282766,0.1792,<30%,261,0.0021,<1%
+Reptiles,Dipsadidae,Phalotris,Phalotris matogrossensis,"Phalotris matogrossensis Lema et al., 2005",2005,LC,LC,1055,Partial,140660,129725,10935,0.077740651,0.279,<30%,4806,0.0057,<1%
+Reptiles,Dipsadidae,Phalotris,Phalotris mertensi,"Phalotris mertensi (Hoge, 1955)",1955,LC,LC,1511881,Partial,68574,67590,984,0.014349462,0.2033,<30%,2693,0.0042,<1%
+Reptiles,Dipsadidae,Phalotris,Phalotris multipunctatus,"Phalotris multipunctatus Puorto & Ferrarezzi, 1994",1994,EN,EN,11924,Partial,103,103,0,0,0.1461,<30%,8,0.0076,<1%
+Reptiles,Dipsadidae,Phalotris,Phalotris nasutus,"Phalotris nasutus (Gomes, 1915)",1915,LC,LC,388737,Partial,426438,386080,40358,0.094639784,0.4018,<50%,8774,0.0058,<1%
+Amphibians,Phyllomedusidae,Phasmahyla,Phasmahyla jandaia,"Phasmahyla jandaia (Bokermann & Sazima, 1978)",1978,LC,LC,724317,Restricted,2469,2359,110,0.04455245,0.6377,<80%,425,0.0356,<5%
+Reptiles,Dipsadidae,Philodryas,Philodryas livida,"Philodryas livida (Amaral, 1923)",1923,VU,VU,750210,Partial,56365,52225,4140,0.073449836,0.2241,<30%,1995,0.0051,<1%
+Reptiles,Dipsadidae,Philodryas,Philodryas mattogrossensis,"Philodryas mattogrossensis Koslowsky, 1898",1898,LC,LC,2411,Partial,95138,88960,6178,0.064937249,0.2491,<30%,4421,0.0061,<1%
+Birds,Tyrannidae,Phyllomyias,Phyllomyias reiseri,"Phyllomyias reiseri Hellmayr, 1905",1905,LC,EN,1334,Partial,331300,295224,36076,0.108892243,0.4358,<50%,17866,0.0238,<5%
+Mammals,Echimyidae,Phyllomys,Phyllomys brasiliensis,"Phyllomys brasiliensis Lund, 1840",1840,EN,EN,240589,Restricted,879,903,-24,-0.027303754,0.3747,<50%,107,0.0444,<5%
+Mammals,Echimyidae,Phyllomys,Phyllomys centralis,"Phyllomys centralis Machado et al., 2018",2018,-,-,583,Restricted,633,592,41,0.064770932,0.4441,<50%,57,0.0427,<5%
+Birds,Rhynchocyclidae,Phylloscartes,Phylloscartes roquettei,"Phylloscartes roquettei Snethlage, 1928",1928,EN,EN,1826841,Partial,114474,106492,7982,0.069727624,0.5931,<80%,7195,0.0299,<5%
+Amphibians,Leptodactylidae,Physalaemus,Physalaemus atim,"Physalaemus atim* Brasileiro & Haddad, 2015",2015,-,LC,360,Restricted,131,132,-1,-0.007633588,0.226,<30%,5,0.0086,<1%
+Amphibians,Leptodactylidae,Physalaemus,Physalaemus centralis,"Physalaemus centralis Bokermann, 1962",1962,LC,LC,2352,Wide,663858,596555,67303,0.101381621,0.4776,<50%,39992,0.0219,<5%
+Amphibians,Leptodactylidae,Physalaemus,Physalaemus claptoni,"Physalaemus claptoni*  Leal et al., 2020",2020,-,-,5445,Restricted,305,304,1,0.003278689,0.8421,>80%,57,0.1583,<17%
+Amphibians,Leptodactylidae,Physalaemus,Physalaemus deimaticus,"Physalaemus deimaticus Sazima & Caramaschi, 1988",1988,DD,LC,1228199,Restricted,1859,1831,28,0.015061861,0.7791,<80%,104,0.0442,<5%
+Amphibians,Leptodactylidae,Physalaemus,Physalaemus evangelistai,"Physalaemus evangelistai Bokermann, 1967",1967,DD,LC,1987481,Restricted,3955,3874,81,0.020480405,0.7112,<80%,474,0.0871,<17%
+Amphibians,Leptodactylidae,Physalaemus,Physalaemus marmoratus,"Physalaemus marmoratus (Reinhardt & Lütken, 1862)",1862,LC,LC,1108,Partial,368155,337897,30258,0.082188209,0.361,<50%,16089,0.0131,<5%
+Amphibians,Leptodactylidae,Physalaemus,Physalaemus nattereri,"Physalaemus nattereri (Steindachner, 1863)",1863,LC,LC,72110,Wide,741061,663446,77615,0.104734968,0.4657,<50%,41283,0.0208,<5%
+Amphibians,Phyllomedusidae,Pithecopus,Pithecopus araguaius,Pithecopus araguaius* Haga et al. 2017,2017,-,LC,2392121,Partial,665,656,9,0.013533835,0.5921,<80%,98,0.0884,<17%
+Amphibians,Phyllomedusidae,Pithecopus,Pithecopus ayeaye,"Pithecopus ayeaye Lutz, 1966",1966,CR,LC,105166,Partial,8684,8897,-213,-0.024527867,0.3013,<50%,2091,0.029,<5%
+Amphibians,Phyllomedusidae,Pithecopus,Pithecopus azureus,"Pithecopus azureus (Cope, 1862)",1862,DD,LC,53181,Partial,950984,849310,101674,0.106914522,0.5317,<80%,53593,0.0224,<5%
+Amphibians,Phyllomedusidae,Pithecopus,Pithecopus centralis,"Pithecopus centralis (Bokermann, 1965)",1965,DD,LC,82568,Partial,33301,30253,3048,0.091528783,0.4749,<50%,581,0.0055,<1%
+Amphibians,Phyllomedusidae,Pithecopus,Pithecopus megacephalus,"Pithecopus megacephalus (Miranda-Ribeiro, 1926)",1926,DD,LC,359,Restricted,21335,20157,1178,0.055214436,0.656,<80%,3718,0.0699,<17%
+Amphibians,Phyllomedusidae,Pithecopus,Pithecopus oreades,"Pithecopus oreades (Brandão, 2002)",2002,DD,LC,442086,Partial,40787,37135,3652,0.089538333,0.4495,<50%,1701,0.0206,<5%
+Reptiles,Gymnophthalmidae,Placosoma,Placosoma cipoense,"Placosoma cipoense Cunha, 1966",1966,EN,EN,1081620,Restricted,237,241,-4,-0.016877637,0.9129,>80%,224,0.624,>17%
+Birds,Tyrannidae,Polystictus,Polystictus superciliaris,"Polystictus superciliaris (Wied, 1831)",1831,LC,LC,3175252,Partial,79076,75493,3583,0.04531084,0.4524,<50%,6555,0.0148,<5%
+Birds,Thraupidae,Porphyrospiza,Porphyrospiza caerulescens,"Porphyrospiza caerulescens (Wied, 1830)",1830,NT,LC,113765,Wide,1001974,899222,102752,0.102549567,0.5506,<80%,74553,0.0235,<5%
+Amphibians,Craugastoridae,Pristimantis,Pristimantis dundeei,"Pristimantis dundeei (Heyer & Muñoz, 1999)",1999,DD,LC,29032,Partial,44955,40964,3991,0.088777667,0.3646,<50%,1843,0.0162,<5%
+Amphibians,Craugastoridae,Pristimantis,Pristimantis moa,"Pristimantis moa* Oliveira et al., 2020",2020,-,-,13038,Restricted,25107,21542,3565,0.141992273,0.7913,<80%,380,0.0131,<5%
+Amphibians,Craugastoridae,Pristimantis,Pristimantis ventrigranulosus,"Pristimantis ventrigranulosus Maciel et al., 2012",2012,-,LC,926,Restricted,5499,4628,871,0.158392435,0.3555,<50%,0,0,0%
+Amphibians,Odontophrynidae,Proceratophrys,Proceratophrys bagnoi,"Proceratophrys bagnoi Brandão et al., 2013",2013,-,DD,151905,Restricted,787,728,59,0.074968234,0.787,<80%,0,0,0%
+Amphibians,Odontophrynidae,Proceratophrys,Proceratophrys branti,"Proceratophrys branti Brandão et al., 2013",2013,-,LC,363,Partial,119772,108842,10930,0.091256721,0.7457,<80%,12781,0.0841,<17%
+Amphibians,Odontophrynidae,Proceratophrys,Proceratophrys carranca,"Proceratophrys carranca Godinho et al., 2013",2013,-,DD,2291,Restricted,178,174,4,0.02247191,0.4807,<50%,0,0,0%
+Amphibians,Odontophrynidae,Proceratophrys,Proceratophrys cururu,"Proceratophrys cururu Eterovick & Sazima, 1998",1998,DD,LC,66603,Restricted,1840,1813,27,0.014673913,0.7893,<80%,426,0.1859,>17%
+Amphibians,Odontophrynidae,Proceratophrys,Proceratophrys dibernardoi,"Proceratophrys dibernardoi Brandão et al., 2013",2013,-,LC,100782,Partial,20815,19043,1772,0.085130915,0.2861,<30%,1647,0.0247,<5%
+Amphibians,Odontophrynidae,Proceratophrys,Proceratophrys goyana,"Proceratophrys goyana (Miranda-Ribeiro, 1937)",1937,LC,LC,1102,Partial,65281,60672,4609,0.070602472,0.6104,<80%,2507,0.0249,<5%
+Amphibians,Odontophrynidae,Proceratophrys,Proceratophrys huntingtoni,"Proceratophrys huntingtoni Ávila et al., 2012",2012,-,LC,226403,Restricted,759,694,65,0.085638999,0.7495,<80%,0,0,0%
+Amphibians,Odontophrynidae,Proceratophrys,Proceratophrys moratoi,Proceratophrys moratoi (Jim & Caramaschi 1980),1980,CR,LC,376,Partial,35509,34847,662,0.018643161,0.1986,<30%,1027,0.0045,<1%
+Amphibians,Odontophrynidae,Proceratophrys,Proceratophrys rotundipalpebra,"Proceratophrys rotundipalpebra Martins & Giaretta, 2013",2013,-,LC,28016,Restricted,366,369,-3,-0.008196721,0.9762,>80%,252,0.6702,>17%
+Amphibians,Odontophrynidae,Proceratophrys,Proceratophrys salvatori,"Proceratophrys salvatori (Caramaschi, 1996)",1996,DD,LC,236,Restricted,14359,13201,1158,0.080646285,0.4705,<50%,731,0.0261,<5%
+Amphibians,Odontophrynidae,Proceratophrys,Proceratophrys strussmannae,"Proceratophrys strussmannae Ávila et al., 2011",2011,-,DD,21126,Restricted,86,88,-2,-0.023255814,0.3745,<50%,0,0,0%
+Amphibians,Odontophrynidae,Proceratophrys,Proceratophrys vielliardi,"Proceratophrys vielliardi Martins & Giaretta, 2011",2011,DD,LC,304291,Restricted,9080,7578,1502,0.165418502,0.358,<50%,242,0.0115,<5%
+Amphibians,Hylidae,Pseudis,Pseudis tocantins,"Pseudis tocantins Caramaschi & Cruz, 1998",1998,LC,LC,12616,Partial,190485,170652,19833,0.104118435,0.6766,<80%,11099,0.0365,<5%
+Amphibians,Leptodactylidae,Pseudopaludicola,Pseudopaludicola atragula,Pseudopaludicola atragula* Pansonato et al. 2014,2014,-,LC,731,Restricted,1764,1934,-170,-0.096371882,0.1539,<30%,0,0,0%
+Amphibians,Leptodactylidae,Pseudopaludicola,Pseudopaludicola coracoralinae,"Pseudopaludicola coracoralinae* Andrade et al., 2020",2020,-,-,64702,Restricted,117,125,-8,-0.068376068,0.1712,<30%,0,0,0%
+Amphibians,Leptodactylidae,Pseudopaludicola,Pseudopaludicola facureae,"Pseudopaludicola facureae* Andrade & Carvalho, 2013",2013,-,LC,726,Partial,8199,8031,168,0.020490304,0.1732,<30%,158,0.0024,<1%
+Amphibians,Leptodactylidae,Pseudopaludicola,Pseudopaludicola ibisoroca,Pseudopaludicola ibisoroca* Pansonato et al. 2016,2016,-,LC,409,Restricted,235,227,8,0.034042553,0.3127,<50%,0,0,0%
+Amphibians,Leptodactylidae,Pseudopaludicola,Pseudopaludicola jazmynmcdonaldae,"Pseudopaludicola jazmynmcdonaldae* Andrade et al., 2019",2019,-,-,722,Restricted,301,308,-7,-0.023255814,0.7531,<80%,184,0.4499,>17%
+Amphibians,Leptodactylidae,Pseudopaludicola,Pseudopaludicola mineira,"Pseudopaludicola mineira* Lobo, 1994",1994,DD,LC,1068878,Restricted,607,611,-4,-0.006589786,0.8474,>80%,364,0.5042,>17%
+Amphibians,Leptodactylidae,Pseudopaludicola,Pseudopaludicola ternetzi,"Pseudopaludicola ternetzi* Miranda-Ribeiro, 1937",1937,LC,LC,737,Partial,414362,374343,40019,0.096579802,0.4312,<50%,15763,0.0147,<5%
+Reptiles,Gymnophthalmidae,Psilops,Psilops seductus,"Psilops seductus* Rodrigues et al., 2017",2017,-,-,13772,Restricted,734,572,162,0.220708447,0.7761,<80%,314,0.4261,>17%
+Birds,Psittacidae ,Pyrrhura,Pyrrhura pfrimeri,"Pyrrhura pfrimeri Miranda-Ribeiro, 1920",1920,EN,EN,1521523,Restricted,8738,7463,1275,0.145914397,0.5413,<80%,557,0.0404,<5%
+Reptiles,Dipsadidae,Rhachidelus,Rhachidelus brazili,"Rhachidelus brazili Boulenger, 1908",1908,LC,LC,28584,Partial,283199,262258,20941,0.07394447,0.3072,<50%,8198,0.0054,<1%
+Reptiles,Gymnophthalmidae,Rhachisaurus,Rhachisaurus brachylepis,"Rhachisaurus brachylepis (Dixon, 1974)",1974,DD,NT,611704,Restricted,13244,12568,676,0.051041981,0.6361,<80%,2306,0.0807,<17%
+Amphibians,Bufonidae,Rhinella,Rhinella cerradensis,"Rhinella cerradensis Maciel et al., 2007",2007,DD,LC,54769,Partial,266877,234780,32097,0.120268888,0.4137,<50%,12574,0.0206,<5%
+Amphibians,Bufonidae,Rhinella,Rhinella inopina,"Rhinella inopina Vaz-Silva et al., 2012",2012,-,LC,1659819,Restricted,46643,39536,7107,0.152370131,0.7437,<80%,2607,0.0476,<5%
+Amphibians,Bufonidae,Rhinella,Rhinella ocellata,"Rhinella ocellata (Günther, 1858)",1858,LC,LC,724425,Partial,618775,554090,64685,0.10453719,0.551,<80%,31130,0.0188,<5%
+Amphibians,Bufonidae,Rhinella,Rhinella rubescens,"Rhinella rubescens (Lutz, 1925)",1925,LC,LC,77788,Partial,229793,214622,15171,0.066020288,0.3913,<50%,13409,0.0185,<5%
+Amphibians,Bufonidae,Rhinella,Rhinella scitula,"Rhinella scitula (Caramaschi & Niemeyer, 2003)",2003,DD,LC,14562,Partial,20267,18517,1750,0.086347264,0.3635,<50%,1865,0.024,<5%
+Amphibians,Bufonidae,Rhinella,Rhinella sebbeni,"Rhinella sebbeni* Vaz-Silva et al., 2015",2015,-,LC,86363,Restricted,5546,5229,317,0.057158312,0.3999,<50%,8,5.00E-04,<1%
+Amphibians,Bufonidae,Rhinella,Rhinella veredas,"Rhinella veredas (Brandão et al., 2007)",2007,LC,LC,34446,Partial,70544,62986,7558,0.107138807,0.7586,<80%,3609,0.0418,<5%
+Mammals,Cricetidae,Rhipidomys,Rhipidomys ipukensis,"Rhipidomys ipukensis Rocha et al., 2011",2011,DD,LC,1976730,Restricted,14692,13080,1612,0.109719575,0.7659,<80%,4699,0.1364,<17%
+Mammals,Cricetidae,Rhipidomys,Rhipidomys macrurus,"Rhipidomys macrurus (Gervais, 1855)",1855,LC,LC,4504410,Wide,664719,604971,59748,0.089884598,0.4508,<50%,40196,0.0203,<5%
+Birds,Thraupidae,Saltatricula,Saltatricula atricollis,"Saltatricula atricollis (Vieillot, 1817)",1817,LC,LC,440647,Wide,1093686,984020,109666,0.100271924,0.5212,<80%,77308,0.0172,<5%
+Reptiles,Teiidae,Salvator,Salvator duseni,"Salvator duseni (Lönnberg, 1910)",1910,LC,LC,725,Partial,170287,155213,15074,0.088521144,0.3829,<50%,11324,0.0257,<5%
+Amphibians,Hylidae,Scinax,Scinax cabralensis,"Scinax cabralensis Drummond et al., 2007",2007,DD,NT,29866,Restricted,253,233,20,0.079051383,0.4291,<50%,45,0.0621,<17%
+Amphibians,Hylidae,Scinax,Scinax canastrensis,"Scinax canastrensis (Cardoso & Haddad, 1982)",1982,DD,LC,11094,Restricted,8343,8512,-169,-0.020256502,0.2896,<30%,1994,0.0668,<17%
+Amphibians,Hylidae,Scinax,Scinax centralis,"Scinax centralis Pombal & Bastos, 1996",1996,LC,LC,1067899,Restricted,3710,3407,303,0.081671159,0.3073,<50%,48,0.0043,<1%
+Amphibians,Hylidae,Scinax,Scinax constrictus,"Scinax constrictus Lima et al., 2005",2005,LC,LC,19813,Partial,427315,380611,46704,0.109296421,0.5425,<80%,16491,0.0154,<5%
+Amphibians,Hylidae,Scinax,Scinax curicica,"Scinax curicica Pugliesse et al., 2004",2004,DD,LC,368,Restricted,14886,14143,743,0.04991267,0.7162,<80%,1093,0.0552,<17%
+Amphibians,Hylidae,Scinax,Scinax goya,"Scinax goya* (Andrade et al., 2018)",2018,-,DD,541,Restricted,267,216,51,0.191011236,0.587,<80%,0,0,0%
+Amphibians,Hylidae,Scinax,Scinax haddadorum,"Scinax haddadorum* Araújo-Vieira et al., 2016",2016,-,DD,25000,Restricted,211,203,8,0.037914692,0.3752,<50%,20,0.037,<5%
+Amphibians,Hylidae,Scinax,Scinax machadoi,"Scinax machadoi (Bokermann & Sazima, 1973)",1973,LC,LC,9703,Restricted,12444,11841,603,0.048457088,0.7728,<80%,1876,0.075,<17%
+Amphibians,Hylidae,Scinax,Scinax maracaya,"Scinax maracaya (Cardoso & Sazima, 1980)",1980,DD,LC,719,Restricted,1287,1340,-53,-0.041181041,0.2485,<30%,278,0.0287,<5%
+Amphibians,Hylidae,Scinax,Scinax pinimus,"Scinax pinimus (Bokermann & Sazima, 1973)",1973,DD,VU,891,Restricted,433,433,0,0,0.6039,<80%,2,0.0028,<1%
+Amphibians,Hylidae,Scinax,Scinax pombali,"Scinax pombali Lourenço et al., 2013",2013,-,DD,153012,Restricted,453,469,-16,-0.035320088,0.5264,<80%,564,0.633,>17%
+Amphibians,Hylidae,Scinax,Scinax rogerioi,"Scinax rogerioi Pugliese et al., 2009",2009,-,LC,4627,Partial,58511,54074,4437,0.075831895,0.3721,<50%,484,0.0032,<1%
+Amphibians,Hylidae,Scinax,Scinax rossaferesae,Scinax rossaferesae* Conte et al. 2016,2016,-,LC,816,Restricted,812,910,-98,-0.120689655,0.4062,<50%,174,0.0376,<5%
+Amphibians,Hylidae,Scinax,Scinax rupestris,"Scinax rupestris* Araújo-Vieira et al., 2015",2015,-,LC,38789,Restricted,760,758,2,0.002631579,0.9289,>80%,199,0.2439,>17%
+Amphibians,Hylidae,Scinax,Scinax skaios,"Scinax skaios Pombal et al., 2010",2010,-,LC,44500,Restricted,21067,19687,1380,0.065505293,0.5075,<80%,744,0.0192,<5%
+Amphibians,Hylidae,Scinax,Scinax tigrinus,"Scinax tigrinus Nunes et al., 2010",2010,LC,LC,89692,Restricted,19768,17687,2081,0.105271145,0.3991,<50%,603,0.0136,<5%
+Birds,Rhinocryptidae,Scytalopus,Scytalopus novacapitalis,"Scytalopus novacapitalis Sick, 1958",1958,EN,EN,1494,Partial,32515,30320,2195,0.067507304,0.3409,<50%,1284,0.0143,<5%
+Reptiles,Leptotyphlopidae,Siagonodon,Siagonodon acutirostris,"Siagonodon acutirostris Pinto & Curcio, 2011",2011,LC,LC,1421441,Restricted,1392,1349,43,0.030890805,0.9023,>80%,831,0.5562,>17%
+Reptiles,Colubridae,Simophis,Simophis rhinostoma,"Simophis rhinostoma (Schlegel, 1837)",1837,LC,LC,107707,Partial,280686,263452,17234,0.061399571,0.3323,<50%,14475,0.0102,<5%
+Birds,Thraupidae,Sporophila,Sporophila nigrorufa,"Sporophila nigrorufa (d'Orbigny & Lafresnaye, 1837)",1837,VU,VU,138504,Partial,5558,4627,931,0.167506297,0.4607,<50%,11182,0.1038,<17%
+Reptiles,Tropiduridae,Stenocercus,Stenocercus albolineatus,"Stenocercus albolineatus* Teixeira et al., 2016",2015,-,-,690,Restricted,62072,57771,4301,0.069290501,0.8116,>80%,96,7.00E-04,<1%
+Reptiles,Tropiduridae,Stenocercus,Stenocercus canastra,"Stenocercus canastra* Avila-Pires et al., 2019",2019,-,LC,48388,Restricted,446,465,-19,-0.042600897,0.6749,<80%,570,0.8261,>17%
+Reptiles,Tropiduridae,Stenocercus,Stenocercus quinarius,"Stenocercus quinarius Nogueira & Rodrigues, 2006",2006,LC,LC,93473,Restricted,42800,35065,7735,0.180724299,0.7248,<80%,3601,0.0744,<17%
+Reptiles,Tropiduridae,Stenocercus,Stenocercus sinesaccus,"Stenocercus sinesaccus Torres-Carvajal, 2005",2005,LC,LC,2385983,Partial,47443,42025,5418,0.114200198,0.4497,<50%,110,0.0012,<1%
+Birds,Furnariidae,Synallaxis,Synallaxis simoni,"Synallaxis simoni Hellmayr, 1907",1907,LC,LC,61720,Partial,46840,43393,3447,0.073590948,0.7277,<80%,8243,0.1336,<17%
+Birds,Furnariidae,Syndactyla,Syndactyla dimidiata,"Syndactyla dimidiata (Pelzeln, 1859)",1859,LC,LC,1196783,Partial,347561,318901,28660,0.082460345,0.3672,<50%,15177,0.0127,<5%
+Birds,Tinamidae,Taoniscus,Taoniscus nanus,"Taoniscus nanus (Temminck, 1815)",1815,EN,EN,1308726,Partial,325050,297658,27392,0.084270112,0.3502,<50%,15832,0.0121,<5%
+Mammals,Cricetidae,Thalpomys,Thalpomys cerradensis,"Thalpomys cerradensis Hershkovitz, 1990",1990,LC,VU,957821,Partial,508190,448195,59995,0.118056239,0.6188,<80%,33989,0.0355,<5%
+Mammals,Cricetidae,Thalpomys,Thalpomys lasiotis,"Thalpomys lasiotis Thomas, 1916",1916,LC,EN,194904,Partial,79032,73348,5684,0.071920235,0.4034,<50%,4384,0.0225,<5%
+Reptiles,Dipsadidae,Thamnodynastes,Thamnodynastes rutilus,"Thamnodynastes rutilus (Prado, 1942)",1942,LC,LC,647749,Partial,192840,179352,13488,0.069943995,0.3311,<50%,6277,0.0097,<1%
+Amphibians,Cycloramphidae,Thoropa,Thoropa megatympanum,"Thoropa megatympanum Caramaschi & Sazima, 1984",1984,LC,LC,35245,Restricted,16636,15831,805,0.048389036,0.6943,<80%,2766,0.0785,<17%
+Mammals,Echimyidae,Thrichomys,Thrichomys apereoides,"Thrichomys apereoides (Lund, 1839)",1839,LC,LC,362360,Partial,153984,142781,11203,0.072754312,0.5519,<80%,10204,0.0282,<5%
+Mammals,Echimyidae,Thrichomys,Thrichomys pachyurus,"Thrichomys pachyurus (Wagner, 1845)",1845,LC,LC,762797,Partial,337552,302660,34892,0.103367777,0.5325,<80%,13812,0.0181,<5%
+Mammals,Didelphidae,Thylamys,Thylamys velutinus,"Thylamys velutinus (Wagner, 1842)",1842,NT,LC,472911,Partial,115290,109906,5384,0.046699627,0.2915,<30%,3827,0.0081,<1%
+Amphibians,Hylidae,Trachycephalus,Trachycephalus mambaiensis,"Trachycephalus mambaiensis Cintra et al., 2009",2009,-,LC,81510,Partial,62267,54604,7663,0.123066793,0.721,<80%,4752,0.0583,<17%
+Reptiles,Leptotyphlopidae,Trilepida,Trilepida brasiliensis,"Trilepida brasiliensis (Laurent, 1949)",1949,LC,LC,1503963,Wide,702364,628041,74323,0.105818351,0.5484,<80%,40976,0.0272,<5%
+Reptiles,Leptotyphlopidae,Trilepida,Trilepida fuliginosa,"Trilepida fuliginosa (Passos et al., 2006)",2006,LC,LC,453998,Partial,250479,225855,24624,0.098307643,0.5795,<80%,12403,0.0273,<5%
+Reptiles,Leptotyphlopidae,Trilepida,Trilepida jani,"Trilepida jani (Pinto & Fernandes, 2012)",2012,LC,LC,19461,Restricted,7243,6945,298,0.041143173,0.6546,<80%,1192,0.0613,<17%
+Reptiles,Leptotyphlopidae,Trilepida,Trilepida koppesi,"Trilepida koppesi (Amaral, 1955)",1955,LC,LC,558325,Partial,111020,103407,7613,0.06857323,0.2514,<30%,2470,0.0044,<1%
+Mammals,Echimyidae,Trinomys,Trinomys moojeni,"Trinomys moojeni (Pessôa et al., 1992)",1992,EN,EN,1403,Restricted,769,765,4,0.00520156,0.742,<80%,332,0.2366,>17%
+Reptiles,Tropidophiidae,Tropidophis,Tropidophis preciosus,"Tropidophis preciosus Curcio et al., 2012",2012,DD,NT,719,Restricted,72,74,-2,-0.027777778,0.8043,>80%,0,0,0%
+Reptiles,Tropiduridae,Tropidurus,Tropidurus callathelys,"Tropidurus callathelys Harvey & Gutberlet, 1998",1998,LC,-,877,Restricted,508,486,22,0.043307087,0.7297,<80%,452,0.5154,>17%
+Reptiles,Tropiduridae,Tropidurus,Tropidurus chromatops,"Tropidurus chromatops Harvey & Gutberlet, 1998",1998,LC,-,1787,Restricted,512,466,46,0.08984375,0.6966,<80%,975,0.5456,>17%
+Reptiles,Tropiduridae,Tropidurus,Tropidurus itambere,"Tropidurus itambere Rodrigues, 1987",1987,LC,LC,1456252,Partial,428334,393699,34635,0.080859796,0.3721,<50%,12951,0.0089,<1%
+Reptiles,Tropiduridae,Tropidurus,Tropidurus montanus,"Tropidurus montanus Rodrigues, 1987",1987,LC,LC,84788,Partial,40355,37352,3003,0.074414571,0.5358,<80%,3047,0.0359,<5%
+Reptiles,Tropiduridae,Tropidurus,Tropidurus oreadicus,"﻿Tropidurus oreadicus Rodrigues, 1987",1987,LC,LC,2773708,Partial,778567,688003,90564,0.116321396,0.5819,<80%,41466,0.0149,<5%
+Reptiles,Teiidae,Tupinambis,Tupinambis matipu,"Tupinambis matipu* Silva et al., 2018",2018,-,LC,701967,Partial,216504,190934,25570,0.118104054,0.5672,<80%,2526,0.0036,<1%
+Reptiles,Teiidae,Tupinambis,Tupinambis quadrilineatus,"Tupinambis quadrilineatus Manzani & Abe, 1997",1997,LC,LC,1572963,Partial,591585,522409,69176,0.116933323,0.593,<80%,34386,0.0219,<5%
+Birds,Columbidae,Uropelia,Uropelia campestris,"Uropelia campestris (Spix, 1825)",1825,LC,LC,4642794,Wide,1009121,902911,106210,0.105250015,0.541,<80%,71821,0.0155,<5%
+Reptiles,Gymnophthalmidae,Vanzosaura,Vanzosaura savanicola,"Vanzosaura savanicola* Recoder et al., 2014",2014,LC,LC,112323,Partial,91932,77420,14512,0.157855806,0.7083,<80%,7700,0.0686,<17%
+Reptiles,Dipsadidae,Xenodon,Xenodon matogrossensis,"Xenodon matogrossensis (Scrocchi & Cruz, 1993)",1993,LC,LC,213601,Partial,36464,33513,2951,0.080929136,0.4467,<50%,976,0.0046,<1%
+Reptiles,Dipsadidae,Xenodon,Xenodon nattereri,"Xenodon nattereri (Steindachner, 1867)",1867,LC,DD,1984447,Wide,711120,642984,68136,0.095815052,0.4618,<50%,40165,0.0202,<5%

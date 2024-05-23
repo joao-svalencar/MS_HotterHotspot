@@ -1,0 +1,1206 @@
+Classe,Nome.Científico,Nome.Científico.Anterior,Autor,Mês.Ano.Avaliação,Categoria,Critério,Bioma,Tendência.Populacional,Ameaça
+Aves,Laterallus xenopterus,Laterallus xenopterus,"Conover, 1934",Oct-18,EN,"B2ab(ii,iii)","Cerrado, Mata Atlântica",Declinando,"2.1 - Culturas anuais e perenes não-madeireiras
+2.2 - Silvicultura
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+7.1 - Incêndios e supressão de incêndios
+7.2 - Represas e uso de água
+7 - Modificações nos sistemas naturais
+9.3 - Agrícola e florestal
+9 - Poluição"
+Aves,Celeus obrieni,Celeus obrieni,"Short, 1973",Oct-18,VU,A4c,"Amazônia, Cerrado",Declinando,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração
+5.3 - Extração florestal
+5 - Uso de recursos biológicos
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7.3 - Outras modificações nos ecossistemas
+7 - Modificações nos sistemas naturais"
+Aves,Cercomacra ferdinandi,Cercomacra ferdinandi,"Snethlage, 1928",Oct-18,NT,,"Amazônia, Cerrado",Declinando,"3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração
+7.2 - Represas e uso de água
+7 - Modificações nos sistemas naturais"
+Aves,Asthenes luizae,Asthenes luizae,"Vielliard, 1990",Oct-18,EN,E,"Cerrado, Mata Atlântica",Declinando,"2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.2 - Mineração
+3 - Produção energética e mineração
+6.1 - Atividades recreacionais/turísticas
+6 - Distúrbios humanos
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais
+8.1 - Espécies exóticas
+8.3.1 - Espécie conhecida
+8.3 - Espécies nativas problemáticas
+8 - Espécies invasoras
+problemáticas e doenças"
+Aves,Alipiopsitta xanthops,Alipiopsitta xanthops,"(Spix, 1824)",Oct-18,LC,,"Amazônia, Caatinga, Cerrado, Mata Atlântica, Pantanal",Declinando,"5.1.1.2 - Comercial - Nacional/Local
+5.1.1 - Caça/captura intencional (a espécie é o alvo)
+5.1 - Caça e captura de animais terrestres ou marinhos
+5 - Uso de recursos biológicos
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Aves,Alectrurus tricolor,Alectrurus tricolor,"(Vieillot, 1816)",Oct-18,VU,C2a(i),"Cerrado, Mata Atlântica, Pantanal",Declinando,"1.3 - Áreas de turismo e recreação
+1 - Desenvolvimento residencial e comercial
+2.2 - Silvicultura
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais
+9.3.3 - Herbicidas e pesticidas
+9.3 - Agrícola e florestal
+9 - Poluição"
+Aves,Columbina cyanopis,Columbina cyanopis,"(Pelzeln, 1870)",Oct-18,CR,D,Cerrado,Desconhecida,
+Aves,Nyctiprogne vielliardi,Hydropsalis vielliardi,"(Lencioni-Neto, 1994)",Oct-18,EN,B2ab(iii),"Caatinga, Cerrado",Declinando,"1.1 - Expansão urbana
+1.4 - Assentamentos rurais
+1 - Desenvolvimento residencial e comercial
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Aves,Conothraupis mesoleuca,Conothraupis mesoleuca,"(Berlioz, 1939)",Oct-18,EN,C2a(i),"Amazônia, Cerrado",Declinando,"3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração
+7.2 - Represas e uso de água
+7 - Modificações nos sistemas naturais"
+Aves,Hydropsalis candicans,Hydropsalis candicans,"(Pelzeln, 1867)",Oct-18,EN,"B2ab(ii,iii,iv)",Cerrado,Declinando,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais
+8 - Espécies invasoras
+problemáticas e doenças"
+Aves,Geositta poeciloptera,Geositta poeciloptera,"(Wied, 1830)",Oct-18,VU,A3c,"Cerrado, Mata Atlântica",Declinando,"1.3 - Áreas de turismo e recreação
+1 - Desenvolvimento residencial e comercial
+2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura
+3.2 - Mineração
+3 - Produção energética e mineração
+6.1 - Atividades recreacionais/turísticas
+6 - Distúrbios humanos
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7.3 - Outras modificações nos ecossistemas
+7 - Modificações nos sistemas naturais
+8.1 - Espécies exóticas
+8 - Espécies invasoras
+problemáticas e doenças"
+Aves,Coryphaspiza melanotis,Coryphaspiza melanotis,Temminck,Oct-18,VU,A2c,"Amazônia, Caatinga, Cerrado, Mata Atlântica, Pantanal",Declinando,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+2.1 - Culturas anuais e perenes não-madeireiras
+2.2 - Silvicultura
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.2 - Mineração
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais
+8.1 - Espécies exóticas
+8 - Espécies invasoras
+problemáticas e doenças
+9.3.3 - Herbicidas e pesticidas
+9.3 - Agrícola e florestal
+9 - Poluição"
+Aves,Paroaria baeri,Paroaria baeri,"Hellmayr, 1907",Oct-18,LC,,"Amazônia, Cerrado",Desconhecida,
+Aves,Antilophia galeata,Antilophia galeata,"(Lichtenstein, 1823)",Oct-18,LC,,"Amazônia, Caatinga, Cerrado, Mata Atlântica, Pantanal",Estável,
+Aves,Arremon flavirostris,Arremon flavirostris,"Swainson, 1838",Oct-18,LC,,"Cerrado, Mata Atlântica",Desconhecida,
+Aves,Augastes scutatus,Augastes scutatus,"(Temminck, 1824)",Oct-18,LC,,"Caatinga, Cerrado, Mata Atlântica",Desconhecida,"3.2 - Mineração
+3 - Produção energética e mineração"
+Aves,Charitospiza eucosma,Charitospiza eucosma,"Oberholser, 1905",Oct-18,LC,,"Amazônia, Caatinga, Cerrado, Mata Atlântica, Pantanal",Declinando,"2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura
+5.1.1 - Caça/captura intencional (a espécie é o alvo)
+5.1 - Caça e captura de animais terrestres ou marinhos
+5 - Uso de recursos biológicos"
+Aves,Clibanornis rectirostris,Clibanornis rectirostris,"(Wied, 1831)",Oct-18,LC,,"Caatinga, Cerrado, Mata Atlântica, Pantanal",Desconhecida,
+Aves,Cyanocorax cristatellus,Cyanocorax cristatellus,"(Temminck, 1823)",Oct-18,LC,,"Amazônia, Caatinga, Cerrado, Mata Atlântica, Pantanal",Desconhecida,"5.1.1.2 - Comercial - Nacional/Local
+5.1.1 - Caça/captura intencional (a espécie é o alvo)
+5.1 - Caça e captura de animais terrestres ou marinhos
+5 - Uso de recursos biológicos"
+Aves,Embernagra longicauda,Embernagra longicauda,"Strickland, 1844",Oct-18,LC,,"Caatinga, Cerrado, Mata Atlântica",Desconhecida,
+Aves,Herpsilochmus longirostris,Herpsilochmus longirostris,"Pelzeln, 1868",Oct-18,LC,,"Amazônia, Caatinga, Cerrado, Mata Atlântica, Pantanal",Desconhecida,
+Aves,Melanopareia torquata,Melanopareia torquata,"(Wied, 1831)",Oct-18,LC,,"Amazônia, Caatinga, Cerrado, Mata Atlântica, Pantanal",Desconhecida,"2 - Agropecuária e Aquacultura
+8.1 - Espécies exóticas
+8 - Espécies invasoras
+problemáticas e doenças"
+Aves,Myiothlypis leucophrys,Myiothlypis leucophrys,"Pelzeln, 1868",Oct-18,LC,,"Amazônia, Cerrado, Mata Atlântica, Pantanal",Desconhecida,
+Aves,Neothraupis fasciata,Neothraupis fasciata,"(Lichtenstein, 1823)",Oct-18,LC,,"Amazônia, Caatinga, Cerrado, Mata Atlântica, Pantanal",Declinando,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais
+8.3 - Espécies nativas problemáticas
+8 - Espécies invasoras
+problemáticas e doenças"
+Aves,Nothura minor,Nothura minor,"(Spix, 1825)",Oct-18,EN,A4cd,Cerrado,Declinando,"2.2.2 - Plantações agro-industriais
+2.2 - Silvicultura
+2 - Agropecuária e Aquacultura
+5.1.1.1 - Uso de subsistência/escambo local
+5.1.1 - Caça/captura intencional (a espécie é o alvo)
+5.1 - Caça e captura de animais terrestres ou marinhos
+5 - Uso de recursos biológicos"
+Aves,Nystalus striatipectus,Nystalus striatipectus,"(Sclater, 1854)",Oct-18,LC,,"Cerrado, Mata Atlântica, Pantanal",Desconhecida,
+Aves,Phaethornis nattereri,Phaethornis nattereri,"Berlepsch, 1887",Oct-18,LC,,"Amazônia, Cerrado, Pantanal",Desconhecida,
+Aves,Phyllomyias reiseri,Phyllomyias reiseri,"Hellmayr, 1905",Oct-18,EN,"B2ab(ii,iii)","Caatinga, Cerrado, Mata Atlântica, Pantanal",Declinando,"2.2 - Silvicultura
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.2 - Mineração
+3 - Produção energética e mineração
+5.3 - Extração florestal
+5 - Uso de recursos biológicos
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Aves,Polystictus superciliaris,Polystictus superciliaris,"(Wied, 1831)",Oct-18,LC,,"Caatinga, Cerrado, Mata Atlântica",Desconhecida,"2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+5.3 - Extração florestal
+5 - Uso de recursos biológicos
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Aves,Porphyrospiza caerulescens,Porphyrospiza caerulescens,"(Wied, 1830)",Oct-18,LC,,"Amazônia, Caatinga, Cerrado, Mata Atlântica, Pantanal",Declinando,"2.2.2 - Plantações agro-industriais
+2.2 - Silvicultura
+2 - Agropecuária e Aquacultura"
+Aves,Saltatricula atricollis,Saltatricula atricollis,"(Vieillot, 1817)",Oct-18,LC,,"Amazônia, Caatinga, Cerrado, Mata Atlântica, Pantanal",Desconhecida,2 - Agropecuária e Aquacultura
+Aves,Guyramemua affine,Suiriri affinis,"(Burmeister, 1856)",Oct-18,LC,,"Amazônia, Caatinga, Cerrado, Mata Atlântica, Pantanal",Desconhecida,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+2.1 - Culturas anuais e perenes não-madeireiras
+2.2 - Silvicultura
+2 - Agropecuária e Aquacultura
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Aves,Synallaxis simoni,Synallaxis simoni,"Hellmayr, 1907",Oct-18,LC,,"Amazônia, Cerrado",Desconhecida,"5.3 - Extração florestal
+5 - Uso de recursos biológicos
+6.1 - Atividades recreacionais/turísticas
+6 - Distúrbios humanos
+7.3 - Outras modificações nos ecossistemas
+7 - Modificações nos sistemas naturais"
+Aves,Syndactyla dimidiata,Syndactyla dimidiata,"(Pelzeln, 1859)",Oct-18,LC,,"Caatinga, Cerrado, Mata Atlântica, Pantanal",Desconhecida,"5 - Uso de recursos biológicos
+7 - Modificações nos sistemas naturais"
+Aves,Taoniscus nanus,Taoniscus nanus,"(Temminck, 1815)",Oct-18,EN,"B2ab(ii,iii)","Caatinga, Cerrado, Mata Atlântica",Declinando,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+2.2.2 - Plantações agro-industriais
+2.2 - Silvicultura
+2 - Agropecuária e Aquacultura
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Aves,Uropelia campestris,Uropelia campestris,"(Spix, 1825)",Oct-18,LC,,"Amazônia, Caatinga, Cerrado, Pantanal",Desconhecida,
+Aves,Microspingus cinereus,Poospiza cinerea,"Bonaparte, 1850",Oct-18,LC,,"Cerrado, Mata Atlântica",Desconhecida,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2.2.2 - Plantações agro-industriais
+2.2 - Silvicultura
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais
+8.1.1 - Espécie conhecida
+8.1 - Espécies exóticas
+8 - Espécies invasoras
+problemáticas e doenças"
+Aves,Penelope ochrogaster,Penelope ochrogaster,"Pelzeln, 1870",Oct-18,NT,,"Amazônia, Cerrado, Pantanal",Declinando,"12 - Outras ameaças
+2.1.4 - Agricultura de escala desconhecida
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3.4 - Pecuária em escala desconhecida
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+5.1.1 - Caça/captura intencional (a espécie é o alvo)
+5.1 - Caça e captura de animais terrestres ou marinhos
+5 - Uso de recursos biológicos
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Aves,Pyrrhura pfrimeri,Pyrrhura pfrimeri,"Miranda-Ribeiro, 1920",Oct-18,EN,A2c,Cerrado,Declinando,"3.2 - Mineração
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração
+5.1.1.6 - Retaliação/controle
+5.1.1 - Caça/captura intencional (a espécie é o alvo)
+5.1 - Caça e captura de animais terrestres ou marinhos
+5.3 - Extração florestal
+5 - Uso de recursos biológicos
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Aves,Scytalopus novacapitalis,Scytalopus novacapitalis,"Sick, 1958",Oct-18,EN,"B2ab(ii,iii)",Cerrado,Declinando,"2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura
+3.2 - Mineração
+3 - Produção energética e mineração
+7.1 - Incêndios e supressão de incêndios
+7.2 - Represas e uso de água
+7 - Modificações nos sistemas naturais"
+Aves,Sporophila nigrorufa,Sporophila nigrorufa,"(d'Orbigny & Lafresnaye, 1837)",Oct-18,VU,C2a(ii),"Amazônia, Cerrado, Pantanal",Declinando,"2.1.4 - Agricultura de escala desconhecida
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3.4 - Pecuária em escala desconhecida
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura"
+Aves,Cinclodes espinhacensis,Cinclodes espinhacensis,"Freitas, Chaves, Costa, Santos & Rodrigues, 2012",Oct-18,EN,B1ab(iii)+2ab(iii),Cerrado,Desconhecida,"11 - Mudanças e extremos climáticos
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.2 - Mineração
+3 - Produção energética e mineração
+6.1 - Atividades recreacionais/turísticas
+6 - Distúrbios humanos
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Aves,Phylloscartes roquettei,Phylloscartes roquettei,"Snethlage, 1928",Oct-18,EN,"B2ab(ii,iii)","Caatinga, Cerrado, Mata Atlântica",Declinando,"5.3 - Extração florestal
+5 - Uso de recursos biológicos
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Aves,Knipolegus franciscanus,Knipolegus franciscanus,"Snethlage, 1928",Oct-18,VU,C2a(i),"Caatinga, Cerrado",Declinando,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+5.3 - Extração florestal
+5 - Uso de recursos biológicos"
+Aves,Euscarthmus rufomarginatus,Euscarthmus rufomarginatus,"(Pelzeln, 1868)",Oct-18,LC,,"Amazônia, Caatinga, Cerrado, Pantanal",Desconhecida,"11.1 - Mudança/alteração de habitat
+11 - Mudanças e extremos climáticos
+2.2 - Silvicultura
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais
+8.1 - Espécies exóticas
+8 - Espécies invasoras
+problemáticas e doenças"
+Reptilia,Phalotris multipunctatus,Phalotris multipunctatus,"Puorto & Ferrarezzi, 1993",Apr-12,EN,B1ab(iii),Cerrado,Desconhecida,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+2.1 - Culturas anuais e perenes não-madeireiras
+2.2 - Silvicultura
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura"
+Reptilia,Phalotris lativittatus,Phalotris lativittatus,"Ferrarezzi, 1994",,NT,,"Cerrado, Mata Atlântica",Desconhecida,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura"
+Reptilia,Bothrops itapetiningae,Bothrops itapetiningae,"(Boulenger, 1907)",,NT,,"Cerrado, Mata Atlântica",Desconhecida,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3.3 - Pecuária agro-industrial
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura"
+Reptilia,Apostolepis vittata,Apostolepis vittata,"(Cope, 1887)",Apr-12,LC,,Cerrado,Desconhecida,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Reptilia,Apostolepis kikoi,,"Santos, Entiauspe-Neto, Silva-Araújo, Souza, Lema, Strüssmann & Albuquerque, 2018",Nov-19,DD,,Cerrado,Desconhecida,"2.1.4 - Agricultura de escala desconhecida
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3.4 - Pecuária em escala desconhecida
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Reptilia,Apostolepis tertulianobeui,,"Lema, 2004",Nov-19,LC,,"Cerrado, Mata Atlântica",Desconhecida,
+Reptilia,Atractus spinalis,,"Passos, Teixeira Jr., Sena, Dal Vechio, Pinto, Mendonça, Cassimiro & Rodrigues, 2013",Nov-19,DD,,Cerrado,Desconhecida,"6.1 - Atividades recreacionais/turísticas
+6 - Distúrbios humanos
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Reptilia,Chironius brazili,,"Hamdan & Fernandes, 2015",Nov-19,LC,,"Cerrado, Mata Atlântica, Pampa",Desconhecida,
+Reptilia,Liotyphlops taylori,,"Marra-Santos & Reis, 2018",Nov-19,LC,,Cerrado,Desconhecida,
+Reptilia,Apostolepis christineae,Apostolepis christineae,"Lema, 2002",Nov-19,LC,,"Amazônia, Cerrado",Desconhecida,"2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.2 - Mineração
+3 - Produção energética e mineração
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Reptilia,Apostolepis intermedia,Apostolepis intermedia,"Koslowsky, 1898",Nov-19,LC,,"Amazônia, Cerrado, Pantanal",Desconhecida,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura"
+Reptilia,Apostolepis lineata,Apostolepis lineata,"Cope, 1887",Nov-19,DD,,Cerrado,Desconhecida,
+Reptilia,Apostolepis serrana,Apostolepis serrana,"Lema & Renner, 2006",Nov-19,DD,,Cerrado,Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura"
+Reptilia,Atractus edioi,Atractus edioi,"Silva Jr., Silva, Ribeiro, Souza & Souza, 2005",Nov-19,DD,,Cerrado,Desconhecida,"3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Reptilia,Epictia clinorostris,Epictia clinorostris,"Arredondo & Zaher, 2010",Nov-19,LC,,Cerrado,Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura"
+Reptilia,Phalotris concolor,Phalotris concolor,"Ferrarezi, 1993",Nov-19,NT,,Cerrado,Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.2 - Mineração
+3 - Produção energética e mineração"
+Reptilia,Philodryas livida,Philodryas livida,"(Amaral, 1923)",Nov-19,VU,"B2ab(ii,iii)","Cerrado, Pantanal",Declinando,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2.2 - Silvicultura
+2.3.3 - Pecuária agro-industrial
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura"
+Reptilia,Tropidophis preciosus,Tropidophis preciosus,"Curcio, Nunes, Argôlo, Skuk & Rodrigues, 2012",Nov-19,NT,,"Cerrado, Mata Atlântica",Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura
+3.2.3 - Extração de minérios - subsolo
+3.2 - Mineração
+3 - Produção energética e mineração
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Reptilia,Apostolepis adhara,,"França, Barbo, Silva-Junior, Silva & Zaher, 2018",Nov-19,DD,,Cerrado,Desconhecida,"2.1.4 - Agricultura de escala desconhecida
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3.4 - Pecuária em escala desconhecida
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Reptilia,Phalotris labiomaculatus,Phalotris labiomaculatus,"Lema, 2002",Nov-19,LC,,Cerrado,Desconhecida,
+Reptilia,Phalotris matogrossensis,Phalotris matogrossensis,"Lema, D’Agostini & Cappelari, 2005",Nov-19,LC,,"Cerrado, Mata Atlântica, Pantanal",Desconhecida,
+Reptilia,Phalotris mertensi,Phalotris mertensi,"(Hoge, 1955)",Nov-19,LC,,"Cerrado, Mata Atlântica",Desconhecida,
+Reptilia,Phalotris nasutus,Phalotris nasutus,"(Gomes, 1915)",Nov-19,LC,,"Amazônia, Cerrado, Mata Atlântica, Pantanal",Desconhecida,
+Reptilia,Philodryas mattogrossensis,Philodryas mattogrossensis,"Koslowsky, 1898",Nov-19,LC,,"Cerrado, Mata Atlântica, Pantanal",Desconhecida,
+Reptilia,Rhachidelus brazili,Rhachidelus brazili,"Boulenger, 1908",Nov-19,LC,,"Cerrado, Mata Atlântica",Desconhecida,
+Reptilia,Siagonodon acutirostris,Siagonodon acutirostris,"Pinto & Curcio, 2011",Nov-19,LC,,Cerrado,Desconhecida,
+Reptilia,Simophis rhinostoma,Simophis rhinostoma,"(Schlegel, 1837)",Nov-19,LC,,"Caatinga, Cerrado, Mata Atlântica, Pantanal",Desconhecida,
+Reptilia,Thamnodynastes rutilus,Thamnodynastes rutilus,"(Prado, 1942)",Nov-19,LC,,"Cerrado, Mata Atlântica",Desconhecida,
+Reptilia,Xenodon matogrossensis,Xenodon matogrossensis,"(Scrocchi & Cruz, 1993)",Nov-19,LC,,"Cerrado, Pantanal",Desconhecida,
+Reptilia,Xenodon nattereri,Xenodon nattereri,"(Steindachner, 1867)",Nov-19,DD,,"Amazônia, Caatinga, Cerrado, Mata Atlântica",Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura"
+Reptilia,Trilepida brasiliensis,Trilepida brasiliensis,"(Laurent, 1949)",Nov-19,LC,,"Caatinga, Cerrado, Pantanal",Desconhecida,
+Reptilia,Trilepida fuliginosa,Trilepida fuliginosa,"(Passos, Caramaschi & Pinto, 2006)",Nov-19,LC,,"Amazônia, Cerrado, Mata Atlântica",Desconhecida,
+Reptilia,Trilepida jani,Trilepida jani,"(Pinto & Fernandes, 2012)",Nov-19,LC,,"Cerrado, Mata Atlântica",Desconhecida,
+Reptilia,Trilepida koppesi,Trilepida koppesi,"(Amaral, 1955)",Nov-19,LC,,"Cerrado, Mata Atlântica, Pantanal",Desconhecida,
+Reptilia,Apostolepis albicollaris,Apostolepis albicollaris,"Lema, 2002",Nov-19,LC,,Cerrado,Desconhecida,
+Reptilia,Apostolepis sanctaeritae,Apostolepis ammodites,"Werner, 1924",Nov-19,LC,,"Cerrado, Mata Atlântica",Declinando,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Reptilia,Apostolepis assimilis,Apostolepis assimilis,"(Reinhardt, 1861)",Nov-19,LC,,"Caatinga, Cerrado, Mata Atlântica, Pantanal",Desconhecida,
+Reptilia,Apostolepis flavotorquata,Apostolepis flavotorquata,"(Duméril, Bibron & Duméril, 1854)",Nov-19,LC,,"Amazônia, Caatinga, Cerrado, Mata Atlântica",Desconhecida,
+Reptilia,Apostolepis goiasensis,Apostolepis goiasensis,"Prado, 1942",Nov-19,LC,,"Amazônia, Cerrado, Mata Atlântica",Desconhecida,
+Reptilia,Apostolepis longicaudata,Apostolepis longicaudata,"Gomes, 1921",Nov-19,LC,,"Amazônia, Cerrado, Mata Atlântica",Desconhecida,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura"
+Reptilia,Apostolepis nelsonjorgei,Apostolepis nelsonjorgei,"Lema & Renner, 2004",Nov-19,LC,,"Amazônia, Cerrado",Desconhecida,
+Reptilia,Apostolepis polylepis,Apostolepis polylepis,"Amaral, 1922",Nov-19,LC,,Cerrado,Desconhecida,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3.3 - Pecuária agro-industrial
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Reptilia,Atractus albuquerquei,Atractus albuquerquei,"Cunha & Nascimento, 1983",Nov-19,LC,,"Amazônia, Cerrado, Mata Atlântica",Desconhecida,
+Reptilia,Atractus pantostictus,Atractus pantostictus,"Fernandes & Puorto, 1994",Nov-19,LC,,"Amazônia, Cerrado, Mata Atlântica",Desconhecida,
+Reptilia,Bothrops marmoratus,Bothrops marmoratus,"Silva & Rodrigues, 2008",Nov-19,LC,,"Cerrado, Mata Atlântica",Desconhecida,
+Reptilia,Bothrops moojeni,Bothrops moojeni,"Hoge, 1966",Nov-19,LC,,"Amazônia, Cerrado, Mata Atlântica, Pantanal",Desconhecida,
+Reptilia,Bothrops pauloensis,Bothrops pauloenesis,"Amaral, 1925",Nov-19,LC,,"Cerrado, Mata Atlântica, Pantanal",Desconhecida,
+Reptilia,Lygophis paucidens,Lygophis paucidens,"Hoge, 1953",Nov-19,LC,,"Amazônia, Caatinga, Cerrado, Mata Atlântica",Desconhecida,
+Reptilia,Micrurus brasiliensis,Micrurus brasiliensis,"Roze, 1967",Nov-19,LC,,"Caatinga, Cerrado",Desconhecida,
+Reptilia,Micrurus tricolor,Micrurus tricolor,"Hoge, 1956",Nov-19,LC,,"Cerrado, Pantanal",Desconhecida,
+Reptilia,Epicrates crassus,Epicrates crassus,"Cope, 1862",Nov-19,LC,,"Amazônia, Caatinga, Cerrado, Mata Atlântica, Pantanal",Desconhecida,
+Reptilia,Drymoluber brazili,Drymoluber brazili,"(Gomes, 1918)",Nov-19,LC,,"Amazônia, Caatinga, Cerrado, Mata Atlântica",Desconhecida,
+Reptilia,Erythrolamprus maryellenae,Erythrolamprus maryellenae,"(Dixon, 1985)",Nov-19,LC,,"Caatinga, Cerrado, Mata Atlântica",Desconhecida,12 - Outras ameaças
+Reptilia,Helicops gomesi,Helicops gomesi,"Amaral, 1922",Nov-19,LC,,"Cerrado, Mata Atlântica",Desconhecida,"3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração
+7.2 - Represas e uso de água
+7 - Modificações nos sistemas naturais"
+Reptilia,Bachia psamophila,Bachia psamophila,"Rodrigues, Pavan & Curcio, 2007",,CR,A2c,Cerrado,Declinando,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+2.1.2 - Agricultura em pequenas propriedades
+2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Reptilia,Kentropyx vanzoi,Kentropyx vanzoi,"Gallagher & Dixon, 1980",Oct-13,VU,A2c,"Amazônia, Cerrado, Pantanal",Desconhecida,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3.3 - Pecuária agro-industrial
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+5.3 - Extração florestal
+5 - Uso de recursos biológicos"
+Reptilia,Amphisbaena sanctaeritae,Amphisbaena sanctaeritae,"Vanzolini, 1994",,DD,,Cerrado,Desconhecida,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2.2.2 - Plantações agro-industriais
+2.2 - Silvicultura
+2.3.3 - Pecuária agro-industrial
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura"
+Reptilia,Amphisbaena saxosa,Amphisbaena saxosa,"(Castro-Mello, 2003)",,NT,,Cerrado,Desconhecida,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Reptilia,Leposternon maximus,Leposternon maximus,"Ribeiro, Nogueira, Cintra, Silva Jr. & Zaher, 2011",,LC,,Cerrado,Desconhecida,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Reptilia,Amphisbaena carli,Amphisbaena carli,"Pinna, Mendonça, Bocchiglieri & Fernandes, 2010",,LC,,Cerrado,Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura"
+Reptilia,Ameiva parecis,Ameiva parecis,"(Colli, Costa, Garda, Kopp, Mesquita, Péres, Valdujo, Vieira & Wiederhecker, 2003)",Apr-21,EN,B2ab(iii),"Amazônia, Cerrado",Desconhecida,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração
+4.1 - Estradas e ferrovias
+4.8 - Hidrovias
+4 - Transportes e serviços de transmissão"
+Reptilia,Amphisbaena acrobeles,Amphisbaena acrobeles,"(Ribeiro, Castro-Mello & Nogueira, 2009)",Mar-21,LC,,Cerrado,Desconhecida,
+Reptilia,Amphisbaena anaemariae,Amphisbaena anaemariae,"Vanzolini, 1997",Oct-20,LC,,"Cerrado, Mata Atlântica",Desconhecida,
+Reptilia,Amphisbaena bedai,Amphisbaena bedai,"(Vanzolini, 1991)",Oct-20,LC,,Cerrado,Desconhecida,
+Reptilia,Amphisbaena brevis,Amphisbaena brevis,"Strüssmann & Mott, 2009",Mar-21,DD,,Cerrado,Desconhecida,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Reptilia,Amphisbaena crisae,Amphisbaena crisae,"Vanzolini, 1997",Mar-21,LC,,Cerrado,Desconhecida,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Reptilia,Amphisbaena cuiabana,Amphisbaena cuiabana,"(Strüssmann & Carvalho, 2001)",Oct-20,LC,,"Amazônia, Cerrado",Desconhecida,
+Reptilia,Amphisbaena kraoh,Amphisbaena kraoh,"(Vanzolini, 1971)",Oct-20,LC,,Cerrado,Desconhecida,
+Reptilia,Amphisbaena leeseri,Amphisbaena leeseri,"Gans, 1964",Oct-20,LC,,"Amazônia, Cerrado, Mata Atlântica, Pantanal",Desconhecida,
+Reptilia,Amphisbaena maranhensis,Amphisbaena maranhensis,"Gomes & Maciel, 2012",Apr-21,DD,,Cerrado,Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Reptilia,Amphisbaena neglecta,Amphisbaena neglecta,"Dunn & Piatt, 1936",Mar-21,DD,,Cerrado,Desconhecida,"1 - Desenvolvimento residencial e comercial
+2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração
+5.3 - Extração florestal
+5 - Uso de recursos biológicos"
+Reptilia,Amphisbaena silvestrii,Amphisbaena silvestrii,"Boulenger, 1902",Oct-20,LC,,"Amazônia, Cerrado, Pantanal",Desconhecida,
+Reptilia,Amphisbaena steindachneri,Amphisbaena steindachneri,"Strauch, 1881",Oct-20,LC,,"Amazônia, Cerrado, Pantanal",Desconhecida,
+Reptilia,Amphisbaena talisiae,Amphisbaena talisiae,"Vanzolini, 1995",Mar-21,LC,,Cerrado,Desconhecida,
+Reptilia,Bachia didactyla,Bachia didactyla,"Freitas, Strüssmann, Carvalho, Kawashita-Ribeiro & Mott, 2011",Apr-21,EN,"B1ab(ii,iii)","Amazônia, Cerrado",Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração
+4.1 - Estradas e ferrovias
+4.8 - Hidrovias
+4 - Transportes e serviços de transmissão"
+Reptilia,Bachia geralista,Bachia geralista,"Teixeira Jr, Recorder, Camacho, Sena, Navas & Rodrigues, 2013",Mar-21,NT,,Cerrado,Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura"
+Reptilia,Bachia micromela,Bachia micromela,"Rodrigues, Pavan & Curcio, 2007",Mar-21,DD,,Cerrado,Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Reptilia,Heterodactylus lundii,Heterodactylus lundii,"Reinhardt & Lütken, 1862",Mar-21,VU,"B2ab(ii,iii)","Cerrado, Mata Atlântica",Desconhecida,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2.2 - Silvicultura
+2 - Agropecuária e Aquacultura
+3.2.3 - Extração de minérios - subsolo
+3.2 - Mineração
+3 - Produção energética e mineração
+6.1 - Atividades recreacionais/turísticas
+6 - Distúrbios humanos
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais
+9.2.2 - Infiltraçao oriunda de mineração
+9.2 - Industrial
+9.3.3 - Herbicidas e pesticidas
+9.3 - Agrícola e florestal
+9.4.2 - Industriais
+9.4 - Lixo e resíduos sólidos
+9 - Poluição"
+Reptilia,Leposternon cerradensis,Leposternon cerradensis,"Ribeiro, Vaz-Silva & Santos-Jr., 2008",Mar-21,DD,,Cerrado,Desconhecida,"1 - Desenvolvimento residencial e comercial
+2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Reptilia,Placosoma cipoense,Placosoma cipoense,"Cunha, 1966",Mar-21,EN,B1ab(iii),"Cerrado, Mata Atlântica",Desconhecida,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.2 - Mineração
+3 - Produção energética e mineração
+4.1 - Estradas e ferrovias
+4 - Transportes e serviços de transmissão
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Reptilia,Rhachisaurus brachylepis,Rhachisaurus brachylepis,"(Dixon, 1974)",Mar-21,NT,,"Cerrado, Mata Atlântica",Desconhecida,"2.2.3 - Plantações em escala desconhecida
+2.2 - Silvicultura
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.2.3 - Extração de minérios - subsolo
+3.2 - Mineração
+3 - Produção energética e mineração
+5.3 - Extração florestal
+5 - Uso de recursos biológicos
+9 - Poluição"
+Reptilia,Atractus stygius,,"Passos, Azevedo, Nogueira, Fernandes & Sawaya, 2019",Nov-19,LC,,"Amazônia, Cerrado",Desconhecida,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura"
+Reptilia,Stenocercus quinarius,Stenocercus quinarius,"Nogueira & Rodrigues, 2006",Oct-13,LC,,Cerrado,Desconhecida,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais
+9.3.3 - Herbicidas e pesticidas
+9.3 - Agrícola e florestal
+9 - Poluição"
+Reptilia,Ameivula mumbuca,Ameivula mumbuca,"(Colli, Caldwell, Costa, Gainsbury, Garda, Mesquita, Filho, Soares, Silva, Valdujo, Vieira, Vitt, Werneck, Wiederhecker & Zatz, 2003)",Oct-20,LC,,Cerrado,Desconhecida,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura"
+Reptilia,Bachia bresslaui,Bachia bresslaui,"(Amaral, 1935)",Mar-21,LC,,"Amazônia, Cerrado, Mata Atlântica, Pantanal",Desconhecida,
+Reptilia,Bachia oxyrhina,Bachia oxyrhina,"Rodrigues, Camacho, Nunes, Recoder, Teixeira Jr, Valdujo, Ghellere, Mott & Nogueira, 2008",Mar-21,LC,,Cerrado,Desconhecida,
+Reptilia,Coleodactylus brachystoma,Coleodactylus brachystoma,"(Amaral, 1935)",Oct-20,LC,,"Amazônia, Cerrado, Pantanal",Desconhecida,
+Reptilia,Colobosaura modesta,Colobosaura modesta,"(Reinhardt & Luetken, 1862)",Oct-20,LC,,"Amazônia, Caatinga, Cerrado, Mata Atlântica",Desconhecida,
+Reptilia,Manciola guaporicola,Manciola guaporicola,"(Dunn, 1935)",Oct-20,LC,,"Amazônia, Cerrado, Pantanal",Desconhecida,
+Reptilia,Micrablepharus atticolus,Micrablepharus atticolus,"Rodrigues, 1996",Oct-20,LC,,"Amazônia, Cerrado, Mata Atlântica",Desconhecida,
+Reptilia,Eurolophosaurus nanuzae,Eurolophosaurus nanuzae,"(Rodrigues, 1981)",Oct-20,LC,,"Caatinga, Cerrado, Mata Atlântica",Desconhecida,
+Reptilia,Salvator duseni,Salvator duseni,"(Lönnberg, 1910)",Oct-20,LC,,"Cerrado, Mata Atlântica",Desconhecida,
+Reptilia,Gymnodactylus amarali,Gymnodactylus amarali,"Barbour, 1925",Oct-20,LC,,"Amazônia, Caatinga, Cerrado",Desconhecida,
+Reptilia,Gymnodactylus guttulatus,Gymnodactylus guttulatus,"Vanzolini, 1982",Mar-21,LC,,Cerrado,Desconhecida,
+Reptilia,Stenocercus sinesaccus,Stenocercus sinesaccus,"Torres-Carvajal, 2005",Oct-20,LC,,Cerrado,Desconhecida,
+Reptilia,Hoplocercus spinosus,Hoplocercus spinosus,"Fitzinger, 1843",Oct-20,LC,,"Amazônia, Caatinga, Cerrado, Mata Atlântica, Pantanal",Desconhecida,
+Reptilia,Kentropyx paulensis,Kentropyx paulensis,"Boettger, 1893",Oct-20,LC,,"Amazônia, Cerrado, Mata Atlântica",Desconhecida,
+Reptilia,Tropidurus itambere,Tropidurus itambere,"Rodrigues, 1987",Mar-21,LC,,"Amazônia, Cerrado, Mata Atlântica, Pantanal",Desconhecida,
+Reptilia,Tropidurus montanus,Tropidurus montanus,"Rodrigues, 1987",Oct-20,LC,,"Caatinga, Cerrado, Mata Atlântica",Desconhecida,
+Reptilia,Tropidurus oreadicus,Tropidurus oreadicus,"Rodrigues, 1987",Oct-20,LC,,"Amazônia, Caatinga, Cerrado, Pantanal",Desconhecida,
+Reptilia,Tupinambis quadrilineatus,Tupinambis quadrilineatus,"Manzani & Abe, 1997",Oct-20,LC,,"Amazônia, Cerrado, Pantanal",Desconhecida,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+2.1.2 - Agricultura em pequenas propriedades
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3.3 - Pecuária agro-industrial
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+4.1 - Estradas e ferrovias
+4 - Transportes e serviços de transmissão
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Reptilia,Vanzosaura savanicola,Vanzosaura savanicola,"Recoder, Werneck, Teixeira Jr, Colli, Sites Jr & Rodrigues, 2014",Oct-20,LC,,Cerrado,Desconhecida,
+Reptilia,Ameivula jalapensis,Ameivula jalapensis,"(Colli, Giugliano, Mesquita & França, 2009)",Mar-21,LC,,Cerrado,Desconhecida,
+Reptilia,Ameivula xacriaba,,"Arias, Teixeira Jr., Recoder, Carvalho, Zaher & Rodrigues, 2014",Mar-21,LC,,Cerrado,Desconhecida,
+Reptilia,Amphisbaena filiformis,,"Ribeiro, Gomes, Silva, Cintra & Silva Jr., 2016",Mar-21,DD,,Cerrado,Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração
+7.2 - Represas e uso de água
+7 - Modificações nos sistemas naturais"
+Reptilia,Tupinambis matipu,,"Silva, Ribeiro-Júnior & Avila-Pires, 2018",Mar-21,LC,,"Amazônia, Cerrado, Pantanal",Desconhecida,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3.3 - Pecuária agro-industrial
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura"
+Reptilia,Amphisbaena mebengokre,,"Ribeiro, Sá, Santos Jr., Graboski, Zaher, Guedes, Andrade & Vaz-Silva, 2019",Mar-21,DD,,Cerrado,Desconhecida,"2.3.4 - Pecuária em escala desconhecida
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Reptilia,Stenocercus canastra,,"Avila-Pires, Nogueira & Martins, 2019",Mar-21,LC,,Cerrado,Desconhecida,"7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Reptilia,Helicops phantasma,,"Moraes-da-Silva, Amaro, Nunes, Rodrigues & Curcio, 2021",Oct-22,LC,,Cerrado,Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração
+9.3.3 - Herbicidas e pesticidas
+9.3 - Agrícola e florestal
+9 - Poluição"
+Amphibia,Proceratophrys salvatori,Odontophrynus salvatori,"(Caramaschi, 1996)",May-18,LC,,Cerrado,Declinando,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Amphibia,Crossodactylus franciscanus,,"Pimenta, Caramaschi & Cruz, 2015",Jun-17,CR,D,Cerrado,Declinando,12 - Outras ameaças
+Amphibia,Boana buriti,Hypsiboas buriti,"(Caramaschi & Cruz, 1999)",May-18,VU,"B1ab(iii,iv)",Cerrado,Declinando,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura"
+Amphibia,Odontophrynus juquinha,,"Rocha, Sena, Pezzuti, Leite, Svartman, Rosset, Baldo & Garcia, 2017",May-18,LC,,"Caatinga, Cerrado, Mata Atlântica",Estável,"1.1 - Expansão urbana
+1.3 - Áreas de turismo e recreação
+1 - Desenvolvimento residencial e comercial
+2.2.3 - Plantações em escala desconhecida
+2.2 - Silvicultura
+2 - Agropecuária e Aquacultura
+3.2 - Mineração
+3 - Produção energética e mineração
+6.1 - Atividades recreacionais/turísticas
+6 - Distúrbios humanos"
+Amphibia,Boana lundii,Hypsiboas lundii,"(Burmeister, 1856)",May-18,LC,,"Cerrado, Mata Atlântica",Estável,
+Amphibia,Ischnocnema penaxavantinho,Ischnocnema penaxavantinho,"Giaretta, Toffoli & Oliveira, 2007",Jun-17,LC,,Cerrado,Estável,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Amphibia,Leptodactylus cunicularius,Leptodactylus cunicularius,"Sazima & Bokermann, 1978",May-18,LC,,"Cerrado, Mata Atlântica",Estável,"6.1 - Atividades recreacionais/turísticas
+6 - Distúrbios humanos
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Amphibia,Oreobates antrum,,"Vaz-Silva, Maciel, Andrade & Amaro, 2018",Sep-18,LC,,Cerrado,Estável,"2.3.3 - Pecuária agro-industrial
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Amphibia,Pseudopaludicola atragula,,"Pansonato, Mudrek, VeigaMenocello, Rossa-Feres, Martins & Strüssmann, 2014",Jun-17,LC,,"Cerrado, Mata Atlântica",Estável,
+Amphibia,Scinax rupestris,,"Araujo-Vieira, Brandão & Faria, 2015",Jun-17,LC,,Cerrado,Estável,
+Amphibia,Thoropa megatympanum,Thoropa megatympanum,"Caramaschi & Sazima, 1984",Jun-17,LC,,"Cerrado, Mata Atlântica",Estável,
+Amphibia,Barycholos ternetzi,Barycholos ternetzi,"(Miranda Ribeiro, 1937)",Jun-17,LC,,"Amazônia, Cerrado, Mata Atlântica",Estável,
+Amphibia,Leptodactylus pustulatus,Leptodactylus pustulatus,"(Peters, 1870)",May-18,LC,,"Amazônia, Caatinga, Cerrado",Estável,
+Amphibia,Lysapsus caraya,Lysapsus caraya,"Gallardo, 1964",May-18,LC,,"Amazônia, Cerrado",Estável,
+Amphibia,Odontophrynus cultripes,Odontophrynus cultripes,"Reinhardt & Lütken, 1862",May-18,LC,,"Cerrado, Mata Atlântica",Estável,
+Amphibia,Oreobates remotus,Oreobates remotus,"Teixeira, Amaro, Recoder, Sena & Rodrigues, 2012",May-18,LC,,Cerrado,Estável,
+Amphibia,Physalaemus centralis,Physalaemus centralis,"Bokermann, 1962",May-18,LC,,"Amazônia, Caatinga, Cerrado, Mata Atlântica, Pantanal",Estável,
+Amphibia,Physalaemus nattereri,Eupemphix nattereri,"(Steindachner, 1863)",May-18,LC,,"Amazônia, Cerrado, Mata Atlântica, Pantanal",Estável,
+Amphibia,Pithecopus azureus,Phyllomedusa azurea,"(Cope, 1862)",May-18,LC,,"Amazônia, Cerrado, Mata Atlântica, Pantanal",Estável,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura"
+Amphibia,Pseudis tocantins,Pseudis tocantins,"Caramaschi & Cruz, 1998",May-18,LC,,"Amazônia, Cerrado",Estável,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+7.2 - Represas e uso de água
+7 - Modificações nos sistemas naturais
+9.1.3 - Tipo desconhecido
+9.1 - Doméstica e urbana - escoamento de água
+9.3.3 - Herbicidas e pesticidas
+9.3 - Agrícola e florestal
+9 - Poluição"
+Amphibia,Rhinella ocellata,Rhinella ocellata,"(Günther, 1858)",May-18,LC,,"Amazônia, Cerrado",Estável,"3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Amphibia,Scinax tigrinus,Scinax tigrinus,"Nunes, Carvalho & Pereira, 2010",May-18,LC,,Cerrado,Estável,
+Amphibia,Scinax machadoi,Ololygon machadoi,"(Bokermann & Sazima, 1973)",May-18,LC,,"Cerrado, Mata Atlântica",Estável,
+Amphibia,Proceratophrys dibernardoi,Proceratophrys dibernardoi,"Brandão, Caramaschi, Vaz-Silva & Campos, 2013",May-18,LC,,Cerrado,Desconhecida,
+Amphibia,Scinax pinimus,Scinax pinima,"(Bokermann & Sazima, 1973)",Jun-17,VU,D2,Cerrado,Desconhecida,"2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+4.1 - Estradas e ferrovias
+4.7 - Linhas de força/transmissão
+4 - Transportes e serviços de transmissão
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Amphibia,Leptodactylus tapiti,Leptodactylus tapiti,"Sazima & Bokermann, 1978",Jun-17,LC,,Cerrado,Desconhecida,"6.1 - Atividades recreacionais/turísticas
+6 - Distúrbios humanos
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Amphibia,Proceratophrys goyana,Proceratophrys goyana,"(Miranda-Ribeiro, 1937)",May-18,LC,,Cerrado,Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+5.3 - Extração florestal
+5 - Uso de recursos biológicos
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Amphibia,Proceratophrys rotundipalpebra,Proceratophrys rotundipalpebra,"Martins & Giaretta, 2013",May-18,LC,,Cerrado,Desconhecida,
+Amphibia,Leptodactylus camaquara,Leptodactylus camaquara,"Sazima & Bokermann, 1978",May-18,LC,,"Cerrado, Mata Atlântica",Desconhecida,"6.1 - Atividades recreacionais/turísticas
+6 - Distúrbios humanos"
+Amphibia,Proceratophrys vielliardi,Proceratophrys vielliardi,"Martins & Giaretta, 2011",May-18,LC,,Cerrado,Desconhecida,
+Amphibia,Physalaemus deimaticus,Physalaemus deimaticus,"Sazima & Caramaschi, 1988",Jun-17,LC,,"Cerrado, Mata Atlântica",Desconhecida,
+Amphibia,Pithecopus centralis,Phyllomedusa centralis,"(Bokermann, 1965)",Sep-18,LC,,Cerrado,Desconhecida,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração
+6.1 - Atividades recreacionais/turísticas
+6 - Distúrbios humanos
+7.1.3 - Tendência desconhecida
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais
+9 - Poluição"
+Amphibia,Proceratophrys bagnoi,Proceratophrys bagnoi,"Brandão, Caramaschi, Vaz-Silva & Campos, 2013",Jun-17,DD,,Cerrado,Desconhecida,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3.3 - Pecuária agro-industrial
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Amphibia,Proceratophrys carranca,Proceratophrys carranca,"Godinho, Moura, Lacerda & Feio, 2013",Jun-17,DD,,Cerrado,Desconhecida,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.2 - Mineração
+3 - Produção energética e mineração"
+Amphibia,Proceratophrys moratoi,Proceratophrys moratoi,"(Jim & Caramaschi, 1980)",Jun-17,LC,,"Cerrado, Mata Atlântica",Desconhecida,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+7.2 - Represas e uso de água
+7 - Modificações nos sistemas naturais"
+Amphibia,Scinax goya,,"(Andrade, Santos, Rocha, Pombal & Vaz-Silva, 2018)",Sep-18,DD,,Cerrado,Desconhecida,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Amphibia,Proceratophrys strussmannae,Proceratophrys strussmannae,"Ávila, Kawashita-Ribeiro & Morais, 2011",Jun-17,DD,,"Amazônia, Cerrado",Desconhecida,"2.1.4 - Agricultura de escala desconhecida
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3.4 - Pecuária em escala desconhecida
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Amphibia,Pseudopaludicola ibisoroca,,"Pansonato, Veiga-Menoncello, Mudrek, Jansen, Recco-Pimentel, Martins & Strüssmann, 2016",Jun-17,LC,,Cerrado,Desconhecida,
+Amphibia,Scinax cabralensis,Scinax cabralensis,"Drummond, Baêta & Pires, 2007",Jun-17,NT,,Cerrado,Desconhecida,"2.2.3 - Plantações em escala desconhecida
+2.2 - Silvicultura
+2.3.2 - Pecuária em pequenas propriedades
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Amphibia,Scinax haddadorum,,"Araujo-Vieira, Valdujo & Faivovich, 2016",Jun-17,DD,,Cerrado,Desconhecida,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura
+9.3.3 - Herbicidas e pesticidas
+9.3 - Agrícola e florestal
+9 - Poluição"
+Amphibia,Pseudopaludicola facureae,Pseudopaludicola facureae,"Andrade & Carvalho, 2013",May-18,LC,,Cerrado,Desconhecida,
+Amphibia,Trachycephalus mambaiensis,Trachycephalus mambaiensis,"Cintra, Silva, Silva, Garcia & Zaher, 2009",Jun-17,LC,,Cerrado,Desconhecida,
+Amphibia,Bokermannohyla sagarana,Bokermannohyla sagarana,"Leite, Pezzuti & Drummond, 2011",Jun-17,NT,,Cerrado,Desconhecida,"2.2 - Silvicultura
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.2.3 - Extração de minérios - subsolo
+3.2 - Mineração
+3 - Produção energética e mineração"
+Amphibia,Proceratophrys huntingtoni,,"Ávila, Pansonato & Strüssmann, 2012",Jun-17,LC,,Cerrado,Desconhecida,"1.4 - Assentamentos rurais
+1 - Desenvolvimento residencial e comercial
+2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Amphibia,Leptodactylus furnarius,Leptodactylus furnarius,"Sazima & Bokermann, 1978",May-18,LC,,"Caatinga, Cerrado, Mata Atlântica, Pampa",Desconhecida,
+Amphibia,Pseudopaludicola ternetzi,Pseudopaludicola ternetzi,"Miranda-Ribeiro, 1937",May-18,LC,,Cerrado,Desconhecida,
+Amphibia,Adenomera saci,Adenomera saci,"Carvalho & Giaretta, 2013",Jun-17,LC,,Cerrado,Desconhecida,
+Amphibia,Ameerega braccata,Ameerega braccata,"(Steindachner, 1864)",Jun-17,LC,,"Amazônia, Cerrado, Pantanal",Desconhecida,
+Amphibia,Bokermannohyla izecksohni,Bokermannohyla izecksohni,"(Jim & Caramaschi, 1979)",Sep-17,DD,,Cerrado,Desconhecida,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura"
+Amphibia,Rhinella cerradensis,Rhinella cerradensis,"Maciel, Brandão, Campos & Sebben, 2007",May-18,LC,,"Cerrado, Mata Atlântica",Desconhecida,
+Amphibia,Leptodactylus sertanejo,Leptodactylus sertanejo,"Giaretta & Costa, 2007",May-18,LC,,"Cerrado, Mata Atlântica",Desconhecida,
+Amphibia,Rhinella inopina,Rhinella inopina,"Vaz-Silva, Valdujo & Pombal, 2012",May-18,LC,,Cerrado,Desconhecida,
+Amphibia,Bokermannohyla sapiranga,,"Brandão, Magalhães, Garda, Campos, Sebben & Maciel, 2012",Jun-17,LC,,Cerrado,Desconhecida,"8.6 - Doenças de causas desconhecidas
+8 - Espécies invasoras
+problemáticas e doenças"
+Amphibia,Bokermannohyla sazimai,Bokermannohyla sazimai,"(Cardoso & Andrade, 1982)",Jun-17,LC,,Cerrado,Desconhecida,
+Amphibia,Dendropsophus anataliasiasi,Dendropsophus anataliasiasi,"(Bokermann, 1972)",Jun-17,LC,,Cerrado,Desconhecida,"7.1 - Incêndios e supressão de incêndios
+7.2 - Represas e uso de água
+7 - Modificações nos sistemas naturais"
+Amphibia,Dendropsophus araguaya,Dendropsophus araguaya,"(Napoli & Caramaschi, 1998)",Jun-17,LC,,Cerrado,Desconhecida,
+Amphibia,Elachistocleis bumbameuboi,Elachistocleis bumbameuboi,"Caramaschi, 2010",Jun-17,LC,,"Amazônia, Cerrado",Desconhecida,
+Amphibia,Boana caiapo,,"Pinheiro, Cintra, Valdujo, Silva, Martins, Silva & Garcia, 2018",Sep-18,LC,,"Amazônia, Cerrado",Desconhecida,
+Amphibia,Chiasmocleis albopunctata,Chiasmocleis albopunctata,"(Boettger, 1885)",Jun-17,LC,,"Amazônia, Cerrado, Mata Atlântica, Pantanal",Desconhecida,
+Amphibia,Dendropsophus elianeae,Dendropsophus elianeae,"(Napoli & Caramaschi, 2000)",Jun-17,LC,,"Amazônia, Cerrado, Mata Atlântica, Pantanal",Desconhecida,
+Amphibia,Dendropsophus jimi,Dendropsophus jimi,"(Napoli & Caramaschi, 1999)",Jun-17,LC,,"Cerrado, Mata Atlântica",Desconhecida,
+Amphibia,Adenomera cotuba,Adenomera cotuba,"Carvalho & Giaretta, 2013",Jun-17,LC,,Cerrado,Desconhecida,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Amphibia,Ameerega berohoka,Ameerega berohoka,"Vaz-Silva & Maciel, 2011",Jun-17,LC,,Cerrado,Desconhecida,
+Amphibia,Ameerega flavopicta,Ameerega flavopicta,"(Lutz, 1925)",Jun-17,LC,,"Amazônia, Cerrado, Mata Atlântica",Desconhecida,"2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração
+7.1 - Incêndios e supressão de incêndios
+7.2 - Represas e uso de água
+7 - Modificações nos sistemas naturais"
+Amphibia,Ameerega picta,Ameerega picta,"(Tschudi, 1838)",Jun-17,LC,,"Amazônia, Cerrado, Pantanal",Desconhecida,
+Amphibia,Bokermannohyla ibitiguara,Bokermannohyla ibitiguara,"(Cardoso, 1983)",Jun-17,LC,,Cerrado,Desconhecida,
+Amphibia,Bokermannohyla nanuzae,Bokermannohyla nanuzae,"(Bokermann & Sazima, 1973)",Jun-17,LC,,"Cerrado, Mata Atlântica",Desconhecida,
+Amphibia,Bokermannohyla pseudopseudis,Bokermannohyla pseudopseudis,"(Miranda-Ribeiro, 1937)",Jun-17,LC,,Cerrado,Desconhecida,"7.2 - Represas e uso de água
+7 - Modificações nos sistemas naturais"
+Amphibia,Bokermannohyla saxicola,Bokermannohyla saxicola,"(Bokermann, 1964)",Jun-17,LC,,"Caatinga, Cerrado, Mata Atlântica",Desconhecida,
+Amphibia,Rhinella rubescens,Rhinella rubescens,"(Lutz, 1925)",May-18,LC,,"Caatinga, Cerrado, Mata Atlântica",Desconhecida,
+Amphibia,Crossodactylus trachystomus,Crossodactylus trachystomus,"(Reinhardt & Lütken, 1862)",Jun-17,LC,,"Cerrado, Mata Atlântica",Desconhecida,
+Amphibia,Dendropsophus cruzi,Dendropsophus cruzi,"(Pombal & Bastos, 1998)",Jun-17,LC,,"Amazônia, Cerrado, Mata Atlântica",Desconhecida,"5.3 - Extração florestal
+5 - Uso de recursos biológicos
+7.2 - Represas e uso de água
+7 - Modificações nos sistemas naturais"
+Amphibia,Dendropsophus rubicundulus,Dendropsophus rubicundulus,"(Reinhardt & Lütken, 1862)",Jun-17,LC,,"Caatinga, Cerrado",Desconhecida,
+Amphibia,Aplastodiscus lutzorum,,"Berneck, Giaretta, Brandão, Cruz, and Haddad, 2017",May-18,LC,,Cerrado,Desconhecida,"3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Amphibia,Elachistocleis matogrosso,Elachistocleis matogrosso,"Caramaschi, 2010",Jun-17,LC,,"Cerrado, Pantanal",Desconhecida,
+Amphibia,Physalaemus atim,,"Brasileiro & Haddad, 2015",Jun-17,LC,,Cerrado,Desconhecida,
+Amphibia,Rhinella sebbeni,,"Vaz-Silva, Maciel, Bastos & Pombal, 2015",Jun-17,LC,,Cerrado,Desconhecida,
+Amphibia,Rhinella scitula,Rhinella scitula,"(Caramaschi & Niemeyer, 2003)",May-18,LC,,"Cerrado, Mata Atlântica, Pantanal",Desconhecida,
+Amphibia,Rhinella veredas,Rhinella veredas,"(Brandão, Maciel & Sebben, 2007)",May-18,LC,,Cerrado,Desconhecida,
+Amphibia,Boana stenocephala,Hypsiboas stenocephalus,"(Caramaschi & Cruz, 1999)",May-18,LC,,"Cerrado, Mata Atlântica",Desconhecida,
+Amphibia,Scinax constrictus,Scinax constrictus,"Lima, Bastos & Giaretta, 2005",May-18,LC,,"Cerrado, Mata Atlântica, Pantanal",Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura"
+Amphibia,Odontophrynus monachus,Odontophrynus monachus,"Caramaschi & Napoli, 2012",May-18,LC,,Cerrado,Desconhecida,
+Amphibia,Pithecopus araguaius,,"Haga, Andrade, Bruschi, Recco-Pimentel & Giaretta, 2017",May-18,LC,,Cerrado,Desconhecida,
+Amphibia,Oreobates heterodactylus,Oreobates heterodactylus,"(Miranda-Ribeiro, 1937)",May-18,LC,,"Cerrado, Pantanal",Desconhecida,
+Amphibia,Scinax curicica,Scinax curicica,"Pugliese, Pombal & Sazima, 2004",May-18,LC,,"Cerrado, Mata Atlântica",Desconhecida,
+Amphibia,Scinax canastrensis,Ololygon canastrensis,"(Cardoso & Haddad, 1982)",May-18,LC,,"Cerrado, Mata Atlântica",Desconhecida,"5.3 - Extração florestal
+5 - Uso de recursos biológicos
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Amphibia,Scinax centralis,Ololygon centralis,"Pombal & Bastos, 1996",May-18,LC,,Cerrado,Desconhecida,"2.1.1 - Agricultura de rotação
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura"
+Amphibia,Scinax maracaya,Scinax maracaya,"(Cardoso & Sazima, 1980)",May-18,LC,,"Cerrado, Mata Atlântica",Desconhecida,"3.2 - Mineração
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Amphibia,Scinax pombali,Ololygon pombali,"Lourenço, Carvalho, Baêta, Pezzuti & Leite, 2013",May-18,DD,,Cerrado,Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura"
+Amphibia,Scinax skaios,Ololygon skaios,"Pombal, Carvalho, Canelas & Bastos, 2010",May-18,LC,,Cerrado,Desconhecida,
+Amphibia,Phasmahyla jandaia,Phasmahyla jandaia,"(Bokermann & Sazima, 1978)",May-18,LC,,"Cerrado, Mata Atlântica",Desconhecida,"3.2 - Mineração
+3 - Produção energética e mineração"
+Amphibia,Pseudopaludicola mineira,Pseudopaludicola mineira,"Lobo, 1994",May-18,LC,,"Cerrado, Mata Atlântica",Desconhecida,"1.2 - Áreas comerciais e industriais
+1 - Desenvolvimento residencial e comercial
+6.1 - Atividades recreacionais/turísticas
+6 - Distúrbios humanos
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Amphibia,Scinax rogerioi,Scinax rogerioi,"Pugliesi, Baêta & Pombal, 2009",May-18,LC,,"Cerrado, Mata Atlântica",Desconhecida,
+Amphibia,Physalaemus evangelistai,Physalaemus evangelistai,"Bokermann, 1967",May-18,LC,,"Cerrado, Mata Atlântica",Desconhecida,
+Amphibia,Physalaemus marmoratus,Physalaemus marmoratus,"(Reinhardt & Lütken, 1862)",May-18,LC,,"Cerrado, Mata Atlântica, Pantanal",Desconhecida,
+Amphibia,Pithecopus ayeaye,Pithecopus ayeaye,"Lutz, 1966",May-18,LC,,"Cerrado, Mata Atlântica",Desconhecida,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.2.3 - Extração de minérios - subsolo
+3.2 - Mineração
+3 - Produção energética e mineração
+5.3 - Extração florestal
+5 - Uso de recursos biológicos
+9.3.3 - Herbicidas e pesticidas
+9.3 - Agrícola e florestal
+9 - Poluição"
+Amphibia,Bokermannohyla alvarengai,Bokermannohyla alvarengai,"(Bokermann, 1956)",Sep-18,LC,,"Caatinga, Cerrado, Mata Atlântica",Desconhecida,
+Amphibia,Pithecopus megacephalus,Phyllomedusa megacephala,"(Miranda-Ribeiro, 1926)",May-18,LC,,"Caatinga, Cerrado, Mata Atlântica",Desconhecida,"6.1 - Atividades recreacionais/turísticas
+6 - Distúrbios humanos"
+Amphibia,Pithecopus oreades,Phyllomedusa oreades,"(Brandão, 2002)",May-18,LC,,Cerrado,Desconhecida,
+Amphibia,Scinax rossaferesae,,"Conte, Araujo-Vieira, Crivellari & Berneck, 2016",Sep-18,LC,,"Cerrado, Mata Atlântica",Desconhecida,"2.1.4 - Agricultura de escala desconhecida
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3.4 - Pecuária em escala desconhecida
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Amphibia,Boana botumirim,Hypsiboas botumirim,"(Caramaschi, Cruz, and Nascimento, 2009)",May-18,LC,,"Cerrado, Mata Atlântica",Desconhecida,
+Amphibia,Boana cipoensis,Hypsiboas cipoensis,"(Lutz, 1968)",May-18,LC,,"Cerrado, Mata Atlântica",Desconhecida,
+Amphibia,Pristimantis dundeei,Pristimantis dundeei,"(Heyer & Muñoz, 1999)",May-18,LC,,Cerrado,Desconhecida,
+Amphibia,Boana ericae,Hypsiboas ericae,"(Caramaschi & Cruz, 2000)",May-18,LC,,Cerrado,Desconhecida,"3.2 - Mineração
+3 - Produção energética e mineração
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Amphibia,Boana goiana,Hypsiboas goianus,"(Lutz, 1968)",May-18,LC,,Cerrado,Desconhecida,
+Amphibia,Boana jaguariaivensis,Hypsiboas jaguariaivensis,"(Caramaschi, Cruz & Segalla, 2010)",May-18,LC,,"Cerrado, Mata Atlântica",Desconhecida,
+Amphibia,Pristimantis ventrigranulosus,Pristimantis ventrigranulosus,"Maciel, Vaz-Silva, de Oliveira & Padial, 2012",May-18,LC,,Cerrado,Desconhecida,
+Amphibia,Proceratophrys branti,Proceratophrys branti,"Brandão, Caramaschi, Vaz-Silva & Campos, 2013",May-18,LC,,Cerrado,Desconhecida,
+Amphibia,Allobates brunneus,Allobates brunneus,"(Cope, 1887)",Jun-17,NT,,Cerrado,Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração
+7.2.10 - Represas (grandes)
+7.2 - Represas e uso de água
+7 - Modificações nos sistemas naturais"
+Amphibia,Allobates goianus,Allobates goianus,"(Bokermann, 1975)",Jun-17,NT,,Cerrado,Desconhecida,"2.1.4 - Agricultura de escala desconhecida
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.2 - Mineração
+3 - Produção energética e mineração
+5.3 - Extração florestal
+5 - Uso de recursos biológicos
+7.2 - Represas e uso de água
+7 - Modificações nos sistemas naturais
+9.3 - Agrícola e florestal
+9 - Poluição"
+Amphibia,Proceratophrys cururu,Proceratophrys cururu,"Eterovick & Sazima, 1998",May-18,LC,,Cerrado,Desconhecida,"6.1 - Atividades recreacionais/turísticas
+6 - Distúrbios humanos
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Amphibia,Bokermannohyla ravida,Bokermannohyla ravida,"(Caramaschi, Napoli & Bernardes, 2001)",Jun-17,DD,,Cerrado,Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura"
+Amphibia,Bokermannohyla napolii,,"Carvalho, Giaretta & Magrini, 2012",Jun-17,VU,D2,Cerrado,Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Amphibia,Chiasmocleis centralis,Chiasmocleis centralis,"Bokermann, 1952",Jun-17,DD,,Cerrado,Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.2 - Mineração
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Amphibia,Dendropsophus cerradensis,Dendropsophus cerradensis,"(Napoli & Caramaschi, 1998)",Jun-17,DD,,Cerrado,Desconhecida,"2.2 - Silvicultura
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Amphibia,Dendropsophus tritaeniatus,Dendropsophus tritaeniatus,"(Bokermann, 1965)",Jun-17,LC,,Cerrado,Desconhecida,"3.3.1 - Hidrelétricas
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Amphibia,Hylodes otavioi,Hylodes otavioi,"Sazima & Bokermann, 1983",Jun-17,NT,,"Cerrado, Mata Atlântica",Desconhecida,"3.2 - Mineração
+3 - Produção energética e mineração
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Mammalia,Gyldenstolpia planaltensis,Gyldenstolpia planaltensis,"(Avila-Pires, 1972)",Jun-13,EN,"B1ab(iii,iv)",Cerrado,Desconhecida,
+Mammalia,Oligoryzomys rupestris,Oligoryzomys rupestris,"Weksler & Bonvicino, 2005",Jun-13,EN,"B2ac(iii,iv)","Caatinga, Cerrado",Desconhecida,"7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Mammalia,Thalpomys cerradensis,Thalpomys cerradensis,"Hershkovitz, 1990",Jun-13,VU,A2c+3c,Cerrado,Desconhecida,"7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Mammalia,Lycalopex vetulus,Lycalopex vetulus,"(Lund, 1842)",,VU,A2c+3cd,"Amazônia, Caatinga, Cerrado, Mata Atlântica",,"11.1 - Mudança/alteração de habitat
+1.1 - Expansão urbana
+11 - Mudanças e extremos climáticos
+1 - Desenvolvimento residencial e comercial
+2.1.1 - Agricultura de rotação
+2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3.3 - Pecuária agro-industrial
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+4.1 - Estradas e ferrovias
+4.2 - Atropelamentos
+4 - Transportes e serviços de transmissão
+5.3 - Extração florestal
+5 - Uso de recursos biológicos
+6 - Distúrbios humanos
+8.2 - Espécies domésticas
+8 - Espécies invasoras
+problemáticas e doenças"
+Mammalia,Lonchophylla bokermanni,Lonchophylla bokermanni,"Sazima, Vizotto e Taddei, 1978",Nov-18,VU,B1ab(iii),"Caatinga, Cerrado",Desconhecida,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+3.2 - Mineração
+3.3.2 - Parques eólicos
+3.3 - Energia renovável
+3 - Produção energética e mineração"
+Mammalia,Lonchophylla dekeyseri,Lonchophylla dekeyseri,"Taddei, Vizotto e Sazima, 1983",Nov-18,EN,"B2ab(iii,v)","Cerrado, Mata Atlântica",Declinando,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+2 - Agropecuária e Aquacultura
+3.2 - Mineração
+3 - Produção energética e mineração
+6.1 - Atividades recreacionais/turísticas
+6 - Distúrbios humanos
+9.3.3 - Herbicidas e pesticidas
+9.3 - Agrícola e florestal
+9 - Poluição"
+Mammalia,Akodon lindberghi,Akodon lindberghi,"Hershkovitz, 1990",Apr-21,LC,,"Cerrado, Mata Atlântica",Desconhecida,
+Mammalia,Calomys tocantinsi,Calomys tocantinsi,"Bonvicino, Lima & Almeida, 2003",Oct-20,LC,,"Amazônia, Cerrado",Desconhecida,"5.3.5 - Motivação desconhecida
+5.3 - Extração florestal
+5 - Uso de recursos biológicos"
+Mammalia,Cerradomys marinhus,Cerradomys marinhus,"(Bonvicino, 2003)",Oct-20,LC,,"Amazônia, Cerrado",Desconhecida,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3.3 - Pecuária agro-industrial
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura"
+Mammalia,Cerradomys scotti,Cerradomys scotti,"(Langguth & Bonvicino, 2002)",Oct-20,LC,,"Amazônia, Caatinga, Cerrado, Pantanal",Desconhecida,"2.1.2 - Agricultura em pequenas propriedades
+2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3.2 - Pecuária em pequenas propriedades
+2.3.3 - Pecuária agro-industrial
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura"
+Mammalia,Clyomys laticeps,Clyomys laticeps,"(Thomas, 1909)",Oct-20,LC,,"Cerrado, Mata Atlântica, Pantanal",Desconhecida,"2.1.2 - Agricultura em pequenas propriedades
+2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura"
+Mammalia,Monodelphis kunsi,Monodelphis kunsi,"Pine, 1975",Oct-19,LC,,"Amazônia, Cerrado, Mata Atlântica",Desconhecida,
+Mammalia,Ctenomys bicolor,Ctenomys bicolor,"Miranda-Ribeiro, 1914",Sep-21,EN,B2ab(iii),"Amazônia, Cerrado",Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2.2 - Silvicultura
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Mammalia,Ctenomys nattereri,Ctenomys nattereri,,Sep-21,LC,,"Amazônia, Cerrado, Pantanal",Estável,"7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Mammalia,Thylamys velutinus,Thylamys velutinus,"(Wagner, 1842)",Oct-19,LC,,"Cerrado, Mata Atlântica",Declinando,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+2.1.1 - Agricultura de rotação
+2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura
+4.1 - Estradas e ferrovias
+4 - Transportes e serviços de transmissão
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Mammalia,Euryoryzomys lamia,Euryoryzomys lamia,"(Thomas, 1901)",Oct-21,EN,"B1ab(i,ii,iii)+2ab(i,ii,iii)",Cerrado,Desconhecida,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+2.3.2 - Pecuária em pequenas propriedades
+2.3.3 - Pecuária agro-industrial
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+5.3.5 - Motivação desconhecida
+5.3 - Extração florestal
+5 - Uso de recursos biológicos"
+Mammalia,Thrichomys apereoides,Thrichomys apereoides,"(Lund, 1839)",Oct-20,LC,,"Caatinga, Cerrado, Mata Atlântica",Desconhecida,"5.1 - Caça e captura de animais terrestres ou marinhos
+5 - Uso de recursos biológicos"
+Mammalia,Thrichomys pachyurus,Thrichomys pachyurus,"(Wagner, 1845)",Mar-21,LC,,"Cerrado, Pantanal",Desconhecida,
+Mammalia,Holochilus sciureus,Holochilus sciureus,"Wagner, 1842",Apr-21,LC,,"Amazônia, Caatinga, Cerrado, Mata Atlântica, Pantanal",Estável,
+Mammalia,Thalpomys lasiotis,Thalpomys lasiotis,"Thomas, 1916",Nov-21,EN,A2bc,Cerrado,Desconhecida,12 - Outras ameaças
+Mammalia,Kerodon acrobata,Kerodon acrobata,"Moojen, Locks & Langguth, 1997",Sep-21,VU,B1ab(iii),Cerrado,Desconhecida,"5.1.1 - Caça/captura intencional (a espécie é o alvo)
+5.1 - Caça e captura de animais terrestres ou marinhos
+5 - Uso de recursos biológicos"
+Mammalia,Kunsia tomentosus,Kunsia tomentosus,"(Lichtenstein, 1830)",Oct-21,LC,,"Amazônia, Cerrado",Declinando,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura"
+Mammalia,Microakodontomys transitorius,Microakodontomys transitorius,"Hershkovitz, 1993",Oct-21,EN,"B1ab(ii,iii)+2ab(ii,iii)",Cerrado,Desconhecida,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+2.1 - Culturas anuais e perenes não-madeireiras
+2.2 - Silvicultura
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura"
+Mammalia,Rhipidomys ipukensis,Rhipidomys ipukensis,"Rocha, Costa & Costa, 2011",Nov-21,LC,,Cerrado,Desconhecida,"2.1.4 - Agricultura de escala desconhecida
+2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura"
+Mammalia,Rhipidomys macrurus,Rhipidomys macrurus,"(Gervais, 1855)",Oct-20,LC,,"Caatinga, Cerrado, Mata Atlântica",Desconhecida,
+Mammalia,Oecomys cleberi,Oecomys cleberi,"Locks, 1981",Oct-20,LC,,"Amazônia, Cerrado, Mata Atlântica",Declinando,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3.3 - Pecuária agro-industrial
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+5.3.5 - Motivação desconhecida
+5.3 - Extração florestal
+5 - Uso de recursos biológicos"
+Mammalia,Phyllomys brasiliensis,Phyllomys brasiliensis,"Lund, 1840",Sep-21,EN,"B1ab(ii,iii)+2ab(ii,iii)",Cerrado,Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura
+5.3 - Extração florestal
+5 - Uso de recursos biológicos
+7.2 - Represas e uso de água
+7 - Modificações nos sistemas naturais"
+Mammalia,Oligoryzomys moojeni,Oligoryzomys moojeni,"Weksler & Bonvicino, 2005",Oct-20,LC,,Cerrado,Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura"
+Mammalia,Oxymycterus delator,Oxymycterus delator,"Thomas, 1903",Oct-20,LC,,"Caatinga, Cerrado, Mata Atlântica",Estável,"7.3 - Outras modificações nos ecossistemas
+7 - Modificações nos sistemas naturais"
+Mammalia,Juscelinomys candango,Juscelinomys candango,"Moojen, 1965",Oct-21,CR,D,Cerrado,Desconhecida,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial"
+Mammalia,Carterodon sulcidens,Carterodon sulcidens,"(Lund, 1838)",Sep-21,DD,,"Amazônia, Cerrado",Desconhecida,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+2 - Agropecuária e Aquacultura
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Mammalia,Calassomys apicalis,,"Pardiñas, Lessa, Teta, Salazar-Bravo & Camara, 2014",Oct-21,NT,,Cerrado,Desconhecida,"1.1 - Expansão urbana
+1 - Desenvolvimento residencial e comercial
+3.2 - Mineração
+3 - Produção energética e mineração
+5.2.2 - Efeitos indiretos (a espécie não é o alvo)
+5.2 - Coleta de plantas terrestres
+5 - Uso de recursos biológicos
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Mammalia,Cerradomys akroai,,"Bonvicino, Casado & Weksler, 2014",Nov-21,DD,,Cerrado,Desconhecida,"2 - Agropecuária e Aquacultura
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Mammalia,Callithrix penicillata,Callithrix penicillata,"(É. Geoffroy Saint-Hilaire, 1812)",Sep-19,LC,,"Caatinga, Cerrado, Mata Atlântica",Desconhecida,"2.1.3 - Agricultura agro-industriais
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3.3 - Pecuária agro-industrial
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+4.1 - Estradas e ferrovias
+4 - Transportes e serviços de transmissão
+5.1.1.2 - Comercial - Nacional/Local
+5.1.1 - Caça/captura intencional (a espécie é o alvo)
+5.1 - Caça e captura de animais terrestres ou marinhos
+5 - Uso de recursos biológicos
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais
+8.3.1.3 - Hibridação
+8.3.1 - Espécie conhecida
+8.3 - Espécies nativas problemáticas
+8 - Espécies invasoras
+problemáticas e doenças"
+Mammalia,Oxymycterus itapeby,,"Peçanha, Quintela, Ribas, Althoff, Maestri, Gonçalves & Freitas, 2019",Oct-21,DD,,"Cerrado, Mata Atlântica",Desconhecida,
+Mammalia,Akodon kadiweu,,"Brandão et al., 2021",Oct-21,DD,,Cerrado,Desconhecida,"2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Reptilia,Anolis meridionalis,Anolis meridionalis,"(Boettger, 1885)",Oct-20,LC,,"Amazônia, Cerrado, Mata Atlântica, Pantanal",Desconhecida,
+Reptilia,Apostolepis striata,Apostolepis striata,"Lema, 2004",Apr-12,EN,B1ab(iii),Amazônia,Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura"
+Reptilia,Amphisbaena absaberi,Amphisbaena absaberi,"(Strüssmann & Carvalho, 2001)",Mar-21,DD,,Pantanal,Desconhecida,"1.1 - Expansão urbana
+1.2 - Áreas comerciais e industriais
+1 - Desenvolvimento residencial e comercial"
+Reptilia,Bachia cacerensis,Bachia cacerensis,"Castrillon & Strüssmann, 1998",Mar-21,DD,,Pantanal,Desconhecida,"1.2 - Áreas comerciais e industriais
+1 - Desenvolvimento residencial e comercial"
+Amphibia,Dendropsophus rhea,Dendropsophus rhea,"(Napoli & Caramaschi, 1999)",Jun-17,DD,,Mata Atlântica,Desconhecida,"2.1 - Culturas anuais e perenes não-madeireiras
+2.2.1 - Plantações em pequenas propriedades
+2.2 - Silvicultura
+2 - Agropecuária e Aquacultura
+5.3.5 - Motivação desconhecida
+5.3 - Extração florestal
+5 - Uso de recursos biológicos"
+Reptilia,Helicops boitata,,"Moraes-da-Silva, Amaro, Nunes, Strüssmann, Teixeira Jr., Andrade Jr., Sudré, Recoder, Rodrigues & Curcio, 2019",Nov-19,LC,,Pantanal,Desconhecida,"7.1.3 - Tendência desconhecida
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
+Reptilia,Liotyphlops schubarti,Liotyphlops schubarti,"Vanzolini, 1948",Nov-19,DD,,Mata Atlântica,Desconhecida,"1.2 - Áreas comerciais e industriais
+1 - Desenvolvimento residencial e comercial
+2.1 - Culturas anuais e perenes não-madeireiras
+2.3 - Pecuária
+2 - Agropecuária e Aquacultura
+9.2 - Industrial
+9 - Poluição"
+Mammalia,Trinomys moojeni,Trinomys moojeni,"(Pessôa, Oliveira & Reis, 1992)",Sep-21,EN,B1ab(iii)+2ab(iii),Mata Atlântica,Declinando,"2.1 - Culturas anuais e perenes não-madeireiras
+2 - Agropecuária e Aquacultura
+3.2 - Mineração
+3 - Produção energética e mineração
+7.1.1 - Aumento da frequência/intensidade de incêndios
+7.1 - Incêndios e supressão de incêndios
+7 - Modificações nos sistemas naturais"
