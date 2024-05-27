@@ -1,8 +1,8 @@
 # main data ---------------------------------------------------------------
 
 list <- read.csv(here::here("data", "raw-data", "list.csv"))
-uso <- read.csv(here::here("outputs", "hghInfo.csv"), header = TRUE, check.names = FALSE) #without Hylaeamys acritus and Juscelinomys huanchacae
-#spp <- read.csv(here::here("data", "processed", "sppAreasFull.csv")) #tem no listnew
+uso <- read.csv(here::here("data", "processed", "usoInfo.csv"), header = TRUE, check.names = FALSE) #without Hylaeamys acritus and Juscelinomys huanchacae
+#range <- read.csv(here::here("data", "processed", "sppAreasFull.csv")) #tem no listnew
 #sppAreas <- read.csv(here::here("data", "processed", "sppAreasFull.csv"), header = TRUE, check.names = FALSE)
 
 # threat data -------------------------------------------------------------
