@@ -3,119 +3,126 @@
 nat <- c("3","4","11","12","23","29","33")
 ant <- c("9","15","20","21","24","25","30","39","40","41","46","47","48","62")
 
+# Creating lulc year vector -----------------------------------------------
+
+lulcyear <- c(2000, 2005, 2010, 2015, 2020)
+
+# Creating an empty object to insert the uso data -------------------------
+
+usoFull <- NULL
+
 # Reading files -----------------------------------------------------------
 
 # uso.csv files were produced on GEE using the MapBiomas database
 #sppAreas <- read.csv(here::here("data", "processed", "sppAreasFull.csv"), header = TRUE, check.names = FALSE) #species and rangesize
 
-uso <- read.csv(here::here("outputs","uso-raw", "uso2020.csv"), header = TRUE, check.names = FALSE)
-uso[is.na.data.frame(uso)] <- 0 #attributing zeros to NAs
-
-# Calculating range within Cerrado ----------------------------------------
-
-for(i in 1:dim(uso)[1])
+for(j in 1:length(lulcyear))
 {
-  uso$range[i] <- sum(uso[i, 2:22]) #range within Cerrado, according to landuse data
+  uso <- read.csv(here::here("outputs","uso-raw", paste("uso", lulcyear[j], ".csv", sep="")), header = TRUE, check.names = FALSE) #check year
+  head(uso)
+  uso[is.na.data.frame(uso)] <- 0 #attributing zeros to NAs
+  
+  # Calculating range within Cerrado ----------------------------------------
+  
+  for(i in 1:dim(uso)[1])
+  {
+    uso$range[i] <- sum(uso[i, 2:22]) #range within Cerrado, according to landuse data
+  }
+  
+  # Calculating remaining natural area --------------------------------------
+  
+  for(i in 1:dim(uso)[1])
+  {
+    uso$rangeNat[i] <- sum(uso[i, nat]) #sum of natural areas, according to landuse data
+  }
+  
+  # Calculating total anthropic area ----------------------------------------
+  
+  for(i in 1:dim(uso)[1])
+  {
+    uso$rangeAnt[i] <- sum(uso[i, ant]) #sum of anthropic areas, according to landuse data
+  }
+  
+  # Calculating  proportional natural area ----------------------------------
+  
+  for(i in 1:dim(uso)[1])
+  {
+    uso$percNat[i] <- round(uso$rangeNat[i]/uso$range[i], digits = 4)
+  }
+  
+  #Calculating proportional forest plantation area -------------------------
+  
+  for(i in 1:dim(uso)[1])
+  {
+    uso$percForPlant[i] <- round(uso$"9"[i]/uso$range[i], digits = 4)
+  }
+  
+  # Calculating proportional pastureland area -------------------------------
+  
+  for(i in 1:dim(uso)[1])
+  {
+    uso$percPast[i] <- round(uso$"15"[i]/uso$range[i], digits = 4)
+  }
+  
+  # Calculating proportional sugar cane area --------------------------------
+  
+  for(i in 1:dim(uso)[1])
+  {
+    uso$percSugCan[i] <- round(uso$"20"[i]/uso$range[i], digits = 4)
+  }
+  
+  # Calculating proportional soybean area -----------------------------------
+  
+  for(i in 1:dim(uso)[1])
+  {
+    uso$percSoy[i] <- round(uso$"39"[i]/uso$range[i], digits = 4)
+  }
+  
+  uso$lulcYear <- paste(lulcyear[j])
+  
+
+  # selecting variables of interest -----------------------------------------
+
+  uso <- uso[,c(1, 23:31)]
+  
+  # Creating final object ---------------------------------------------------
+
+  usoFull <- rbind(usoFull, uso)
 }
 
-# Calculating remaining natural area --------------------------------------
-
-for(i in 1:dim(uso)[1])
-{
-  uso$rangeNat[i] <- sum(uso[i, nat]) #sum of natural areas, according to landuse data
-}
-
-# Calculating total anthropic area ----------------------------------------
-
-for(i in 1:dim(uso)[1])
-{
-  uso$rangeAnt[i] <- sum(uso[i, ant]) #sum of anthropic areas, according to landuse data
-}
-
-# Calculating  proportional natural area ----------------------------------
-
-for(i in 1:dim(uso)[1])
-{
-  uso$percNat[i] <- round(uso$rangeNat[i]/uso$range[i], digits = 4)
-}
-
-# Calculating proportional forest plantation area -------------------------
-# 
-# for(i in 1:dim(uso)[1])
-# {
-#   uso$percForPlant[i] <- round(uso$"9"[i]/uso$range[i], digits = 4)
-# }
-# 
-# # Calculating proportional pastureland area -------------------------------
-# 
-# for(i in 1:dim(uso)[1])
-# {
-#   uso$percPast[i] <- round(uso$"15"[i]/uso$range[i], digits = 4)
-# }
-# 
-# # Calculating proportional sugar cane area --------------------------------
-# 
-# for(i in 1:dim(uso)[1])
-# {
-#   uso$percSugCan[i] <- round(uso$"20"[i]/uso$range[i], digits = 4)
-# }
-# 
-# # Calculating proportional soybean area -----------------------------------
-# 
-# for(i in 1:dim(uso)[1])
-# {
-#   uso$percSoy[i] <- round(uso$"39"[i]/uso$range[i], digits = 4)
-# }
-
-uso$lulcYear <- "2020" # ATENTION: Check the year!
-
-head(uso)
-
-uso <- uso[,c(1, 23:31)]
-
-head(uso)
-
-###########################################################################
-# REPEAT FOR EACH ANALYSED YEAR!!! ----------------------------------------
-###########################################################################
-
-#usoFull <- NULL
-
-usoFull <- rbind(usoFull, uso)
+head(usoFull)
 
 unique(usoFull$lulcYear) # Check included years
 
-write.csv(usoFull, here::here("outputs", "uso-raw", "usoFull.csv"), row.names = FALSE)
+write.csv(usoFull, here::here("data", "processed", "usoInfo.csv"), row.names = FALSE)
 
 ###########################################################################
 # ADDING OTHER VARIABLES OF INTEREST --------------------------------------
+# Find out if it is necessary
 ###########################################################################
-# 
-# uso <- read.csv(here::here("outputs", "usoFull.csv"))
-# head(uso)
-# 
-# list <- read.csv(here::here("data", "raw-data", "list.csv"))
-# head(list)
-# 
-# varInt <- list[,c(5, 7, 8, 13)]
-# head(varInt)
-# 
-# 
-# usoVar <- merge(uso, varInt, by="species")
-# head(usoVar)
-# 
-# usoVar <- merge(uso, sppAreas, by="species")
 
-write.csv(usoVar, here::here("outputs", "hghInfo.csv"), row.names = FALSE) #file with landuse data per year (2000-2020/5)
+#head(list)
+# 
+#varInt <- list[,c(5, 8, 9, 11, 18)] #binomial, rangesize, range.cat, year, IUCN
+#head(varInt)
+# 
+# 
+#usoVar <- merge(usoFull, varInt, by="binomial")
+
+#head(usoVar)
+
+#write.csv(usoVar, here::here("data", "processed", "usoInfo.csv"), row.names = FALSE) #file with landuse data per year (2000-2020/5) #same as usoFull
 
 ################################################################################
 ################################################################################
 
-head(uso)
+################################################################################
+# Find out where this data is used in the MS. -----------------------------
+################################################################################
 
-uso <- uso[uso$lulcYear%in%c("2000", "2020"),]
-uso$range.cat <- factor(uso$range.cat, levels=c("Restricted", "Partial", "Wide"))
-uso$icmbio.cat <- factor(uso$icmbio.cat, levels = c("CR","EN","VU","DD","NT","LC"))
-
-tapply(uso$percNat, INDEX=list(uso$lulcYear, uso$icmbio.cat), FUN=mean)
+head(usoVar)
+usoM <- usoVar[usoVar$lulcYear%in%c("2000", "2020"),]
+usoM$range.cat <- factor(usoM$range.cat, levels=c("Restricted", "Partial", "Wide"))
+usoM$IUCN <- factor(usoM$IUCN, levels = c("-","CR","EN","VU","DD","NT","LC"))
+tapply(usoM$percNat, INDEX=list(usoM$lulcYear, usoM$IUCN), FUN=mean) #mean percNat per threat category
 ?tapply
