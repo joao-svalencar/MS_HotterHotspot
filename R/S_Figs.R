@@ -1,6 +1,7 @@
 library(ggplot2)
 library(cowplot)
 
+###########################################################################
 # Fig. 1 - Endemism levels ------------------------------------------------
 
 sppRich$class <- factor(sppRich$class, levels=c("Amphibians", "Reptiles", "Birds", "Mammals"))
@@ -49,7 +50,6 @@ ggsave("Fig 1.png",
 
 ###########################################################################
 # Fig 2a ------------------------------------------------------------------
-# file: outputs, tables, listnew.csv
 
 spyear <- as.data.frame(table(list$year))
 spyear$Var1 <- as.numeric(as.character(spyear$Var1))
@@ -77,13 +77,16 @@ ggsave("Fig 2.png",
 )
 
 ###########################################################################
-# Fig. 4a - Species threat status, IUCN versus ICMBio ----------------------
 
-colors <- c("#000000","#d6231e", "#fd7e4b","#fae639","#d1d1c5","#cce041","#67c262")
+# Fig. 4 Color ------------------------------------------------------------
 
-fig4a <- ggplot2::ggplot(data=cat.sources, aes(x=class, y=Freq, fill=category))+
+colors <- c("#440099", "#000000","#d6231e", "#fd7e4b","#fae639","#d1d1c5","#cce041","#67c262") #definir cor pra NA
+
+# Fig. 4a - Species threat status -----------------------------------------
+# Done
+
+fig4a <- ggplot2::ggplot(data=iucn, aes(x=class, y=Freq, fill=category))+
   geom_bar(stat="identity", position=position_fill(reverse = TRUE), width = .85)+
-  facet_wrap(~source)+
   geom_text(aes(y=0.90, label=paste("N = ", labelN, sep="")), 
             vjust=1.6, color="black", size=2.5)+
   scale_fill_manual(values=colors)+
@@ -103,13 +106,13 @@ fig4a <- ggplot2::ggplot(data=cat.sources, aes(x=class, y=Freq, fill=category))+
         axis.title = element_text(size=10, margin = margin(t=0, r=0, b=0, l=0, unit="mm")), 
         axis.text = element_text(size=10))+
   guides(fill = guide_legend(title.position = "top", 
-                              title.hjust = 0.5,
-                              nrow=1,
-                              label.position = "right")) 
+                             title.hjust = 0.5,
+                             nrow=1,
+                             label.position = "right")) 
 
 fig4a
 
-ggsave("Fig 4a.png",
+ggsave("Fig 4a-new.png",
        device = png,
        plot = fig4a,
        path = here::here("outputs", "figures"),
@@ -120,17 +123,13 @@ ggsave("Fig 4a.png",
 )
 
 # Fig. 4b - Range category - Threat ----------------------------------------
+#Done
 
-range.icmbio$category <- factor(range.icmbio$category, levels = c("CR","EN","VU","DD","NT","LC"))
-range.icmbio$Range.Category <- factor(range.icmbio$Range.Category, levels = c("Restricted", "Partial", "Wide")) 
-
-colors.icmbio <- c("#d6231e", "#fd7e4b","#fae639","#d1d1c5","#cce041","#67c262")
-
-fig4b <- ggplot2::ggplot(data=range.icmbio, aes(x=Range.Category, y=Freq, fill=category))+
+fig4b <- ggplot2::ggplot(data=range.iucn, aes(x=range.cat, y=Freq, fill=category))+
   geom_bar(stat="identity", position=position_fill(reverse = TRUE), width = .7)+
   geom_text(aes(y=0.9, label=paste("N = ", labelN, sep="")), 
             vjust=1.6, color="black", size=2.5)+
-  scale_fill_manual(values=colors.icmbio)+
+  scale_fill_manual(values=colors)+
   labs(x= "Range Size Category", y= "Frequency", fill="Threat Category")+
   scale_y_continuous(expand=c(0,0), breaks = c(0,0.5,1))+
   scale_x_discrete(expand=c(0.23,0))+
@@ -154,14 +153,13 @@ ggsave("Fig 4b.png",
 )
 
 # Fig. 4c - Habitat loss versus threat status ------------------------------
-# hab.cat in D_hgh-iucn.R
-hab.cat$category <- factor(hab.cat$category, levels = c("CR","EN","VU","DD","NT","LC")) 
+#Done
 
 fig4c <- ggplot2::ggplot(data=hab.cat, aes(x=loss, y=Freq, fill=category))+
   geom_bar(stat="identity", position=position_fill(reverse = TRUE), width = .8)+
   geom_text(aes(y=0.9, label=paste("N = ", labelN, sep="")), 
             vjust=1.6, color="black", size=2.5)+
-  scale_fill_manual(values=colors.icmbio)+
+  scale_fill_manual(values=colors)+
   labs(x= "Remaining Habitat", y= "Frequency")+
   scale_y_continuous(expand=c(0,0))+
   scale_x_discrete(expand=c(0.15,0))+

@@ -1,119 +1,46 @@
-library(tidyr) #usado para separar a coluna combinada
+library(tidyr)
 
-round((table(list$IUCN)/sum(table(list$IUCN)))*100, digits=2)
+#exploring data
+table(list$taxa)
 table(list$IUCN, list$taxa)
+round(apply(table(list$IUCN, list$taxa),2,function(x){x/sum(x)})*100, digits=2)
 
-
-head(salve)
-threats <- salve[,c(1:3,10)]
-salve <- salve[,c(1:9)]
-
-head(salve)
-head(threats)
-
-names(salve) <- c("class", "species", "species.old", "author", "evaluation date", "category", "criteria", "biome", "pop.trend")
-s.cat <- salve[, c(2,3,6)]
-head(s.cat)
-
-l.cat <- list[, c(6, 10, 16)]
-head(l.cat)
-
-comp.cat <- merge(l.cat, s.cat, by="species", all.x = TRUE)
-
-comp.cat
-
-comp.cat$category[is.na(comp.cat$species.old)] <- "-"
-
-
-#biomas <- tidyr::separate(data=salve, col="Bioma", into=c("biome.1", "biome.2", "biome.3", "biome.4", "biome.5"), sep=", ")
-#head(biomas)
-
-comp.cat <- comp.cat[,c(1:3,5)]
-head(comp.cat)
-names(comp.cat)[4] <- "Salve"
-
-write.csv(comp.cat, here::here("outputs", "tables", "hgh-iucn-salve.csv"), row.names = FALSE)
-
-
-head(list)
-head(comp.cat)
-
-comp.cat <- comp.cat[,c(1,4)]
-names(comp.cat)[2] <- "Salve.Cat"
-
-list <- merge(list, comp.cat, by="species")
-write.csv(list, here::here("outputs", "tables", "listnew.csv"), row.names = FALSE)
-
-head(list)
-
+# Object for fig 4a -------------------------------------------------------
+#ok
 iucn <- as.data.frame(table(list$taxa, list$IUCN))
-#salve <- as.data.frame(table(list$taxa, list$Salve.Cat))
+names(iucn)[c(1,2)] <- c("class", "category")
+iucn$labelN[iucn$class==names(table(list$taxa))] <- table(list$taxa)
+iucn$category <- factor(iucn$category, levels = c("-", "EX","CR","EN","VU","DD","NT","LC")) 
+iucn$class <- factor(iucn$class, levels = c("Amphibians", "Reptiles", "Birds", "Mammals"))
 
-names(iucn)[c(1,2)] <- c("class", "cat")
-#names(salve)[c(1,2)] <- c("class", "cat")
+# Object for fig 4b -------------------------------------------------------
+#ok
+range.iucn <- as.data.frame(table(list$range.cat, list$IUCN))
+names(range.iucn) <- c("range.cat", "category", "Freq")
+table(list$range.cat)
+range.iucn$labelN[range.iucn$range.cat==names(table(list$range.cat))] <- table(list$range.cat)
+range.iucn$category <- factor(range.iucn$category, levels = c("-", "EX", "CR","EN","VU","DD","NT","LC"))
+range.iucn$range.cat <- factor(range.iucn$range.cat, levels = c("Restricted", "Partial", "Wide")) 
 
-iucn$source <- "IUCN"
-salve$source <- " Salve"
-
-table.1 <- rbind(iucn, salve)
-
-
-names(table.1)[2] <- "Threat Category"
-
-write.csv(table.1, here::here("outputs", "tables", "cat.sources.csv"), row.names = FALSE)
-
-# objects for fig 4a ------------------------------------------------------
-cat.sources <- cat.sources[cat.sources$category!="-",]
-cat.sources$class[cat.sources$class=="Aves"] <- "Birds"
-cat.sources$class[cat.sources$class=="Reptilia"] <- "Reptiles"
-
-cat.sources$category <- factor(cat.sources$category, levels = c("EX","CR","EN","VU","DD","NT","LC")) 
-cat.sources$class <- factor(cat.sources$class, levels = c("Amphibians", "Reptiles", "Birds", "Mammals"))
-#cat.sources$source <- factor(cat.sources$source, levels = c("IUCN", " ICMBio"))
-
-# For figs 4b and 4c --------------------------------------------------------
-
+# Object for fig 4c -------------------------------------------------------
+#ok
 uso2020 <- uso[uso$lulcYear=="2020",]
-head(uso2020)
-uso2020 <- uso2020[uso2020$IUCN!="-",]
-
 uso2020$percNatCat <- NA
 uso2020$percNatCat[uso2020$percNat>0.80] <- ">80%"
 uso2020$percNatCat[uso2020$percNat<=0.80] <- "<80%"
 uso2020$percNatCat[uso2020$percNat<=0.50] <- "<50%"
 uso2020$percNatCat[uso2020$percNat<=0.30] <- "<30%"
 
-uso2020$percNatCat <- factor(uso2020$percNatCat, levels=c("<30%", "<50%", "<80%", ">80%"))
-uso2020$range.cat <- factor(uso2020$range.cat, levels=c("Restricted", "Partial", "Wide"))
+sppNatCat <- uso2020[,c(1, 11)] #binomial, percNatCat
 
-
-# objects for figs 4b and 4c ----------------------------------------------
-list <- list[list$icmbio.cat!="-",]
-
-hab.cat <- as.data.frame(table(list$percNatCat, list$icmbio.cat))
+list.loss <- merge(list, sppNatCat, by="binomial")
+hab.cat <- as.data.frame(table(list.loss$percNatCat, list.loss$IUCN))
 names(hab.cat) <- c("loss", "category", "Freq")
+hab.cat$labelN[hab.cat$loss==names(table(list.loss$percNatCat))] <- table(list.loss$percNatCat)
+hab.cat$category <- factor(hab.cat$category, levels = c("-", "EX", "CR","EN","VU","DD","NT","LC")) 
+hab.cat$loss <- factor(hab.cat$loss, levels=c("<30%", "<50%", "<80%", ">80%"))
 
-labelN <- as.data.frame(tapply(hab.cat$Freq, INDEX=hab.cat$loss, FUN=sum))
-labelN$loss <- row.names(labelN)
-names(labelN) <- c("labelN", "loss")
-row.names(labelN) <- NULL
-labelN
-
-hab.cat <- merge(hab.cat, labelN, by="loss")
-
-#
-
-range.icmbio <- as.data.frame(table(list$range.cat, list$icmbio.cat))
-names(range.icmbio) <- c("Range.Category", "category", "Freq")
-
-labelN <- as.data.frame(tapply(range.icmbio$Freq, INDEX=range.icmbio$Range.Category, FUN=sum))
-labelN$Range.Category <- row.names(labelN)
-names(labelN) <- c("labelN", "Range.Category")
-row.names(labelN) <- NULL
-labelN
-
-range.icmbio <- merge(range.icmbio, labelN, by="Range.Category")
-
+################################################################################
 # Filtering species by remaining habitat ----------------------------------
 # To create habitat loss category maps
 
@@ -238,3 +165,65 @@ list.salve$Categoria <- factor(list.salve$Categoria, levels = c("CR","EN","VU","
 table(list.salve$Classe, list.salve$Categoria)
 
 table(list$taxa, list$icmbio.cat)
+
+
+##############################################################################################################
+# Review usefullness ------------------------------------------------------
+##############################################################################################################
+
+# head(salve)
+# threats <- salve[,c(1:3,10)]
+# salve <- salve[,c(1:9)]
+# 
+# head(salve)
+# head(threats)
+# 
+# names(salve) <- c("class", "species", "species.old", "author", "evaluation date", "category", "criteria", "biome", "pop.trend")
+# s.cat <- salve[, c(2,3,6)]
+# head(s.cat)
+# 
+# l.cat <- list[, c(6, 10, 16)]
+# head(l.cat)
+# 
+# comp.cat <- merge(l.cat, s.cat, by="species", all.x = TRUE)
+# 
+# comp.cat
+# 
+# comp.cat$category[is.na(comp.cat$species.old)] <- "-"
+
+
+#biomas <- tidyr::separate(data=salve, col="Bioma", into=c("biome.1", "biome.2", "biome.3", "biome.4", "biome.5"), sep=", ")
+#head(biomas)
+
+# comp.cat <- comp.cat[,c(1:3,5)]
+# head(comp.cat)
+# names(comp.cat)[4] <- "Salve"
+# 
+# write.csv(comp.cat, here::here("outputs", "tables", "hgh-iucn-salve.csv"), row.names = FALSE)
+# 
+# head(list)
+# head(comp.cat)
+# 
+# comp.cat <- comp.cat[,c(1,4)]
+# names(comp.cat)[2] <- "Salve.Cat"
+# 
+# list <- merge(list, comp.cat, by="species")
+# write.csv(list, here::here("outputs", "tables", "listnew.csv"), row.names = FALSE)
+# 
+# head(list)
+# 
+# iucn <- as.data.frame(table(list$taxa, list$IUCN))
+#salve <- as.data.frame(table(list$taxa, list$Salve.Cat))
+
+#names(iucn)[c(1,2)] <- c("class", "cat")
+#names(salve)[c(1,2)] <- c("class", "cat")
+
+# iucn$source <- "IUCN"
+# salve$source <- " Salve"
+
+# table.1 <- rbind(iucn, salve)
+
+
+# names(table.1)[2] <- "Threat Category"
+
+#write.csv(table.1, here::here("outputs", "tables", "cat.sources.csv"), row.names = FALSE)

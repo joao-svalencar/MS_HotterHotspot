@@ -1,4 +1,4 @@
-species,rangesize,protected_range,prot_perc,layer
+binomial,rangesize,protected_range,prot_perc,layer
 Adenomera cotuba*,206241,3399,0.0165,Intersection
 Adenomera saci,731210,29189,0.0399,Intersection
 Akodon kadiweu,356,93,0.2612,Intersection
@@ -288,20 +288,20 @@ Rhipidomys macrurus,1976730,40196,0.0203,Intersection
 Saltatricula atricollis,4504410,77308,0.0172,Intersection
 Salvator duseni,440647,11324,0.0257,Intersection
 Scinax cabralensis,725,45,0.0621,Intersection
-Scinax canastrensis,29866,1994,0.0668,Intersection
-Scinax centralis,11094,48,0.0043,Intersection
+Ololygon canastrensis,29866,1994,0.0668,Intersection
+Ololygon centralis,11094,48,0.0043,Intersection
 Scinax constrictus,1067899,16491,0.0154,Intersection
 Scinax curicica,19813,1093,0.0552,Intersection
-Scinax goya*,368,,,gapspp
+Ololygon goya*,368,,,gapspp
 Scinax haddadorum*,541,20,0.037,Intersection
-Scinax machadoi,25000,1876,0.075,Intersection
+Ololygon machadoi,25000,1876,0.075,Intersection
 Scinax maracaya,9703,278,0.0287,Intersection
-Scinax pinimus,719,2,0.0028,Intersection
-Scinax pombali,891,564,0.633,Intersection
+Julianus pinimus,719,2,0.0028,Intersection
+Ololygon pombali,891,564,0.633,Intersection
 Scinax rogerioi,153012,484,0.0032,Intersection
 Scinax rossaferesae*,4627,174,0.0376,Intersection
 Scinax rupestris*,816,199,0.2439,Intersection
-Scinax skaios,38789,744,0.0192,Intersection
+Ololygon skaios,38789,744,0.0192,Intersection
 Scinax tigrinus,44500,603,0.0136,Intersection
 Scytalopus novacapitalis,89692,1284,0.0143,Intersection
 Siagonodon acutirostris,1494,831,0.5562,Intersection
