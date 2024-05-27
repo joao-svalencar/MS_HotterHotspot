@@ -43,10 +43,10 @@ write.csv(list, here::here("outputs", "tables", "listnew.csv"), row.names = FALS
 head(list)
 
 iucn <- as.data.frame(table(list$taxa, list$IUCN))
-salve <- as.data.frame(table(list$taxa, list$Salve.Cat))
+#salve <- as.data.frame(table(list$taxa, list$Salve.Cat))
 
 names(iucn)[c(1,2)] <- c("class", "cat")
-names(salve)[c(1,2)] <- c("class", "cat")
+#names(salve)[c(1,2)] <- c("class", "cat")
 
 iucn$source <- "IUCN"
 salve$source <- " Salve"
@@ -65,13 +65,13 @@ cat.sources$class[cat.sources$class=="Reptilia"] <- "Reptiles"
 
 cat.sources$category <- factor(cat.sources$category, levels = c("EX","CR","EN","VU","DD","NT","LC")) 
 cat.sources$class <- factor(cat.sources$class, levels = c("Amphibians", "Reptiles", "Birds", "Mammals"))
-cat.sources$source <- factor(cat.sources$source, levels = c("IUCN", " ICMBio"))
+#cat.sources$source <- factor(cat.sources$source, levels = c("IUCN", " ICMBio"))
 
 # For figs 4b and 4c --------------------------------------------------------
 
 uso2020 <- uso[uso$lulcYear=="2020",]
 head(uso2020)
-uso2020 <- uso2020[uso2020$icmbio.cat!="-",]
+uso2020 <- uso2020[uso2020$IUCN!="-",]
 
 uso2020$percNatCat <- NA
 uso2020$percNatCat[uso2020$percNat>0.80] <- ">80%"

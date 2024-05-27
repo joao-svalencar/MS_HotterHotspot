@@ -1,19 +1,19 @@
 library(ggplot2)
 
 head(list)
-analyses <- list[,c(1,8,11:19)]
+analyses <- list[,c(1,8,9,18)] #taxa, rangesize, range.cat, IUCN  
 
 head(analyses)
 
 analyses$threatened <- NA
-analyses$threatened[analyses$icmbio.cat%in%c("LC", "NT")] <- "No"
-analyses$threatened[analyses$icmbio.cat%in%c("VU", "EN", "CR")] <- "Yes"
+analyses$threatened[analyses$IUCN%in%c("LC", "NT")] <- "No"
+analyses$threatened[analyses$IUCN%in%c("VU", "EN", "CR")] <- "Yes"
 
-analyses <- analyses[analyses$icmbio.cat!="-"&analyses$icmbio.cat!="DD",]
-analyses <- analyses[analyses$icmbio.cat!="-",]
+analyses <- analyses[analyses$IUCN!="-" & analyses$IUCN!="DD",]
+analyses <- analyses[analyses$IUCN!="-",]
 
 analyses$taxa <- factor(analyses$taxa, levels = c("Amphibians", "Reptiles", "Birds", "Mammals"))
-analyses$icmbio.cat <- factor(analyses$icmbio.cat, levels = c("CR","EN","VU","DD", "NT","LC"))
+analyses$IUCN <- factor(analyses$IUCN, levels = c("CR","EN","VU","DD", "NT","LC"))
 analyses$range.cat <- factor(analyses$range.cat, levels = c("Restricted","Partial","Wide"))
 
 str(analyses)
@@ -23,15 +23,15 @@ str(analyses)
 
 kruskal.test(rangesize~taxa, data=list)
 
-# Chisquared test of classes and ICMBio categories ------------------------
+# Chisquared test of classes and IUCN categories ------------------------
 
-chisq.test(analyses$taxa, analyses$icmbio.cat) #including DD
+chisq.test(analyses$taxa, analyses$IUCN) #including DD
 chisq.test(analyses$taxa, analyses$threatened)
 
 #capture.output(chisq, file = here::here("outputs", "tests", "chisq_class_threat.txt"))
 
-table(analyses$taxa, analyses$icmbio.cat)
 table(analyses$taxa, analyses$IUCN)
+#table(analyses$taxa, analyses$IUCN)
 
 a <- table(analyses$taxa, analyses$threatened)
 
@@ -41,34 +41,34 @@ a[2,2]/(a[2,1]+a[2,2]) #prop reptiles 0.07826087
 a[3,2]/(a[3,1]+a[3,2]) #prop birds 0.422222
 a[4,2]/(a[4,1]+a[4,2]) #prop mammals 0.3783784
 
-#data-deficient ICMBio
+#data-deficient IUCN
 11/(1+0+3+11+5+98) #amphibians 0.09322034
 18/(1+5+3+18+7+81) #reptiles 0.1565217
 0 #birds
 4/(1+9+4+4+1+18) #mammals 0.1081081
 
 #data-deficient IUCN
-36/(3+36+0+0+41+2+0) #amphibians 0.4390244
-17/(3+17+5+0+20+8+9) #reptiles 0.2741935
-0 #birds
-7/(6+0+7+5+1+15+2+1) #mammals 0.1891892
+#36/(3+36+0+0+41+2+0) #amphibians 0.4390244
+#17/(3+17+5+0+20+8+9) #reptiles 0.2741935
+#0 #birds
+#7/(6+0+7+5+1+15+2+1) #mammals 0.1891892
 
 
 # Espécies diferentes tamanho de range tendem a ter diferentes categorias de ameaça?
 
-kruskal.test(rangesize~icmbio.cat, data=analyses)
+kruskal.test(rangesize~IUCN, data=analyses)
 kruskal.test(rangesize~threatened, data=analyses)
 
 ?kruskal.test
 
 # Espécies ameçadas x não ameaçadas tendem a ter menos habitat remanescente?
 
-kruskal.test(percNat~icmbio.cat, data=analyses)
+kruskal.test(percNat~IUCN, data=analyses)
 kruskal.test(percNat~threatened, data=analyses)
 
 # Ou menos area protegida?
 
-kruskal.test(prot_perc~icmbio.cat, data=analyses)
+kruskal.test(prot_perc~IUCN, data=analyses)
 kruskal.test(prot_perc~threatened, data=analyses)
 
 # Espécies descritas recentemente tendem a ter maior probabilidade de extinção?
@@ -85,7 +85,7 @@ summary(mod)
 head(list)
 gap$prop <- cbind(sucess = gap$protected_range, fail = gap$rangesize-gap$protected_range)
 
-mod <- glm(prop~icmbio.cat, family=binomial, data=gap)
+mod <- glm(prop~IUCN, family=binomial, data=gap)
 
 summary(mod)
 
