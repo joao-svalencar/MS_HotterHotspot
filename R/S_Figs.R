@@ -80,7 +80,7 @@ ggsave("Fig 2.png",
 
 # Fig. 4 Color ------------------------------------------------------------
 
-colors <- c("#440099", "#000000","#d6231e", "#fd7e4b","#fae639","#d1d1c5","#cce041","#67c262") #definir cor pra NA
+colors <- c("#000000","#d6231e", "#fd7e4b","#fae639","#d1d1c5","#cce041","#67c262", "#440099")
 
 # Fig. 4a - Species threat status -----------------------------------------
 # Done
@@ -188,18 +188,6 @@ ggsave("Fig 4c.png",
 
 ###########################################################################
 ###########################################################################
-# reload the list object
-list <- list[list$icmbio.cat!="-",]
-
-list$icmbio.cat <- factor(list$icmbio.cat, levels = c("CR","EN","VU","DD","NT","LC"))
-list$taxa <- factor(list$taxa, levels = c("Amphibians", "Reptiles", "Birds", "Mammals"))
-list$prot_perc_cat <- factor(list$prot_perc_cat, levels=c("0%", "<1%", "<5%", "<17%", ">17%"))
-
-gap <- as.data.frame(table(list$icmbio.cat, list$prot_perc_cat))
-labelN <- as.data.frame(table(list$prot_perc_cat))
-names(labelN) <- c("Var2", "labelN")
-
-gap <- merge(gap, labelN, by="Var2")
 
 fig4d <- ggplot2::ggplot(data=gap, aes(x=Var2, y=Freq, fill=Var1))+
   geom_bar(stat="identity", position=position_fill(reverse = TRUE), width = .8)+

@@ -10,7 +10,7 @@ round(apply(table(list$IUCN, list$taxa),2,function(x){x/sum(x)})*100, digits=2)
 iucn <- as.data.frame(table(list$taxa, list$IUCN))
 names(iucn)[c(1,2)] <- c("class", "category")
 iucn$labelN[iucn$class==names(table(list$taxa))] <- table(list$taxa)
-iucn$category <- factor(iucn$category, levels = c("-", "EX","CR","EN","VU","DD","NT","LC")) 
+iucn$category <- factor(iucn$category, levels = c("EX","CR","EN","VU","DD","NT","LC", "-")) 
 iucn$class <- factor(iucn$class, levels = c("Amphibians", "Reptiles", "Birds", "Mammals"))
 
 # Object for fig 4b -------------------------------------------------------
@@ -19,7 +19,7 @@ range.iucn <- as.data.frame(table(list$range.cat, list$IUCN))
 names(range.iucn) <- c("range.cat", "category", "Freq")
 table(list$range.cat)
 range.iucn$labelN[range.iucn$range.cat==names(table(list$range.cat))] <- table(list$range.cat)
-range.iucn$category <- factor(range.iucn$category, levels = c("-", "EX", "CR","EN","VU","DD","NT","LC"))
+range.iucn$category <- factor(range.iucn$category, levels = c("EX", "CR","EN","VU","DD","NT","LC", "-"))
 range.iucn$range.cat <- factor(range.iucn$range.cat, levels = c("Restricted", "Partial", "Wide")) 
 
 # Object for fig 4c -------------------------------------------------------
@@ -37,8 +37,22 @@ list.loss <- merge(list, sppNatCat, by="binomial")
 hab.cat <- as.data.frame(table(list.loss$percNatCat, list.loss$IUCN))
 names(hab.cat) <- c("loss", "category", "Freq")
 hab.cat$labelN[hab.cat$loss==names(table(list.loss$percNatCat))] <- table(list.loss$percNatCat)
-hab.cat$category <- factor(hab.cat$category, levels = c("-", "EX", "CR","EN","VU","DD","NT","LC")) 
+hab.cat$category <- factor(hab.cat$category, levels = c("EX", "CR","EN","VU","DD","NT","LC", "-")) 
 hab.cat$loss <- factor(hab.cat$loss, levels=c("<30%", "<50%", "<80%", ">80%"))
+
+# Object for fig 4d -------------------------------------------------------
+
+head(gap)
+gap$gap.cat <- NA
+gap$gap.cat[gap$prot_perc<0.01] <- "<1%"
+
+list$prot_perc_cat <- factor(list$prot_perc_cat, levels=c("0%", "<1%", "<5%", "<17%", ">17%"))
+
+gap <- as.data.frame(table(list$icmbio.cat, list$prot_perc_cat))
+labelN <- as.data.frame(table(list$prot_perc_cat))
+names(labelN) <- c("Var2", "labelN")
+
+gap <- merge(gap, labelN, by="Var2")
 
 ################################################################################
 # Filtering species by remaining habitat ----------------------------------
