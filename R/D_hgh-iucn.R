@@ -1,5 +1,9 @@
 library(tidyr) #usado para separar a coluna combinada
 
+round((table(list$IUCN)/sum(table(list$IUCN)))*100, digits=2)
+table(list$IUCN, list$taxa)
+
+
 head(salve)
 threats <- salve[,c(1:3,10)]
 salve <- salve[,c(1:9)]
