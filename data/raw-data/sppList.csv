@@ -149,6 +149,7 @@ Euryoryzomys lamia,Euryoryzomys lamia,1901,s,polygon
 Euscarthmus rufomarginatus,Euscarthmus rufomarginatus,1868,s,polygon
 Galea flavidens,Galea flavidens,1835,s,polygon
 Geositta poeciloptera,Geositta poeciloptera,1830,s,polygon
+Guyramemua affine,Guyramemua affine,1856,s,polygon
 Gyldenstolpia planaltensis,Gyldenstolpia planaltensis,1972,s,buffer
 Gymnodactylus amarali,Gymnodactylus amarali,1925,n,polygon
 Gymnodactylus guttulatus,Gymnodactylus guttulatus,1982,n,buffer
@@ -193,6 +194,7 @@ Manciola guaporicola,Manciola guaporicola,1935,n,polygon
 Melanopareia torquata,Melanopareia torquata,1831,s,polygon
 Micrablepharus atticolus,Micrablepharus atticolus,1996,n,polygon
 Microakodontomys transitorius,Microakodontomys transitorius,1993,s,buffer
+Poospiza cinerea,Microspingus cinereus,1850,s,polygon
 Micrurus brasiliensis,Micrurus brasiliensis,1967,n,polygon
 Micrurus tricolor,Micrurus tricolor,1956,n,polygon
 Monodelphis kunsi,Monodelphis kunsi,1975,s,polygon
@@ -208,6 +210,12 @@ Odontophrynus monachus,Odontophrynus monachus,2012,n,buffer
 Oecomys cleberi,Oecomys cleberi,1981,s,polygon
 Oligoryzomys moojeni,Oligoryzomys moojeni,2005,s,polygon
 Oligoryzomys rupestris,Oligoryzomys rupestris,2005,s,buffer
+Ololygon canastrensis,Ololygon canastrensis,1982,n,polygon
+Ololygon centralis,Ololygon centralis,1996,n,polygon
+Ololygon goya*,Ololygon goya,2018,s,buffer
+Ololygon machadoi,Ololygon machadoi,1973,n,polygon
+Ololygon pombali,Ololygon pombali,2013,n,buffer
+Ololygon skaios,Ololygon skaios,2010,n,polygon
 Oreobates antrum*,Oreobates antrum,2018,s,buffer
 Oreobates heterodactylus,Oreobates heterodactylus,1937,n,polygon
 Oreobates remotus,Oreobates remotus,2012,n,buffer
@@ -246,7 +254,6 @@ Pithecopus megacephalus,Pithecopus megacephalus,1926,n,polygon
 Pithecopus oreades,Pithecopus oreades,2002,n,polygon
 Placosoma cipoense,Placosoma cipoense,1966,n,buffer
 Polystictus superciliaris,Polystictus superciliaris,1831,s,polygon
-Poospiza cinerea,Microspingus cinereus,1850,s,polygon
 Porphyrospiza caerulescens,Porphyrospiza caerulescens,1830,s,polygon
 Pristimantis dundeei,Pristimantis dundeei,1999,n,polygon
 Pristimantis moa*,Pristimantis moa,2020,s,polygon
@@ -287,20 +294,14 @@ Rhipidomys macrurus,Rhipidomys macrurus,1855,s,polygon
 Saltatricula atricollis,Saltatricula atricollis,1817,s,polygon
 Salvator duseni,Salvator duseni,1910,n,polygon
 Scinax cabralensis,Scinax cabralensis,2007,n,buffer
-Scinax canastrensis,Scinax canastrensis,1982,n,polygon
-Scinax centralis,Scinax centralis,1996,n,polygon
 Scinax constrictus,Scinax constrictus,2005,n,polygon
 Scinax curicica,Scinax curicica,2004,n,polygon
-Scinax goya*,Scinax goya,2018,s,buffer
 Scinax haddadorum*,Scinax haddadorum,2016,s,polygon
-Scinax machadoi,Scinax machadoi,1973,n,polygon
 Scinax maracaya,Scinax maracaya,1980,n,polygon
-Scinax pinimus,Scinax pinimus,1973,n,buffer
-Scinax pombali,Scinax pombali,2013,n,buffer
+Julianus pinimus,Julianus pinimus,1973,n,buffer
 Scinax rogerioi,Scinax rogerioi,2009,n,polygon
 Scinax rossaferesae*,Scinax rossaferesae,2016,s,polygon
 Scinax rupestris*,Scinax rupestris,2015,s,buffer
-Scinax skaios,Scinax skaios,2010,n,polygon
 Scinax tigrinus,Scinax tigrinus,2010,n,polygon
 Scytalopus novacapitalis,Scytalopus novacapitalis,1958,s,polygon
 Siagonodon acutirostris,Siagonodon acutirostris,2011,n,buffer
@@ -310,7 +311,6 @@ Stenocercus albolineatus*,Stenocercus albolineatus,2015,s,polygon
 Stenocercus canastra*,Stenocercus canastra,2019,s,buffer
 Stenocercus quinarius,Stenocercus quinarius,2006,n,polygon
 Stenocercus sinesaccus,Stenocercus sinesaccus,2005,n,polygon
-Guyramemua affine,Guyramemua affine,1856,s,polygon
 Synallaxis simoni,Synallaxis simoni,1907,s,polygon
 Syndactyla dimidiata,Syndactyla dimidiata,1859,s,polygon
 Taoniscus nanus,Taoniscus nanus,1815,s,polygon
