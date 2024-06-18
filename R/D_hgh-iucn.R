@@ -7,11 +7,11 @@ round(apply(table(list$IUCN, list$taxa),2,function(x){x/sum(x)})*100, digits=2)
 
 # Object for fig 4a -------------------------------------------------------
 #ok
-iucn <- as.data.frame(table(list$taxa, list$IUCN))
-names(iucn)[c(1,2)] <- c("class", "category")
-iucn$labelN[iucn$class==names(table(list$taxa))] <- table(list$taxa)
-iucn$category <- factor(iucn$category, levels = c("EX","CR","EN","VU","DD","NT","LC", "-")) 
-iucn$class <- factor(iucn$class, levels = c("Amphibians", "Reptiles", "Birds", "Mammals"))
+iucn.class <- as.data.frame(table(list$taxa, list$IUCN))
+names(iucn.class)[c(1,2)] <- c("class", "category")
+iucn.class$labelN[iucn.class$class==names(table(list$taxa))] <- table(list$taxa)
+iucn.class$category <- factor(iucn.class$category, levels = c("EX","CR","EN","VU","DD","NT","LC", "-")) 
+iucn.class$class <- factor(iucn.class$class, levels = c("Amphibians", "Reptiles", "Birds", "Mammals"))
 
 # Object for fig 4b -------------------------------------------------------
 #ok
@@ -44,15 +44,33 @@ hab.cat$loss <- factor(hab.cat$loss, levels=c("<30%", "<50%", "<80%", ">80%"))
 
 head(gap)
 gap$gap.cat <- NA
+
+gap$protected_range[is.na(gap$protected_range)] <- 0
+gap$prot_perc[is.na(gap$prot_perc)] <- 0
+
+gap$gap.cat[gap$prot_perc>=0.17] <- ">17%"
+gap$gap.cat[gap$prot_perc<0.17] <- "<17%"
+gap$gap.cat[gap$prot_perc<0.05] <- "<5%"
 gap$gap.cat[gap$prot_perc<0.01] <- "<1%"
+gap$gap.cat[gap$prot_perc==0] <- "0%"
 
-list$prot_perc_cat <- factor(list$prot_perc_cat, levels=c("0%", "<1%", "<5%", "<17%", ">17%"))
+table(gap$gap.cat)
 
-gap <- as.data.frame(table(list$icmbio.cat, list$prot_perc_cat))
-labelN <- as.data.frame(table(list$prot_perc_cat))
+head(list)
+iucn.cat <- list[,c(5,18)]
+
+gap <- merge(gap, iucn.cat, by="binomial")
+
+gap.tab <- as.data.frame(table(gap$IUCN, gap$gap.cat))
+labelN <- as.data.frame(table(gap$gap.cat))
 names(labelN) <- c("Var2", "labelN")
 
-gap <- merge(gap, labelN, by="Var2")
+head(gap.tab)
+gap.tab <- merge(gap.tab, labelN, by="Var2")
+
+names(gap.tab) <- c("gap.cat", "iucn", "Freq", "labelN")
+gap.tab$iucn <- factor(gap.tab$iucn, levels = c("EX", "CR","EN","VU","DD","NT","LC", "-"))
+gap.tab$gap.cat <- factor(gap.tab$gap.cat, levels=c("0%", "<1%", "<5%", "<17%", ">17%"))
 
 ################################################################################
 # Filtering species by remaining habitat ----------------------------------
@@ -112,20 +130,6 @@ write.csv(db_unique_gap5, here::here("data", "processed", "baseunique_gap5.csv")
 
 # Gap analysis processing -------------------------------------------------
 
-head(gap)
-
-gap$protected_range[is.na(gap$protected_range)] <- 0
-gap$prot_perc[is.na(gap$prot_perc)] <- 0
-
-gap$prot_perc_cat <- NA
-gap$prot_perc_cat[gap$prot_perc>=0.17] <- ">17%"
-gap$prot_perc_cat[gap$prot_perc<0.17] <- "<17%"
-gap$prot_perc_cat[gap$prot_perc<0.05] <- "<5%"
-gap$prot_perc_cat[gap$prot_perc<0.01] <- "<1%"
-gap$prot_perc_cat[gap$prot_perc==0] <- "0%"
-
-gap$prot_perc_cat <- factor(gap$prot_perc_cat, levels=c("0%", "<1%", "<5%", "<17%", ">17%"))
-
 gap$fail <- (gap$rangesize-gap$protected_range)
 write.csv(list, here::here("outputs", "tables", "listnew.csv"), row.names = FALSE)
 
@@ -163,81 +167,3 @@ iucn <- iucn[,c(1,2,3,4)]
 list.iucn <- merge(list, iucn, by="species")
 
 list.iucn[list.iucn$assessmentDate=="2004-04-30 00:00:00 UTC",]
-
-
-
-# Salve processing --------------------------------------------------------
-table(list.salve$Mês.Ano.Avaliação)
-salve[salve$Mês.Ano.Avaliação=="Oct-11",]
-
-names(salve)[2] <- "species"
-list.salve <- merge(list, salve, by="species")
-
-list.salve[list.salve$Mês.Ano.Avaliação=="Apr-12",]
-
-list.salve$Categoria <- factor(list.salve$Categoria, levels = c("CR","EN","VU","DD","NT","LC")) 
-table(list.salve$Classe, list.salve$Categoria)
-
-table(list$taxa, list$icmbio.cat)
-
-
-##############################################################################################################
-# Review usefullness ------------------------------------------------------
-##############################################################################################################
-
-# head(salve)
-# threats <- salve[,c(1:3,10)]
-# salve <- salve[,c(1:9)]
-# 
-# head(salve)
-# head(threats)
-# 
-# names(salve) <- c("class", "species", "species.old", "author", "evaluation date", "category", "criteria", "biome", "pop.trend")
-# s.cat <- salve[, c(2,3,6)]
-# head(s.cat)
-# 
-# l.cat <- list[, c(6, 10, 16)]
-# head(l.cat)
-# 
-# comp.cat <- merge(l.cat, s.cat, by="species", all.x = TRUE)
-# 
-# comp.cat
-# 
-# comp.cat$category[is.na(comp.cat$species.old)] <- "-"
-
-
-#biomas <- tidyr::separate(data=salve, col="Bioma", into=c("biome.1", "biome.2", "biome.3", "biome.4", "biome.5"), sep=", ")
-#head(biomas)
-
-# comp.cat <- comp.cat[,c(1:3,5)]
-# head(comp.cat)
-# names(comp.cat)[4] <- "Salve"
-# 
-# write.csv(comp.cat, here::here("outputs", "tables", "hgh-iucn-salve.csv"), row.names = FALSE)
-# 
-# head(list)
-# head(comp.cat)
-# 
-# comp.cat <- comp.cat[,c(1,4)]
-# names(comp.cat)[2] <- "Salve.Cat"
-# 
-# list <- merge(list, comp.cat, by="species")
-# write.csv(list, here::here("outputs", "tables", "listnew.csv"), row.names = FALSE)
-# 
-# head(list)
-# 
-# iucn <- as.data.frame(table(list$taxa, list$IUCN))
-#salve <- as.data.frame(table(list$taxa, list$Salve.Cat))
-
-#names(iucn)[c(1,2)] <- c("class", "cat")
-#names(salve)[c(1,2)] <- c("class", "cat")
-
-# iucn$source <- "IUCN"
-# salve$source <- " Salve"
-
-# table.1 <- rbind(iucn, salve)
-
-
-# names(table.1)[2] <- "Threat Category"
-
-#write.csv(table.1, here::here("outputs", "tables", "cat.sources.csv"), row.names = FALSE)

@@ -80,13 +80,12 @@ ggsave("Fig 2.png",
 
 # Fig. 4 Color ------------------------------------------------------------
 
-colors <- c("#000000","#d6231e", "#fd7e4b","#fae639","#d1d1c5","#cce041","#67c262", "#440099")
+colors <- c("#000000","#d6231e", "#fd7e4b","#fae639","#d1d1c5","#cce041","#67c262", "#FFFFFF")
 
 # Fig. 4a - Species threat status -----------------------------------------
-# Done
 
-fig4a <- ggplot2::ggplot(data=iucn, aes(x=class, y=Freq, fill=category))+
-  geom_bar(stat="identity", position=position_fill(reverse = TRUE), width = .85)+
+fig4a <- ggplot2::ggplot(data=iucn.class, aes(x=class, y=Freq, fill=category))+
+  geom_bar(stat="identity", color = "black", position=position_fill(reverse = TRUE), width = .85)+
   geom_text(aes(y=0.90, label=paste("N = ", labelN, sep="")), 
             vjust=1.6, color="black", size=2.5)+
   scale_fill_manual(values=colors)+
@@ -189,11 +188,11 @@ ggsave("Fig 4c.png",
 ###########################################################################
 ###########################################################################
 
-fig4d <- ggplot2::ggplot(data=gap, aes(x=Var2, y=Freq, fill=Var1))+
+fig4d <- ggplot2::ggplot(data=gap.tab, aes(x=gap.cat, y=Freq, fill=iucn))+
   geom_bar(stat="identity", position=position_fill(reverse = TRUE), width = .8)+
   geom_text(aes(y=0.90, label=paste("N = ", labelN, sep="")), 
             vjust=1.6, color="black", size=2.5)+
-  scale_fill_manual(values=colors.icmbio)+
+  scale_fill_manual(values=colors)+
   labs(x= "Protected Range", y= "Frequency", fill="Threat Category")+
   scale_y_continuous(expand=c(0,0))+
   scale_x_discrete(expand=c(0.11, 0))+
