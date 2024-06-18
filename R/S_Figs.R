@@ -125,7 +125,7 @@ ggsave("Fig 4a-new.png",
 #Done
 
 fig4b <- ggplot2::ggplot(data=range.iucn, aes(x=range.cat, y=Freq, fill=category))+
-  geom_bar(stat="identity", position=position_fill(reverse = TRUE), width = .7)+
+  geom_bar(stat="identity", color="black", position=position_fill(reverse = TRUE), width = .7)+
   geom_text(aes(y=0.9, label=paste("N = ", labelN, sep="")), 
             vjust=1.6, color="black", size=2.5)+
   scale_fill_manual(values=colors)+
@@ -155,7 +155,7 @@ ggsave("Fig 4b.png",
 #Done
 
 fig4c <- ggplot2::ggplot(data=hab.cat, aes(x=loss, y=Freq, fill=category))+
-  geom_bar(stat="identity", position=position_fill(reverse = TRUE), width = .8)+
+  geom_bar(stat="identity", color="black", position=position_fill(reverse = TRUE), width = .8)+
   geom_text(aes(y=0.9, label=paste("N = ", labelN, sep="")), 
             vjust=1.6, color="black", size=2.5)+
   scale_fill_manual(values=colors)+
@@ -189,7 +189,7 @@ ggsave("Fig 4c.png",
 ###########################################################################
 
 fig4d <- ggplot2::ggplot(data=gap.tab, aes(x=gap.cat, y=Freq, fill=iucn))+
-  geom_bar(stat="identity", position=position_fill(reverse = TRUE), width = .8)+
+  geom_bar(stat="identity", color="black", position=position_fill(reverse = TRUE), width = .8)+
   geom_text(aes(y=0.90, label=paste("N = ", labelN, sep="")), 
             vjust=1.6, color="black", size=2.5)+
   scale_fill_manual(values=colors)+
@@ -209,7 +209,7 @@ fig4d <- ggplot2::ggplot(data=gap.tab, aes(x=gap.cat, y=Freq, fill=iucn))+
 
 fig4d
 
-ggsave("Fig 3d.png",
+ggsave("Fig 4d.png",
        device = png,
        plot = fig3d,
        path = here::here("outputs", "figures"),
@@ -241,17 +241,17 @@ ggsave("Fig 4 bottom.png",
 
 list <- list[list$icmbio.cat!="-",]
 
-list$icmbio.cat <- factor(list$icmbio.cat, levels = c("CR","EN","VU","DD","NT","LC"))
+list$IUCN <- factor(list$IUCN, levels = c("EX","CR","EN","VU","DD","NT","LC", "-"))
 list$taxa <- factor(list$taxa, levels = c("Amphibians", "Reptiles", "Birds", "Mammals"))
-
+table(list$IUCN)
+table(list$taxa)
 head(list)
 list<-list[,c(2,8,11,19)]
-colors.icmbio <- c("#d6231e", "#fd7e4b","#fae639","#d1d1c5","#cce041","#67c262")
 
-fig5a <- ggplot2::ggplot(data=list, aes(x=year, y=log(rangesize), color=icmbio.cat, shape=taxa))+
+fig5a <- ggplot2::ggplot(data=list, aes(x=year, y=log(rangesize), color=IUCN, shape=taxa))+
   geom_point(size=3)+
   geom_smooth(method="lm", formula=y~x, se=FALSE, aes(group = 1), color="black")+
-  scale_color_manual(values=colors.icmbio)+
+  scale_color_manual(values=colors)+
   scale_shape_manual(values=c(16, 15, 17, 18))+
   scale_y_continuous(breaks = c(5, 10, 15))+
   labs(x= "Year of description", y= bquote("Log species range size " (km^2)), color="Threat Category", shape="Class")+

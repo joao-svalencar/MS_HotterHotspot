@@ -72,6 +72,7 @@ names(gap.tab) <- c("gap.cat", "iucn", "Freq", "labelN")
 gap.tab$iucn <- factor(gap.tab$iucn, levels = c("EX", "CR","EN","VU","DD","NT","LC", "-"))
 gap.tab$gap.cat <- factor(gap.tab$gap.cat, levels=c("0%", "<1%", "<5%", "<17%", ">17%"))
 
+
 ################################################################################
 # Filtering species by remaining habitat ----------------------------------
 # To create habitat loss category maps
