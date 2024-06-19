@@ -92,11 +92,12 @@ fig4a <- ggplot2::ggplot(data=iucn.class, aes(x=class, y=Freq, fill=category))+
   labs(x= "Class", y= "Frequency", fill="Threat Category")+
   scale_y_continuous(expand=c(0,0), breaks = c(0,0.5,1))+
   theme_classic()+
-  theme(aspect.ratio = 1.1/1,
+  theme(aspect.ratio = 1.2/1,
         axis.title.x = element_blank(),
         axis.text.x = element_blank(),
         axis.ticks.x = element_blank(),
-        legend.position='bottom',
+        #legend.position='bottom',
+        legend.position='none',
         legend.direction = "horizontal", 
         legend.box = "horizontal",
         legend.box.margin = margin(t=0, r=0, b=0, l=0, unit="mm"),
@@ -126,7 +127,7 @@ ggsave("Fig 4a-new.png",
 
 fig4b <- ggplot2::ggplot(data=range.iucn, aes(x=range.cat, y=Freq, fill=category))+
   geom_bar(stat="identity", color="black", position=position_fill(reverse = TRUE), width = .7)+
-  geom_text(aes(y=0.9, label=paste("N = ", labelN, sep="")), 
+  geom_text(aes(y=0.75, label=paste("N = ", labelN, sep="")), 
             vjust=1.6, color="black", size=2.5)+
   scale_fill_manual(values=colors)+
   labs(x= "Range Size Category", y= "Frequency", fill="Threat Category")+
@@ -156,7 +157,7 @@ ggsave("Fig 4b.png",
 
 fig4c <- ggplot2::ggplot(data=hab.cat, aes(x=loss, y=Freq, fill=category))+
   geom_bar(stat="identity", color="black", position=position_fill(reverse = TRUE), width = .8)+
-  geom_text(aes(y=0.9, label=paste("N = ", labelN, sep="")), 
+  geom_text(aes(y=0.75, label=paste("N = ", labelN, sep="")), 
             vjust=1.6, color="black", size=2.5)+
   scale_fill_manual(values=colors)+
   labs(x= "Remaining Habitat", y= "Frequency")+
@@ -190,7 +191,7 @@ ggsave("Fig 4c.png",
 
 fig4d <- ggplot2::ggplot(data=gap.tab, aes(x=gap.cat, y=Freq, fill=iucn))+
   geom_bar(stat="identity", color="black", position=position_fill(reverse = TRUE), width = .8)+
-  geom_text(aes(y=0.90, label=paste("N = ", labelN, sep="")), 
+  geom_text(aes(y=0.75, label=paste("N = ", labelN, sep="")), 
             vjust=1.6, color="black", size=2.5)+
   scale_fill_manual(values=colors)+
   labs(x= "Protected Range", y= "Frequency", fill="Threat Category")+
@@ -219,12 +220,25 @@ ggsave("Fig 4d.png",
        dpi = 300,
 )
 
-bottom_row <- plot_grid(fig4b, NULL, fig4c, NULL, fig4d, labels = NULL, nrow=1, align="v", axis="b",
-                        rel_widths= c(1, 0,1,0,1))
+#bottom_row <- plot_grid(fig4b, NULL, fig4c, NULL, fig4d, labels = NULL, nrow=1, align="v", axis="b",
+                     #   rel_widths= c(1.5,0,1.5,0,1.5))
 
-bottom_row
+#bottom_row
 
-ggsave("Fig 4 bottom.png",
+fig4 <- plot_grid(fig4a, fig4b, fig4c, fig4d, nrow=2, ncol=2)
+fig4
+
+
+ggsave("Fig 4-composite1.5-1h.png",
+       plot = fig4,
+       path = here::here("outputs", "figures"),
+       width = 200,
+       height = 150,
+       units = "mm",
+       dpi = 300,
+)
+
+  ggsave("Fig 4b bottom-new.png",
        device = png,
        plot = bottom_row,
        path = here::here("outputs", "figures"),
@@ -239,27 +253,21 @@ ggsave("Fig 4 bottom.png",
 
 # Fig 5a ------------------------------------------------------------------
 
-list <- list[list$icmbio.cat!="-",]
-
 list$IUCN <- factor(list$IUCN, levels = c("EX","CR","EN","VU","DD","NT","LC", "-"))
 list$taxa <- factor(list$taxa, levels = c("Amphibians", "Reptiles", "Birds", "Mammals"))
-table(list$IUCN)
-table(list$taxa)
-head(list)
-list<-list[,c(2,8,11,19)]
 
-fig5a <- ggplot2::ggplot(data=list, aes(x=year, y=log(rangesize), color=IUCN, shape=taxa))+
+fig5a <- ggplot2::ggplot(data=list, aes(x=year, y=log(rangesize), fill=IUCN, shape=taxa))+
   geom_point(size=3)+
-  geom_smooth(method="lm", formula=y~x, se=FALSE, aes(group = 1), color="black")+
-  scale_color_manual(values=colors)+
-  scale_shape_manual(values=c(16, 15, 17, 18))+
+  geom_smooth(method="lm", formula=y~x, se=FALSE,  aes(group = 1), color="black")+
+  scale_fill_manual(values=colors)+
+  scale_shape_manual(values=c(22, 21, 24, 23))+
   scale_y_continuous(breaks = c(5, 10, 15))+
-  labs(x= "Year of description", y= bquote("Log species range size " (km^2)), color="Threat Category", shape="Class")+
+  labs(x= "Year of description", y= bquote("Log species range size " (km^2)), fill="Threat Category", shape="Class")+
   theme_classic()+
   theme(legend.position='right',
         axis.title = element_text(size=10, margin = margin(t=0, r=0, b=0, l=0, unit="mm")), 
         axis.text = element_text(size=10))+
-  guides(shape='none')
+  guides(shape='none', fill=guide_legend(override.aes = list(shape=21, linetype=0, color="black")))
 fig5a
 
 # Fig. 5b - Range size versus habitat loss ---------------------------------

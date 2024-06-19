@@ -13,6 +13,8 @@ iucn.class$labelN[iucn.class$class==names(table(list$taxa))] <- table(list$taxa)
 iucn.class$category <- factor(iucn.class$category, levels = c("EX","CR","EN","VU","DD","NT","LC", "-")) 
 iucn.class$class <- factor(iucn.class$class, levels = c("Amphibians", "Reptiles", "Birds", "Mammals"))
 
+#iucn.class$Freq[iucn.class$category%in%c("EX", "CR", "EN", "VU")] <- -1*iucn.class$Freq[iucn.class$category%in%c("EX", "CR", "EN", "VU")]
+
 # Object for fig 4b -------------------------------------------------------
 #ok
 range.iucn <- as.data.frame(table(list$range.cat, list$IUCN))
