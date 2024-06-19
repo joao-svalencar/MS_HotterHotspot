@@ -13,8 +13,11 @@ iucn.class$labelN[iucn.class$class==names(table(list$taxa))] <- table(list$taxa)
 iucn.class$category <- factor(iucn.class$category, levels = c("EX","CR","EN","VU","DD","NT","LC", "-")) 
 iucn.class$class <- factor(iucn.class$class, levels = c("Amphibians", "Reptiles", "Birds", "Mammals"))
 
-#iucn.class$Freq[iucn.class$category%in%c("EX", "CR", "EN", "VU")] <- -1*iucn.class$Freq[iucn.class$category%in%c("EX", "CR", "EN", "VU")]
+#removing NE species
+iucn.class <- iucn.class[iucn.class$category!="-",]
+iucn.class$category <- factor(iucn.class$category, levels = c("EX","CR","EN","VU","DD","NT","LC")) 
 
+str(iucn.class)
 # Object for fig 4b -------------------------------------------------------
 #ok
 range.iucn <- as.data.frame(table(list$range.cat, list$IUCN))
@@ -23,6 +26,10 @@ table(list$range.cat)
 range.iucn$labelN[range.iucn$range.cat==names(table(list$range.cat))] <- table(list$range.cat)
 range.iucn$category <- factor(range.iucn$category, levels = c("EX", "CR","EN","VU","DD","NT","LC", "-"))
 range.iucn$range.cat <- factor(range.iucn$range.cat, levels = c("Restricted", "Partial", "Wide")) 
+
+#removing NE species
+range.iucn <- range.iucn[range.iucn$category!="-",]
+range.iucn$category <- factor(range.iucn$category, levels = c("EX", "CR","EN","VU","DD","NT","LC"))
 
 # Object for fig 4c -------------------------------------------------------
 #ok
@@ -41,6 +48,10 @@ names(hab.cat) <- c("loss", "category", "Freq")
 hab.cat$labelN[hab.cat$loss==names(table(list.loss$percNatCat))] <- table(list.loss$percNatCat)
 hab.cat$category <- factor(hab.cat$category, levels = c("EX", "CR","EN","VU","DD","NT","LC", "-")) 
 hab.cat$loss <- factor(hab.cat$loss, levels=c("<30%", "<50%", "<80%", ">80%"))
+
+#removing NE species
+hab.cat <- hab.cat[hab.cat$category!="-",]
+hab.cat$category <- factor(hab.cat$category, levels = c("EX", "CR","EN","VU","DD","NT","LC")) 
 
 # Object for fig 4d -------------------------------------------------------
 
@@ -74,6 +85,9 @@ names(gap.tab) <- c("gap.cat", "iucn", "Freq", "labelN")
 gap.tab$iucn <- factor(gap.tab$iucn, levels = c("EX", "CR","EN","VU","DD","NT","LC", "-"))
 gap.tab$gap.cat <- factor(gap.tab$gap.cat, levels=c("0%", "<1%", "<5%", "<17%", ">17%"))
 
+#removing NE species
+gap.tab <- gap.tab[gap.tab$iucn!="-",]
+gap.tab$iucn <- factor(gap.tab$iucn, levels = c("EX", "CR","EN","VU","DD","NT","LC"))
 
 ################################################################################
 # Filtering species by remaining habitat ----------------------------------

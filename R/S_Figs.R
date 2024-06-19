@@ -85,17 +85,17 @@ colors <- c("#000000","#d6231e", "#fd7e4b","#fae639","#d1d1c5","#cce041","#67c26
 # Fig. 4a - Species threat status -----------------------------------------
 
 fig4a <- ggplot2::ggplot(data=iucn.class, aes(x=class, y=Freq, fill=category))+
-  geom_bar(stat="identity", color = "black", position=position_fill(reverse = TRUE), width = .85)+
-  geom_text(aes(y=0.90, label=paste("N = ", labelN, sep="")), 
+  geom_bar(stat="identity", position=position_fill(reverse = TRUE), width = .8)+
+  geom_text(aes(y=0.9, label=paste("N = ", labelN, sep="")), 
             vjust=1.6, color="black", size=2.5)+
   scale_fill_manual(values=colors)+
   labs(x= "Class", y= "Frequency", fill="Threat Category")+
   scale_y_continuous(expand=c(0,0), breaks = c(0,0.5,1))+
   theme_classic()+
-  theme(aspect.ratio = 1.2/1,
-        axis.title.x = element_blank(),
-        axis.text.x = element_blank(),
-        axis.ticks.x = element_blank(),
+  theme(aspect.ratio = 1/1.2,
+        #axis.title.x = element_blank(),
+        #axis.text.x = element_blank(),
+        #axis.ticks.x = element_blank(),
         #legend.position='bottom',
         legend.position='none',
         legend.direction = "horizontal", 
@@ -112,7 +112,7 @@ fig4a <- ggplot2::ggplot(data=iucn.class, aes(x=class, y=Freq, fill=category))+
 
 fig4a
 
-ggsave("Fig 4a-new.png",
+ggsave("Fig 4a.png",
        device = png,
        plot = fig4a,
        path = here::here("outputs", "figures"),
@@ -126,16 +126,20 @@ ggsave("Fig 4a-new.png",
 #Done
 
 fig4b <- ggplot2::ggplot(data=range.iucn, aes(x=range.cat, y=Freq, fill=category))+
-  geom_bar(stat="identity", color="black", position=position_fill(reverse = TRUE), width = .7)+
-  geom_text(aes(y=0.75, label=paste("N = ", labelN, sep="")), 
+  geom_bar(stat="identity", position=position_fill(reverse = TRUE), width = .7)+
+  geom_text(aes(y=0.9, label=paste("N = ", labelN, sep="")), 
             vjust=1.6, color="black", size=2.5)+
   scale_fill_manual(values=colors)+
   labs(x= "Range Size Category", y= "Frequency", fill="Threat Category")+
   scale_y_continuous(expand=c(0,0), breaks = c(0,0.5,1))+
   scale_x_discrete(expand=c(0.23,0))+
   theme_classic()+
-  theme(aspect.ratio = 1.2/1,
+  theme(aspect.ratio = 1/1.2,
         legend.position='none',
+        axis.title.y = element_blank(),
+        axis.line.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.text.y = element_blank(),
         plot.margin = unit(c(1.5,0,1,1), "mm"),
         axis.title = element_text(size=10, margin = margin(t=0, r=0, b=0, l=0, unit="mm")), 
         axis.text = element_text(size=10))
@@ -156,20 +160,16 @@ ggsave("Fig 4b.png",
 #Done
 
 fig4c <- ggplot2::ggplot(data=hab.cat, aes(x=loss, y=Freq, fill=category))+
-  geom_bar(stat="identity", color="black", position=position_fill(reverse = TRUE), width = .8)+
-  geom_text(aes(y=0.75, label=paste("N = ", labelN, sep="")), 
+  geom_bar(stat="identity", position=position_fill(reverse = TRUE), width = .8)+
+  geom_text(aes(y=0.9, label=paste("N = ", labelN, sep="")), 
             vjust=1.6, color="black", size=2.5)+
   scale_fill_manual(values=colors)+
   labs(x= "Remaining Habitat", y= "Frequency")+
   scale_y_continuous(expand=c(0,0))+
   scale_x_discrete(expand=c(0.15,0))+
   theme_classic()+
-  theme(aspect.ratio = 1.2/1,
+  theme(aspect.ratio = 1/1.2,
         legend.position='none',
-        axis.title.y = element_blank(),
-        axis.line.y = element_blank(),
-        axis.ticks.y = element_blank(),
-        axis.text.y = element_blank(),
         plot.margin = unit(c(1.5,0,1,0), "mm"),
         axis.title = element_text(size=10, margin = margin(t=0, r=0, b=0, l=0, unit="mm")), 
         axis.text = element_text(size=10))
@@ -190,15 +190,15 @@ ggsave("Fig 4c.png",
 ###########################################################################
 
 fig4d <- ggplot2::ggplot(data=gap.tab, aes(x=gap.cat, y=Freq, fill=iucn))+
-  geom_bar(stat="identity", color="black", position=position_fill(reverse = TRUE), width = .8)+
-  geom_text(aes(y=0.75, label=paste("N = ", labelN, sep="")), 
+  geom_bar(stat="identity", position=position_fill(reverse = TRUE), width = .8)+
+  geom_text(aes(y=0.9, label=paste("N = ", labelN, sep="")), 
             vjust=1.6, color="black", size=2.5)+
   scale_fill_manual(values=colors)+
   labs(x= "Protected Range", y= "Frequency", fill="Threat Category")+
   scale_y_continuous(expand=c(0,0))+
   scale_x_discrete(expand=c(0.11, 0))+
   theme_classic()+
-  theme(aspect.ratio = 1.2/1,
+  theme(aspect.ratio = 1/1.2,
         legend.position='none',
         axis.title.y = element_blank(),
         axis.line.y = element_blank(),
@@ -220,30 +220,18 @@ ggsave("Fig 4d.png",
        dpi = 300,
 )
 
-#bottom_row <- plot_grid(fig4b, NULL, fig4c, NULL, fig4d, labels = NULL, nrow=1, align="v", axis="b",
-                     #   rel_widths= c(1.5,0,1.5,0,1.5))
+###########################################################################
+###########################################################################
 
-#bottom_row
-
-fig4 <- plot_grid(fig4a, fig4b, fig4c, fig4d, nrow=2, ncol=2)
+fig4 <- plot_grid(fig4a, fig4b, fig4c, fig4d, nrow=2, ncol=2, align = 'hv',
+                  labels = 'AUTO', label_size=12, hjust=-0.5, vjust=2)
 fig4
 
-
-ggsave("Fig 4-composite1.5-1h.png",
+ggsave("Fig 4-full-2.png",
        plot = fig4,
        path = here::here("outputs", "figures"),
        width = 200,
-       height = 150,
-       units = "mm",
-       dpi = 300,
-)
-
-  ggsave("Fig 4b bottom-new.png",
-       device = png,
-       plot = bottom_row,
-       path = here::here("outputs", "figures"),
-       width = 200,
-       height = 78,
+       height = 200,
        units = "mm",
        dpi = 300,
 )
