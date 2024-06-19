@@ -96,18 +96,17 @@ fig4a <- ggplot2::ggplot(data=iucn.class, aes(x=class, y=Freq, fill=category))+
         #axis.title.x = element_blank(),
         #axis.text.x = element_blank(),
         #axis.ticks.x = element_blank(),
-        #legend.position='bottom',
         legend.position='none',
-        legend.direction = "horizontal", 
-        legend.box = "horizontal",
-        legend.box.margin = margin(t=0, r=0, b=0, l=0, unit="mm"),
-        legend.box.spacing = unit(0, "mm"),
+        #legend.position='right',
+        #legend.direction = "vertical", 
+        #legend.box = "vertical",
+        #legend.box.margin = margin(t=0, r=0, b=0, l=0, unit="mm"),
+        #legend.box.spacing = unit(0, "mm"),
         plot.margin = unit(c(1.5,0,0,1), "mm"),
         axis.title = element_text(size=10, margin = margin(t=0, r=0, b=0, l=0, unit="mm")), 
         axis.text = element_text(size=10))+
   guides(fill = guide_legend(title.position = "top", 
                              title.hjust = 0.5,
-                             nrow=1,
                              label.position = "right")) 
 
 fig4a
@@ -140,7 +139,7 @@ fig4b <- ggplot2::ggplot(data=range.iucn, aes(x=range.cat, y=Freq, fill=category
         axis.line.y = element_blank(),
         axis.ticks.y = element_blank(),
         axis.text.y = element_blank(),
-        plot.margin = unit(c(1.5,0,1,1), "mm"),
+        plot.margin = unit(c(1.5,1,0,0), "mm"),
         axis.title = element_text(size=10, margin = margin(t=0, r=0, b=0, l=0, unit="mm")), 
         axis.text = element_text(size=10))
 
@@ -170,7 +169,7 @@ fig4c <- ggplot2::ggplot(data=hab.cat, aes(x=loss, y=Freq, fill=category))+
   theme_classic()+
   theme(aspect.ratio = 1/1.2,
         legend.position='none',
-        plot.margin = unit(c(1.5,0,1,0), "mm"),
+        plot.margin = unit(c(1,0,0,1), "mm"),
         axis.title = element_text(size=10, margin = margin(t=0, r=0, b=0, l=0, unit="mm")), 
         axis.text = element_text(size=10))
 
@@ -204,7 +203,7 @@ fig4d <- ggplot2::ggplot(data=gap.tab, aes(x=gap.cat, y=Freq, fill=iucn))+
         axis.line.y = element_blank(),
         axis.ticks.y = element_blank(),
         axis.text.y = element_blank(),
-        plot.margin = unit(c(1.5,1,1,0), "mm"),
+        plot.margin = unit(c(1,1,0,0), "mm"),
         axis.title = element_text(size=10, margin = margin(t=0, r=0, b=0, l=0, unit="mm")), 
         axis.text = element_text(size=10))
 
