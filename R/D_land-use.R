@@ -1,3 +1,10 @@
+# Vieira-Alencar et al. Hostspot getting hotter (manuscript)
+
+# LAND-USE DATA PROCESSING ------------------------------------------------
+# This script was used to summarize Google Earth Engine outputs into a single file:
+# "usoInfo.csv"
+# Check C_hgh.R to load it into your workspace
+
 # Creating classification vectors -----------------------------------------
 
 nat <- c("3","4","11","12","23","29","33")
@@ -26,21 +33,21 @@ for(j in 1:length(lulcyear))
   
   for(i in 1:dim(uso)[1])
   {
-    uso$range[i] <- sum(uso[i, 2:22]) #range within Cerrado, according to landuse data
+    uso$range[i] <- sum(uso[i, 2:22]) #range within Cerrado, according to land-use data
   }
   
   # Calculating remaining natural area --------------------------------------
   
   for(i in 1:dim(uso)[1])
   {
-    uso$rangeNat[i] <- sum(uso[i, nat]) #sum of natural areas, according to landuse data
+    uso$rangeNat[i] <- sum(uso[i, nat]) #sum of natural areas, according to land-use data
   }
   
   # Calculating total anthropic area ----------------------------------------
   
   for(i in 1:dim(uso)[1])
   {
-    uso$rangeAnt[i] <- sum(uso[i, ant]) #sum of anthropic areas, according to landuse data
+    uso$rangeAnt[i] <- sum(uso[i, ant]) #sum of anthropic areas, according to land-use data
   }
   
   # Calculating  proportional natural area ----------------------------------
@@ -92,37 +99,6 @@ for(j in 1:length(lulcyear))
 
 head(usoFull)
 
-unique(usoFull$lulcYear) # Check included years
+unique(usoFull$lulcYear) # Checking included years
 
 write.csv(usoFull, here::here("data", "processed", "usoInfo.csv"), row.names = FALSE)
-
-###########################################################################
-# ADDING OTHER VARIABLES OF INTEREST --------------------------------------
-# Find out if it is necessary
-###########################################################################
-
-#head(list)
-# 
-#varInt <- list[,c(5, 8, 9, 11, 18)] #binomial, rangesize, range.cat, year, IUCN
-#head(varInt)
-# 
-# 
-#usoVar <- merge(usoFull, varInt, by="binomial")
-
-#head(usoVar)
-
-#write.csv(usoVar, here::here("data", "processed", "usoInfo.csv"), row.names = FALSE) #file with landuse data per year (2000-2020/5) #same as usoFull
-
-################################################################################
-################################################################################
-
-################################################################################
-# Find out where this data is used in the MS. -----------------------------
-################################################################################
-
-head(usoVar)
-usoM <- usoVar[usoVar$lulcYear%in%c("2000", "2020"),]
-usoM$range.cat <- factor(usoM$range.cat, levels=c("Restricted", "Partial", "Wide"))
-usoM$IUCN <- factor(usoM$IUCN, levels = c("-","CR","EN","VU","DD","NT","LC"))
-tapply(usoM$percNat, INDEX=list(usoM$lulcYear, usoM$IUCN), FUN=mean) #mean percNat per threat category
-?tapply

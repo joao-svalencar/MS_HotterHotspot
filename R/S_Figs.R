@@ -369,6 +369,8 @@ sup2 <- ggplot(data=list, aes(x=(rangesize/10^6)))+
         axis.text = element_text(size=8))+
   labs(x= bquote("Range size "(km^2~x~10^6)), y= "Frequency")
 
+sup2
+
 ggsave("supp_fig_2.png",
        device = png,
        plot = sup2,
