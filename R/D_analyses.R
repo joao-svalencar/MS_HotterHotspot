@@ -1,5 +1,42 @@
-library(ggplot2)
+# Largest PAs Richness ----------------------------------------------------
+head(kba)
+kba_rich <- as.data.frame(table(kba$NAME))
+kba_unique <- kba[!duplicated(kba$NAME),]
 
+head(kba_rich)
+names(kba_rich)[1] <- "NAME"
+
+kba_merge <- merge(kba_rich, kba_unique, by="NAME", )
+head(kba_merge)
+
+kba_merge <- kba_merge[,c(1,2,5:11)]
+names(kba_merge)[2] <- "richness"
+
+# Gap - exploring ---------------------------------------------------------
+head(gap)
+head(list)
+
+list_gap_info <- list[,c(5,9, 18)] #binomial, range category, iucn
+
+gap_explore <- merge(gap, list_gap_info, by="binomial")
+
+sum(gap_explore$prot_perc<=0.17) #296 (87.05%) species with less than 17% protected
+
+table(gap_explore$range.cat[gap_explore$prot_perc<=0.17])
+#Restricted: 129; Partial: 142; Wide: 25
+round((129/296)*100, digits=2) #43.58%
+round((142/296)*100, digits=2) #47.97%
+round((25/296)*100, digits=2) #8.45%
+
+gap_explore$prot_perc[is.na(gap_explore$prot_perc)] <- 0
+sum(gap_explore$prot_perc==0) #51 (15%)
+
+table(gap_explore$range.cat[gap_explore$prot_perc==0])
+#Restricted: 47; Partial: 4
+round((47/51)*100, digits=2) #92.16%
+round((4/51)*100, digits=2)  #7.84%
+
+# Preparing for data analyses ---------------------------------------------
 head(list)
 analyses <- list[,c(1,8,9,18)] #taxa, rangesize, range.cat, IUCN  
 
@@ -9,8 +46,8 @@ analyses$threatened <- NA
 analyses$threatened[analyses$IUCN%in%c("LC", "NT")] <- "No"
 analyses$threatened[analyses$IUCN%in%c("VU", "EN", "CR")] <- "Yes"
 
-analyses <- analyses[analyses$IUCN!="-" & analyses$IUCN!="DD",]
-analyses <- analyses[analyses$IUCN!="-",]
+analyses <- analyses[analyses$IUCN!="-" & analyses$IUCN!="DD",] #all but NA and DD
+analyses <- analyses[analyses$IUCN!="-",] #all but NA
 
 analyses$taxa <- factor(analyses$taxa, levels = c("Amphibians", "Reptiles", "Birds", "Mammals"))
 analyses$IUCN <- factor(analyses$IUCN, levels = c("CR","EN","VU","DD", "NT","LC"))
@@ -19,9 +56,9 @@ analyses$range.cat <- factor(analyses$range.cat, levels = c("Restricted","Partia
 str(analyses)
 
 
-# Range size versus class: Supp 1 -----------------------------------------
+# Range size versus class: Supp ? -----------------------------------------
 
-kruskal.test(rangesize~taxa, data=list)
+kruskal.test(log(rangesize)~taxa, data=list)
 
 # Chisquared test of classes and IUCN categories ------------------------
 
@@ -92,17 +129,5 @@ summary(mod)
 ##############################################################################################################
 ##############################################################################################################
 
-head(kba)
-kba_rich <- as.data.frame(table(kba$NAME))
-kba_unique <- kba[!duplicated(kba$NAME),]
+# Largest PAs richness ----------------------------------------------------
 
-names(kba_rich)[1] <- "NAME"
-
-kba_merge <- merge(kba_rich, kba_unique, by="NAME", )
-head(kba_merge)
-
-kba_merge <- kba_merge[,c(1,2,5:11)]
-names(kba_merge)[2] <- "richness"
-
-write.csv(kba_merge, here::here("outputs", "tables", "kbas.csv"), row.names=FALSE, fileEncoding = "mac")
-?write.csv

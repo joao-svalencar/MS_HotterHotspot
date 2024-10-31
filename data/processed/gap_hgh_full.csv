@@ -51,7 +51,7 @@ Apostolepis flavotorquata,1256330,23339,0.0186,Intersection
 Apostolepis goiasensis,470835,5366,0.0114,Intersection
 Apostolepis intermedia,1425,330,0.2316,Intersection
 Apostolepis kikoi*,1240,,,gapspp
-Apostolepis lineata,367,0,0,Intersection
+Apostolepis lineata,367,0,0,gapspp
 Apostolepis longicaudata,27040,2496,0.0923,Intersection
 Apostolepis nelsonjorgei,73372,2925,0.0399,Intersection
 Apostolepis phillipsae*,736,393,0.534,Intersection
@@ -67,7 +67,7 @@ Atractus albuquerquei,2711519,33701,0.0124,Intersection
 Atractus edioi,370,,,gapspp
 Atractus pantostictus*,940260,19639,0.0209,Intersection
 Atractus spinalis,763,249,0.3263,Intersection
-Atractus stygius*,115675,5,0,Intersection
+Atractus stygius*,115675,5,0,gapspp
 Augastes scutatus,53428,3537,0.0662,Intersection
 Bachia bresslaui,535404,2949,0.0055,Intersection
 Bachia cacerensis,365,,,gapspp
@@ -124,7 +124,7 @@ Conothraupis mesoleuca,144734,1853,0.0128,Intersection
 Coryphaspiza melanotis,3576856,55246,0.0154,Intersection
 Crossodactylus franciscanus*,714,91,0.1275,Intersection
 Crossodactylus trachystomus,33530,2490,0.0743,Intersection
-Ctenomys bicolor,108826,5,0,Intersection
+Ctenomys bicolor,108826,5,0,gapspp
 Ctenomys nattereri,195476,15090,0.0772,Intersection
 Cyanocorax cristatellus,4033939,69579,0.0172,Intersection
 Dendropsophus anataliasiasi,400550,10619,0.0265,Intersection
@@ -251,7 +251,7 @@ Polystictus superciliaris,442086,6555,0.0148,Intersection
 Porphyrospiza caerulescens,3175252,74553,0.0235,Intersection
 Pristimantis dundeei,113765,1843,0.0162,Intersection
 Pristimantis moa*,29032,380,0.0131,Intersection
-Pristimantis ventrigranulosus,13038,0,0,Intersection
+Pristimantis ventrigranulosus,13038,0,0,gapspp
 Proceratophrys bagnoi,926,,,gapspp
 Proceratophrys branti,151905,12781,0.0841,Intersection
 Proceratophrys carranca,363,,,gapspp
