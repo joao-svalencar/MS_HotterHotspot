@@ -78,87 +78,133 @@ round((table(list$range.cat)/340)*100, digits=2)
 #  Partial   Restricted     Wide 
 # 42.94        49.71       7.35 
 
-# Preparing for data analyses ---------------------------------------------
-head(list)
-analyses <- list[,c(1,8,9,18)] #taxa, rangesize, range.cat, IUCN  
+# adding habitat loss info
+usoM <- uso[uso$lulcYear%in%c("2000", "2020"),] #selecting 2000 and 2020 info
 
-# transforming interest variables in factors with specified levels
-head(analyses)
-analyses$range.cat <- factor(analyses$range.cat, levels = c("Restricted","Partial","Wide"))
-analyses$taxa <- factor(analyses$taxa, levels = c("Amphibians", "Reptiles", "Birds", "Mammals"))
-analyses$IUCN <- factor(analyses$IUCN, levels = c("CR","EN","VU","DD", "NT","LC"))
+spp <- unique(usoM$binomial)
+loss <- usoM$rangeNat[usoM$lulcYear==2000]-usoM$rangeNat[usoM$lulcYear==2020] # absolute loss
+percLoss <- loss/usoM$rangeNat[usoM$lulcYear==2000] # percentual loss
 
-# creating a column to classify species as threatened and non-treatened (sensu Borgelt et al. 2022)
-analyses$threatened <- NA
-analyses$threatened[analyses$IUCN%in%c("LC", "NT")] <- "No"
-analyses$threatened[analyses$IUCN%in%c("VU", "EN", "CR")] <- "Yes"
+hab.loss <- as.data.frame(cbind(spp, loss, percLoss))
+hab.loss$loss <- as.numeric(hab.loss$loss)
+hab.loss$percLoss <- round((as.numeric(hab.loss$percLoss))*100, digits=2)
 
-# filtering non-assessed anda DD species
-analyses <- analyses[analyses$IUCN!="-" & analyses$IUCN!="DD",] #all but NA and DD
-analyses <- analyses[analyses$IUCN!="-",] #all but NA
+list <- merge(list, hab.loss, by.x="binomial", by.y="spp",  all.x = TRUE)
 
 # Range size versus class: Supp 2 -----------------------------------------
 
 kruskal.test(log(rangesize)~taxa, data=list)
 #chi-sq: 31.76; df: 3; p-value < 0.001
 
-# checked with text
-
+###########################################################################
 # Exploring habitat loss --------------------------------------------------
+###########################################################################
 
 head(uso)
 unique(uso$binomial) #338 species
 
-usoM <- uso[uso$lulcYear%in%c("2000", "2020"),] #selecting 2000 and 2020 info
+sum(hab.loss$loss>0) #number of species with habitat loss greater than 0 (no loss)
+#294
 
+round((sum(hab.loss$loss>0)/length(unique(usoM$binomial)))*100, digits=2)
+# 86.98% species lost natural habitats  
 
+round(summary(percLoss[percLoss>0])*100, digits=2)
+# mean, min, max habitat loss percentage
 
-usoM$loss <- usoM$rangeNat[usoM$lulcYear==2000]-usoM$rangeNat[usoM$lulcYear==2020]
+abs(round(summary(percLoss[percLoss<=0])*100, digits=2))
+# mean, min, max habitat gain percentage
 
+table(list$range.cat)
+table(list$range.cat[list$loss>0]) #habitat loss in range categories
+# Restricted    Partial       Wide 
+#     129        140           25
 
-#find ot where it was used:
-head(uso)
-#usoVar <- variaveis range.cat e iucn
+round((table(list$range.cat[list$loss>0])/table(list$range.cat))*100, digits=2)
+# Restricted    Partial       Wide 
+#  76.79        96.55       100.00 
 
-usoM <- uso[uso$lulcYear%in%c("2000", "2020"),]
-usoM$range.cat <- factor(usoM$range.cat, levels=c("Restricted", "Partial", "Wide")) #falta add no uso
-usoM$IUCN <- factor(usoM$IUCN, levels = c("-","CR","EN","VU","DD","NT","LC"))
-tapply(usoM$percNat, INDEX=list(usoM$lulcYear, usoM$IUCN), FUN=mean) #mean percNat per threat category
+# Habitat gain ------------------------------------------------------------
+sum(hab.loss$loss<0) #sum of species with marginal habitat gain
+# 39
+round((sum(hab.loss$loss<0)/length(hab.loss$spp))*100, digits=2)
+
+abs(round(summary(percLoss[percLoss<0])*100, digits=2))
+
+###########################################################################
+# Exploring IUCN assessment -----------------------------------------------
+###########################################################################
+
+head(list)
+analyses <- list[,c(2,8,9,18)] #taxa, rangesize, range.cat, IUCN  
+
+# transforming interest variables in factors with specified levels
+head(analyses)
+analyses$range.cat <- factor(analyses$range.cat, levels = c("Restricted","Partial","Wide"))
+analyses$taxa <- factor(analyses$taxa, levels = c("Amphibians", "Reptiles", "Birds", "Mammals"))
+analyses$IUCN <- factor(analyses$IUCN, levels = c("EX", "CR","EN","VU","DD", "NT","LC", "-"))
+
+# creating a column to classify species as threatened and non-treatened
+analyses$threatened <- NA
+analyses$threatened[analyses$IUCN%in%c("LC", "NT")] <- "No"
+analyses$threatened[analyses$IUCN%in%c("EX", "VU", "EN", "CR")] <- "Yes"
+
+table(analyses$taxa, analyses$IUCN, useNA="ifany")
+table(analyses$taxa, analyses$threatened, useNA="ifany")
+
+# proportion of assessed species
+sum(analyses$IUCN!="-", na.rm=TRUE)/length(analyses$taxa) #303/340 assessed species
+
+# proportion of DD species
+round((table(analyses$IUCN)[5]/sum(table(analyses$IUCN)[-8]))*100, digits=2) #33/303
+
+# proportion of threatened species amongst assessed species:
+a <- table(analyses$taxa, analyses$threatened)
+a[1,2]/(a[1,1]+a[1,2]) #prop amphibians 0.1794
+a[2,2]/(a[2,1]+a[2,2]) #prop reptiles 0.1744
+a[3,2]/(a[3,1]+a[3,2]) #prop birds 0.3488372
+a[4,2]/(a[4,1]+a[4,2]) #prop mammals 0.2916
+
+table(analyses$IUCN)
+table(analyses$threatened, useNA = "ifany") #NA is the sum of One EX, DD and non-assessed species
+
+analyses_iucn <- analyses[analyses$IUCN!="-",] # removing not evaluated species
+analyses_iucn$IUCN <- factor(analyses_iucn$IUCN, levels = c("EX","CR","EN","VU","DD","NT","LC")) 
+analyses_iucn$taxa <- factor(analyses_iucn$taxa, levels = c("Amphibians", "Reptiles", "Birds", "Mammals")) 
+
+table(analyses_iucn$threatened, useNA="ifany")
+
+# prop IUCN amphibians
+round((table(analyses_iucn$taxa, analyses_iucn$IUCN)[1,]/sum(table(analyses_iucn$taxa, analyses_iucn$IUCN)[1,]))*100, digits=2)
+#EX    CR    EN    VU    DD    NT    LC 
+#0.00  2.44  7.32  7.32  4.88  5.69 72.36 
+
+# prop IUCN reptiles
+round((table(analyses_iucn$taxa, analyses_iucn$IUCN)[2,]/sum(table(analyses_iucn$taxa, analyses_iucn$IUCN)[2,]))*100, digits=2)
+#EX    CR    EN    VU    DD    NT    LC 
+#0.00  2.88  4.81  6.73 17.31  2.88 65.38 
+
+# prop IUCN Birds
+round((table(analyses_iucn$taxa, analyses_iucn$IUCN)[3,]/sum(table(analyses_iucn$taxa, analyses_iucn$IUCN)[3,]))*100, digits=2)
+#EX    CR    EN    VU    DD    NT    LC 
+#0.00  2.33 11.63 20.93  0.00 18.60 46.51 
+
+# prop IUCN Mammals
+round((table(analyses_iucn$taxa, analyses_iucn$IUCN)[4,]/sum(table(analyses_iucn$taxa, analyses_iucn$IUCN)[4,]))*100, digits=2)
+#EX    CR    EN    VU    DD    NT    LC 
+#3.03  0.00 15.15  3.03 27.27  6.06 45.45
 
 # Chisquared test of classes and IUCN categories ------------------------
+chisq.test(analyses_iucn$taxa, analyses_iucn$IUCN) # with DD
 
-chisq.test(analyses$taxa, analyses$IUCN) #including DD
-chisq.test(analyses$taxa, analyses$threatened)
+analyses_iucn_noDD <- analyses_iucn[analyses_iucn$IUCN!="DD",] #removing 33 DD species; N=270
+chisq.test(analyses_iucn_noDD$taxa, analyses_iucn_noDD$threatened) # without DD
 
-#capture.output(chisq, file = here::here("outputs", "tests", "chisq_class_threat.txt"))
+table(analyses_iucn$range.cat, analyses_iucn$IUCN)
 
-table(analyses$taxa, analyses$IUCN)
-
-a <- table(analyses$taxa, analyses$threatened)
-
-#threatened
-a[1,2]/(a[1,1]+a[1,2]) #prop amphibians 0.03389831
-a[2,2]/(a[2,1]+a[2,2]) #prop reptiles 0.07826087
-a[3,2]/(a[3,1]+a[3,2]) #prop birds 0.422222
-a[4,2]/(a[4,1]+a[4,2]) #prop mammals 0.3783784
-
-#data-deficient IUCN
-11/(1+0+3+11+5+98) #amphibians 0.09322034
-18/(1+5+3+18+7+81) #reptiles 0.1565217
-0 #birds
-4/(1+9+4+4+1+18) #mammals 0.1081081
-
-#data-deficient IUCN
-#36/(3+36+0+0+41+2+0) #amphibians 0.4390244
-#17/(3+17+5+0+20+8+9) #reptiles 0.2741935
-#0 #birds
-#7/(6+0+7+5+1+15+2+1) #mammals 0.1891892
-
-
-# Espécies diferentes tamanho de range tendem a ter diferentes categorias de ameaça?
-
-kruskal.test(rangesize~IUCN, data=analyses)
-kruskal.test(rangesize~threatened, data=analyses)
+# range-size versus IUCN categories
+kruskal.test(rangesize~IUCN, data=analyses_iucn)
+kruskal.test(rangesize~threatened, data=analyses_iucn_noDD)
 
 # Espécies ameçadas x não ameaçadas tendem a ter menos habitat remanescente?
 
@@ -190,6 +236,4 @@ summary(mod)
 
 ##############################################################################################################
 ##############################################################################################################
-
-# Largest PAs richness ----------------------------------------------------
 

@@ -7,17 +7,20 @@ round(apply(table(list$IUCN, list$taxa),2,function(x){x/sum(x)})*100, digits=2)
 
 # Object for fig 4a -------------------------------------------------------
 #ok
+
+sum(table(list$taxa, list$IUCN))
+unique(list)
 iucn.class <- as.data.frame(table(list$taxa, list$IUCN))
 names(iucn.class)[c(1,2)] <- c("class", "category")
-iucn.class$labelN[iucn.class$class==names(table(list$taxa))] <- table(list$taxa)
-iucn.class$category <- factor(iucn.class$category, levels = c("EX","CR","EN","VU","DD","NT","LC", "-")) 
-iucn.class$class <- factor(iucn.class$class, levels = c("Amphibians", "Reptiles", "Birds", "Mammals"))
 
 #removing NE species
 iucn.class <- iucn.class[iucn.class$category!="-",]
-iucn.class$category <- factor(iucn.class$category, levels = c("EX","CR","EN","VU","DD","NT","LC")) 
 
-str(iucn.class)
+iucn.class$labelN[iucn.class$class==names(table(list$taxa))] <- table(list$taxa[list$IUCN!="-"])
+iucn.class$category <- factor(iucn.class$category, levels = c("EX","CR","EN","VU","DD","NT","LC")) 
+iucn.class$class <- factor(iucn.class$class, levels = c("Amphibians", "Reptiles", "Birds", "Mammals"))
+
+
 # Object for fig 4b -------------------------------------------------------
 #ok
 range.iucn <- as.data.frame(table(list$range.cat, list$IUCN))
