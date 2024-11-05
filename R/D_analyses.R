@@ -203,8 +203,15 @@ chisq.test(analyses_iucn_noDD$taxa, analyses_iucn_noDD$threatened) # without DD
 table(analyses_iucn$range.cat, analyses_iucn$IUCN)
 
 # range-size versus IUCN categories
-kruskal.test(rangesize~IUCN, data=analyses_iucn)
+analyses_iucn_noDD$threatened <- factor(analyses_iucn_noDD$threatened, levels=c("No", "Yes"))
+analyses_iucn$threatened <- factor(analyses_iucn$threatened, levels=c("No", "Yes"))
+
 kruskal.test(rangesize~threatened, data=analyses_iucn_noDD)
+kruskal.test(rangesize~IUCN, data=analyses_iucn)
+
+boxplot(log(rangesize)~threatened, data=analyses_iucn_noDD)
+boxplot(log(rangesize)~IUCN, data=analyses_iucn)
+head(analyses_iucn_noDD)
 
 # Espécies ameçadas x não ameaçadas tendem a ter menos habitat remanescente?
 
