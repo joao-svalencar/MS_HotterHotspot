@@ -80,7 +80,7 @@ ggsave("Fig 2.png",
 
 # Fig. 4 Color ------------------------------------------------------------
 
-colors <- c("#000000","#d6231e", "#fd7e4b","#fae639","#d1d1c5","#cce041","#67c262", "#FFFFFF")
+colors <- c("#000000","#d6231e", "#fd7e4b","#fae639","#d1d1c5","#cce041","#67c262")
 
 # Fig. 4a - Species threat status -----------------------------------------
 
@@ -188,7 +188,7 @@ ggsave("Fig 4c.png",
 ###########################################################################
 ###########################################################################
 
-fig4d <- ggplot2::ggplot(data=gap.tab, aes(x=gap.cat, y=Freq, fill=iucn))+
+fig4d <- ggplot2::ggplot(data=gap.tab, aes(x=gap.cat, y=Freq, fill=IUCN))+
   geom_bar(stat="identity", position=position_fill(reverse = TRUE), width = .8)+
   geom_text(aes(y=0.9, label=paste("N = ", labelN, sep="")), 
             vjust=1.6, color="black", size=2.5)+
@@ -381,11 +381,11 @@ ggsave("supp_fig_2.png",
        dpi = 300,
 )
 
-# Supp. 3 - Range-size versus ICMBio Categories ---------------------------
-
+# Supp. 3 - Range-size versus IUCN Categories ---------------------------
+plots_iucn <- analyses_iucn[analyses_iucn$IUCN!="EX",]
 colors <- c("#d6231e", "#fd7e4b","#fae639","#d1d1c5", "#cce041","#67c262")
 
-sup3 <- ggplot2::ggplot(data=analyses, aes(x=icmbio.cat, y=log(rangesize),color=icmbio.cat))+
+sup3 <- ggplot2::ggplot(data=plots_iucn, aes(x=IUCN, y=log(rangesize),color=IUCN))+
   geom_point(position = position_jitter(.2))+
   scale_color_manual(values=colors)+
   labs(x= "Threat Categories" , y= bquote("Log species range size "(km^2)), color="Threat Category")+
@@ -407,11 +407,11 @@ ggsave("supp_fig_3.png",
        dpi = 300,
 )
 
-# Supp. 4 - Percentage of natural habitat versus ICMBio Categories --------
-
+# Supp. 4 - Percentage of natural habitat versus IUCN Categories --------
+plots_iucn <- analyses_iucn[analyses_iucn$IUCN!="EX",]
 colors <- c("#d6231e", "#fd7e4b","#fae639","#d1d1c5", "#cce041","#67c262")
 
-sup4 <- ggplot2::ggplot(data=analyses, aes(x=icmbio.cat, y=percNat,color=icmbio.cat))+
+sup4 <- ggplot2::ggplot(data=plots_iucn, aes(x=IUCN, y=percNat,color=IUCN))+
   geom_point(position=position_jitter(.2))+
   scale_color_manual(values=colors)+
   labs(x= "Threat Categories" , y= "Percentage of Remaining Habitat", color="Threat Category")+
@@ -433,9 +433,11 @@ ggsave("supp_fig_4.png",
        dpi = 300,
 )
 
-# Supp. 5 - Percentage of protected range versus ICMBio Categories --------
+# Supp. 5 - Percentage of protected range versus IUCN Categories --------
+plots_iucn <- analyses_iucn[analyses_iucn$IUCN!="EX",]
+colors <- c("#d6231e", "#fd7e4b","#fae639","#d1d1c5", "#cce041","#67c262")
 
-sup5 <- ggplot2::ggplot(data=analyses, aes(x=icmbio.cat, y=prot_perc,color=icmbio.cat))+
+sup5 <- ggplot2::ggplot(data=plots_iucn, aes(x=IUCN, y=prot_perc,color=IUCN))+
   geom_point(position=position_jitter(.4), size=2)+
   scale_color_manual(values=colors)+
   labs(x= "Threat Categories" , y= "Percentage of Protected Range", color="Threat Category")+

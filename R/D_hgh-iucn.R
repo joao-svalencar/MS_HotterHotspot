@@ -9,7 +9,7 @@ round(apply(table(list$IUCN, list$taxa),2,function(x){x/sum(x)})*100, digits=2)
 #ok
 
 sum(table(list$taxa, list$IUCN))
-unique(list)
+
 iucn.class <- as.data.frame(table(list$taxa, list$IUCN))
 names(iucn.class)[c(1,2)] <- c("class", "category")
 
@@ -25,14 +25,17 @@ iucn.class$class <- factor(iucn.class$class, levels = c("Amphibians", "Reptiles"
 #ok
 range.iucn <- as.data.frame(table(list$range.cat, list$IUCN))
 names(range.iucn) <- c("range.cat", "category", "Freq")
-table(list$range.cat)
-range.iucn$labelN[range.iucn$range.cat==names(table(list$range.cat))] <- table(list$range.cat)
-range.iucn$category <- factor(range.iucn$category, levels = c("EX", "CR","EN","VU","DD","NT","LC", "-"))
-range.iucn$range.cat <- factor(range.iucn$range.cat, levels = c("Restricted", "Partial", "Wide")) 
 
 #removing NE species
 range.iucn <- range.iucn[range.iucn$category!="-",]
 range.iucn$category <- factor(range.iucn$category, levels = c("EX", "CR","EN","VU","DD","NT","LC"))
+
+range.iucn$labelN[range.iucn$range.cat==names(table(list.noNE$range.cat))] <- table(list.noNE$range.cat)
+range.iucn$range.cat <- factor(range.iucn$range.cat, levels = c("Restricted", "Partial", "Wide")) 
+
+head(range.iucn)
+list.noNE <- list[list$IUCN!="-",]
+table(list.noNE$range.cat, list.noNE$IUCN)
 
 # Object for fig 4c -------------------------------------------------------
 #ok
@@ -42,19 +45,20 @@ uso2020$percNatCat[uso2020$percNat>0.80] <- ">80%"
 uso2020$percNatCat[uso2020$percNat<=0.80] <- "<80%"
 uso2020$percNatCat[uso2020$percNat<=0.50] <- "<50%"
 uso2020$percNatCat[uso2020$percNat<=0.30] <- "<30%"
+head(uso2020)
 
-sppNatCat <- uso2020[,c(1, 11)] #binomial, percNatCat
+sppNat <- uso2020[,c(1, 5, 11)] #binomial, percNat, percNatCat ## used in D_analyses.R
 
-list.loss <- merge(list, sppNatCat, by="binomial")
-hab.cat <- as.data.frame(table(list.loss$percNatCat, list.loss$IUCN))
+list.loss <- merge(list, sppNat, by="binomial") 
+list.loss.noNE <- list.loss[list.loss$IUCN!="-",]
+
+hab.cat <- as.data.frame(table(list.loss.noNE$percNatCat, list.loss.noNE$IUCN))
 names(hab.cat) <- c("loss", "category", "Freq")
-hab.cat$labelN[hab.cat$loss==names(table(list.loss$percNatCat))] <- table(list.loss$percNatCat)
-hab.cat$category <- factor(hab.cat$category, levels = c("EX", "CR","EN","VU","DD","NT","LC", "-")) 
-hab.cat$loss <- factor(hab.cat$loss, levels=c("<30%", "<50%", "<80%", ">80%"))
 
 #removing NE species
-hab.cat <- hab.cat[hab.cat$category!="-",]
 hab.cat$category <- factor(hab.cat$category, levels = c("EX", "CR","EN","VU","DD","NT","LC")) 
+hab.cat$labelN[hab.cat$loss==names(table(list.loss.noNE$percNatCat))] <- table(list.loss.noNE$percNatCat)
+hab.cat$loss <- factor(hab.cat$loss, levels=c("<30%", "<50%", "<80%", ">80%"))
 
 # Object for fig 4d -------------------------------------------------------
 
@@ -73,9 +77,15 @@ gap$gap.cat[gap$prot_perc==0] <- "0%"
 table(gap$gap.cat)
 
 head(list)
-iucn.cat <- list[,c(5,18)]
+head(gap)
+sppGap <- gap[, c(1,4)] #binomial, prot_perc ## used in D_analyses.R
 
+iucn.cat <- list[,c(5,18)]
 gap <- merge(gap, iucn.cat, by="binomial")
+
+#removing NE species
+gap <- gap[gap$IUCN!="-",]
+gap$IUCN <- factor(gap$IUCN, levels = c("EX", "CR","EN","VU","DD","NT","LC"))
 
 gap.tab <- as.data.frame(table(gap$IUCN, gap$gap.cat))
 labelN <- as.data.frame(table(gap$gap.cat))
@@ -84,13 +94,8 @@ names(labelN) <- c("Var2", "labelN")
 head(gap.tab)
 gap.tab <- merge(gap.tab, labelN, by="Var2")
 
-names(gap.tab) <- c("gap.cat", "iucn", "Freq", "labelN")
-gap.tab$iucn <- factor(gap.tab$iucn, levels = c("EX", "CR","EN","VU","DD","NT","LC", "-"))
+names(gap.tab) <- c("gap.cat", "IUCN", "Freq", "labelN")
 gap.tab$gap.cat <- factor(gap.tab$gap.cat, levels=c("0%", "<1%", "<5%", "<17%", ">17%"))
-
-#removing NE species
-gap.tab <- gap.tab[gap.tab$iucn!="-",]
-gap.tab$iucn <- factor(gap.tab$iucn, levels = c("EX", "CR","EN","VU","DD","NT","LC"))
 
 ################################################################################
 # Filtering species by remaining habitat ----------------------------------

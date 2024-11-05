@@ -26,7 +26,7 @@ names(kba_merge)[2] <- "richness"
 head(gap)
 head(list)
 
-list_gap_info <- list[,c(5,9, 18)] #binomial, range category, iucn
+list_gap_info <- list[,c(5,9,18)] #binomial, range category, iucn
 
 gap_explore <- merge(gap, list_gap_info, by="binomial")
 
@@ -136,12 +136,12 @@ abs(round(summary(percLoss[percLoss<0])*100, digits=2))
 ###########################################################################
 
 head(list)
-analyses <- list[,c(2,8,9,18)] #taxa, rangesize, range.cat, IUCN  
+analyses <- list[,c(1,5,8,9,11,18)] #taxa, binomial, rangesize, range.cat, year, IUCN  
 
 # transforming interest variables in factors with specified levels
 head(analyses)
-analyses$range.cat <- factor(analyses$range.cat, levels = c("Restricted","Partial","Wide"))
 analyses$taxa <- factor(analyses$taxa, levels = c("Amphibians", "Reptiles", "Birds", "Mammals"))
+analyses$range.cat <- factor(analyses$range.cat, levels = c("Restricted","Partial","Wide"))
 analyses$IUCN <- factor(analyses$IUCN, levels = c("EX", "CR","EN","VU","DD", "NT","LC", "-"))
 
 # creating a column to classify species as threatened and non-treatened
@@ -149,11 +149,13 @@ analyses$threatened <- NA
 analyses$threatened[analyses$IUCN%in%c("LC", "NT")] <- "No"
 analyses$threatened[analyses$IUCN%in%c("EX", "VU", "EN", "CR")] <- "Yes"
 
+analyses$threatened <- factor(analyses$threatened, levels=c("No", "Yes"))
+
 table(analyses$taxa, analyses$IUCN, useNA="ifany")
 table(analyses$taxa, analyses$threatened, useNA="ifany")
 
 # proportion of assessed species
-sum(analyses$IUCN!="-", na.rm=TRUE)/length(analyses$taxa) #303/340 assessed species
+round((sum(analyses$IUCN!="-", na.rm=TRUE)/length(analyses$taxa))*100, digits=2) #303/340 assessed species
 
 # proportion of DD species
 round((table(analyses$IUCN)[5]/sum(table(analyses$IUCN)[-8]))*100, digits=2) #33/303
@@ -169,10 +171,10 @@ table(analyses$IUCN)
 table(analyses$threatened, useNA = "ifany") #NA is the sum of One EX, DD and non-assessed species
 
 analyses_iucn <- analyses[analyses$IUCN!="-",] # removing not evaluated species
+table(analyses_iucn$IUCN)
 analyses_iucn$IUCN <- factor(analyses_iucn$IUCN, levels = c("EX","CR","EN","VU","DD","NT","LC")) 
-analyses_iucn$taxa <- factor(analyses_iucn$taxa, levels = c("Amphibians", "Reptiles", "Birds", "Mammals")) 
 
-table(analyses_iucn$threatened, useNA="ifany")
+table(analyses_iucn$threatened, useNA="ifany") #NA = Data Deficient species
 
 # prop IUCN amphibians
 round((table(analyses_iucn$taxa, analyses_iucn$IUCN)[1,]/sum(table(analyses_iucn$taxa, analyses_iucn$IUCN)[1,]))*100, digits=2)
@@ -198,48 +200,68 @@ round((table(analyses_iucn$taxa, analyses_iucn$IUCN)[4,]/sum(table(analyses_iucn
 chisq.test(analyses_iucn$taxa, analyses_iucn$IUCN) # with DD
 
 analyses_iucn_noDD <- analyses_iucn[analyses_iucn$IUCN!="DD",] #removing 33 DD species; N=270
-chisq.test(analyses_iucn_noDD$taxa, analyses_iucn_noDD$threatened) # without DD
 
-table(analyses_iucn$range.cat, analyses_iucn$IUCN)
+chisq.test(analyses_iucn_noDD$taxa, analyses_iucn_noDD$threatened) # without DD
 
 # range-size versus IUCN categories
 analyses_iucn_noDD$threatened <- factor(analyses_iucn_noDD$threatened, levels=c("No", "Yes"))
-analyses_iucn$threatened <- factor(analyses_iucn$threatened, levels=c("No", "Yes"))
+
+shapiro.test(analyses_iucn_noDD$rangesize) # not normal - non-parametric test required
 
 kruskal.test(rangesize~threatened, data=analyses_iucn_noDD)
 kruskal.test(rangesize~IUCN, data=analyses_iucn)
 
-boxplot(log(rangesize)~threatened, data=analyses_iucn_noDD)
-boxplot(log(rangesize)~IUCN, data=analyses_iucn)
-head(analyses_iucn_noDD)
+# remaining habitat versus IUCN categories --------------------------------
 
-# Espécies ameçadas x não ameaçadas tendem a ter menos habitat remanescente?
+#sppNat created in D_hgh-iucn.R line 47
+analyses_iucn <- merge(analyses_iucn, sppNat, by="binomial") # remove Hylaeamys acritus and Juscelinomys huanchacae, see text for details
+analyses_iucn_noDD <- analyses_iucn[analyses_iucn$IUCN!="DD",] # removing 31 DD species; N=270
 
-kruskal.test(percNat~IUCN, data=analyses)
-kruskal.test(percNat~threatened, data=analyses)
+analyses_iucn_noDD$threatened <- factor(analyses_iucn_noDD$threatened, levels=c("No", "Yes"))
 
-# Ou menos area protegida?
+#normality test
+shapiro.test(analyses_iucn_noDD$percNat) # not normal - non-parametric test required
 
-kruskal.test(prot_perc~IUCN, data=analyses)
-kruskal.test(prot_perc~threatened, data=analyses)
+kruskal.test(percNat~threatened, data=analyses_iucn_noDD)
+kruskal.test(percNat~IUCN, data=analyses_iucn)
 
+# range protection versus IUCN categories ---------------------------------
+# recreating analyses_iucn before continuing (re-add Hylaeamys acritus and Juscelinomys huanchacae)
+analyses_iucn <- analyses[analyses$IUCN!="-",] # removing not evaluated species
+head(analyses_iucn)
+
+analyses_iucn <- merge(analyses_iucn, sppGap, by="binomial")
+analyses_iucn_noDD <- analyses_iucn[analyses_iucn$IUCN!="DD",] # removing 33 DD species; N=270
+
+analyses_iucn_noDD$threatened <- factor(analyses_iucn_noDD$threatened, levels=c("No", "Yes"))
+
+str(analyses_iucn)
+str(analyses_iucn_noDD)
+
+# normality test
+shapiro.test(analyses_iucn_noDD$prot_perc) # not normal - non-parametric test required
+
+kruskal.test(prot_perc~threatened, data=analyses_iucn_noDD)
+kruskal.test(prot_perc~IUCN, data=analyses_iucn)
+
+############################################################################
+# Section 3.5 - Vulnerability, Irreplaceability and Discovery -------------
+############################################################################
+
+# range size versus year of description -----------------------------------
 # Espécies descritas recentemente tendem a ter maior probabilidade de extinção?
 
-mod <- lm(log(rangesize)~year, data=analyses)
-summary(mod)
+head(analyses)
+str(analyses)
+
+# normality test
+shapiro.test(analyses$rangesize) #not normal - non-parametric test required
+
+# Spearman's rank correlation rho
+cor.test(x=analyses$year, y=analyses$rangesize, method = 'spearman')
 
 ## Outra pergunta seria testar se as sp ameacadas diferem ou não em termos de data de descrição.
-  ## tb da pra usar DD X Dados Suficientes, em outra pergunta. As DDs tendem a ser as sp descritas agora (provavel que sim)
-
-
-##############################################################################################################
-##############################################################################################################
-head(list)
-gap$prop <- cbind(sucess = gap$protected_range, fail = gap$rangesize-gap$protected_range)
-
-mod <- glm(prop~IUCN, family=binomial, data=gap)
-
-summary(mod)
+## tb da pra usar DD X Dados Suficientes, em outra pergunta. As DDs tendem a ser as sp descritas agora (provavel que sim)
 
 ##############################################################################################################
 ##############################################################################################################
