@@ -93,16 +93,20 @@ fig4a <- ggplot2::ggplot(data=iucn.class, aes(x=class, y=Freq, fill=category))+
   scale_y_continuous(expand=c(0,0), breaks = c(0,0.5,1))+
   theme_classic()+
   theme(aspect.ratio = 1/1.2,
-        #axis.title.x = element_blank(),
-        #axis.text.x = element_blank(),
-        #axis.ticks.x = element_blank(),
+        plot.background = element_rect(fill='transparent', color=NA),
+        panel.background = element_rect(fill='transparent'),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        legend.background = element_rect(fill='transparent'),
+        legend.box.background = element_rect(fill='transparent', colour = "transparent"),
         legend.position='none',
-        #legend.position='right',
-        #legend.direction = "vertical", 
-        #legend.box = "vertical",
-        #legend.box.margin = margin(t=0, r=0, b=0, l=0, unit="mm"),
-        #legend.box.spacing = unit(0, "mm"),
-        plot.margin = unit(c(1.5,0,0,1), "mm"),
+        legend.direction = "vertical", 
+        legend.box.margin = margin(t=0, r=0, b=0, l=0, unit="mm"),
+        legend.box.spacing = unit(0, "mm"),
+        legend.key.size = unit(10, "mm"),
+        legend.text = element_text(size = 12),
+        legend.title = element_text(size = 14),
+        plot.margin = unit(c(1.5,0,0,0), "mm"),
         axis.title = element_text(size=10, margin = margin(t=0, r=0, b=0, l=0, unit="mm")), 
         axis.text = element_text(size=10))+
   guides(fill = guide_legend(title.position = "top", 
@@ -111,12 +115,15 @@ fig4a <- ggplot2::ggplot(data=iucn.class, aes(x=class, y=Freq, fill=category))+
 
 fig4a
 
+legend <- cowplot::get_legend(fig4a)
+plot(legend)
+
 ggsave("Fig 4a.png",
        device = png,
        plot = fig4a,
        path = here::here("outputs", "figures"),
-       width = 168,
-       height = 120,
+       width = 56,
+       height = 78,
        units = "mm",
        dpi = 300,
 )
@@ -134,12 +141,15 @@ fig4b <- ggplot2::ggplot(data=range.iucn, aes(x=range.cat, y=Freq, fill=category
   scale_x_discrete(expand=c(0.23,0))+
   theme_classic()+
   theme(aspect.ratio = 1/1.2,
-        legend.position='none',
+        plot.background = element_rect(fill='transparent', color=NA),
+        panel.background = element_rect(fill='transparent'),
+        legend.position='none', legend.key.spacing = unit(3,"mm"),
+        legend.box.spacing=unit(5, "mm"),
         axis.title.y = element_blank(),
         axis.line.y = element_blank(),
         axis.ticks.y = element_blank(),
         axis.text.y = element_blank(),
-        plot.margin = unit(c(1.5,1,0,0), "mm"),
+        plot.margin = unit(c(1.5,0,0,0), "mm"),
         axis.title = element_text(size=10, margin = margin(t=0, r=0, b=0, l=0, unit="mm")), 
         axis.text = element_text(size=10))
 
@@ -168,8 +178,10 @@ fig4c <- ggplot2::ggplot(data=hab.cat, aes(x=loss, y=Freq, fill=category))+
   scale_x_discrete(expand=c(0.15,0))+
   theme_classic()+
   theme(aspect.ratio = 1/1.2,
+        plot.background = element_rect(fill='transparent', color=NA),
+        panel.background = element_rect(fill='transparent'),
         legend.position='none',
-        plot.margin = unit(c(1,0,0,1), "mm"),
+        plot.margin = unit(c(0,0,0,0), "mm"),
         axis.title = element_text(size=10, margin = margin(t=0, r=0, b=0, l=0, unit="mm")), 
         axis.text = element_text(size=10))
 
@@ -193,17 +205,20 @@ fig4d <- ggplot2::ggplot(data=gap.tab, aes(x=gap.cat, y=Freq, fill=IUCN))+
   geom_text(aes(y=0.9, label=paste("N = ", labelN, sep="")), 
             vjust=1.6, color="black", size=2.5)+
   scale_fill_manual(values=colors)+
-  labs(x= "Protected Range", y= "Frequency", fill="Threat Category")+
+  labs(x= "Protected Range", y= "Frequency")+
   scale_y_continuous(expand=c(0,0))+
   scale_x_discrete(expand=c(0.11, 0))+
   theme_classic()+
+  guides(fill = guide_legend(override.aes= list(alpha = 0, color = "white"))) +
   theme(aspect.ratio = 1/1.2,
         legend.position='none',
+        plot.background = element_rect(fill='transparent', color=NA),
+        panel.background = element_rect(fill='transparent'),
         axis.title.y = element_blank(),
         axis.line.y = element_blank(),
         axis.ticks.y = element_blank(),
         axis.text.y = element_blank(),
-        plot.margin = unit(c(1,1,0,0), "mm"),
+        plot.margin = unit(c(0,0,0,0), "mm"),
         axis.title = element_text(size=10, margin = margin(t=0, r=0, b=0, l=0, unit="mm")), 
         axis.text = element_text(size=10))
 
@@ -222,17 +237,26 @@ ggsave("Fig 4d.png",
 ###########################################################################
 ###########################################################################
 
-fig4 <- plot_grid(fig4a, fig4b, fig4c, fig4d, nrow=2, ncol=2, align = 'hv',
-                  labels = 'AUTO', label_size=12, hjust=-0.5, vjust=2)
+fig4 <- plot_grid(fig4a, fig4b, fig4c, fig4d, 
+                  nrow=2, ncol=2, align = 'hv',
+                  labels = 'auto', label_size=10, 
+                  vjust=7,hjust=-5)
 fig4
 
-ggsave("Fig 4-full-2.png",
-       plot = fig4,
+fig4_full <- plot_grid(fig4, legend, nrow=1, rel_widths = c(5,1))
+
+fig4_full
+
+?plot_grid
+
+ggsave("Fig 4.png",
+       plot = fig4_full,
        path = here::here("outputs", "figures"),
-       width = 200,
-       height = 200,
+       width = 250,
+       height = 250,
        units = "mm",
        dpi = 300,
+       bg="transparent"
 )
 
 ###########################################################################
@@ -240,16 +264,18 @@ ggsave("Fig 4-full-2.png",
 
 # Fig 5a ------------------------------------------------------------------
 
-list$IUCN <- factor(list$IUCN, levels = c("EX","CR","EN","VU","DD","NT","LC", "-"))
-list$taxa <- factor(list$taxa, levels = c("Amphibians", "Reptiles", "Birds", "Mammals"))
+list.noNE <- list[list$IUCN!="-",]
+list.noNE$IUCN <- factor(list.noNE$IUCN, levels = c("EX","CR","EN","VU","DD","NT","LC"))
+list.noNE$taxa <- factor(list.noNE$taxa, levels = c("Amphibians", "Reptiles", "Birds", "Mammals"))
+colors <- c("#000000","#d6231e", "#fd7e4b","#fae639","#d1d1c5","#cce041","#67c262")
 
-fig5a <- ggplot2::ggplot(data=list, aes(x=year, y=log(rangesize), fill=IUCN, shape=taxa))+
+fig5a <- ggplot2::ggplot(data=list.noNE, aes(x=year, y=log(rangesize), color=IUCN, shape=taxa))+
   geom_point(size=3)+
   geom_smooth(method="lm", formula=y~x, se=FALSE,  aes(group = 1), color="black")+
-  scale_fill_manual(values=colors)+
-  scale_shape_manual(values=c(22, 21, 24, 23))+
+  scale_color_manual(values=colors)+
+  scale_shape_manual(values=c(16, 15, 17, 18))+
   scale_y_continuous(breaks = c(5, 10, 15))+
-  labs(x= "Year of description", y= bquote("Log species range size " (km^2)), fill="Threat Category", shape="Class")+
+  labs(x= "Year of description", y= bquote("Log species range size " (km^2)), color="Threat Category", shape="Class")+
   theme_classic()+
   theme(legend.position='right',
         axis.title = element_text(size=10, margin = margin(t=0, r=0, b=0, l=0, unit="mm")), 
@@ -258,31 +284,29 @@ fig5a <- ggplot2::ggplot(data=list, aes(x=year, y=log(rangesize), fill=IUCN, sha
 fig5a
 
 # Fig. 5b - Range size versus habitat loss ---------------------------------
-# file: outputs, hghInfo.csv
 
 head(uso)
-names(uso)[2] <- "binomial"
-unique(uso$binomial)
+unique(uso$binomial) #338 spp
 
 head(list)
 list$binomial
-list <- list[,c(1,2)] #adding taxa
+taxa_uso <- list[,c(1,5, 18)] #taxa, binomial, IUCN
 
-uso <- merge(uso, list, by="binomial")
-
+uso <- merge(uso, taxa_uso, by="binomial")
+head(uso)
 uso2020 <- uso[uso$lulcYear==2020,]
 head(uso2020)
 
-uso2020 <- uso2020[uso2020$icmbio.cat!="-",]
+uso2020 <- uso2020[uso2020$IUCN!="-",]
 
-uso2020$icmbio.cat <- factor(uso2020$icmbio.cat, levels = c("CR","EN","VU","DD","NT","LC"))
+uso2020$IUCN <- factor(uso2020$IUCN, levels = c("EX", "CR","EN","VU","DD","NT","LC"))
 uso2020$taxa <- factor(uso2020$taxa, levels = c("Amphibians", "Reptiles", "Birds", "Mammals"))
 
-colors.icmbio <- c("#d6231e", "#fd7e4b","#fae639","#d1d1c5","#cce041","#67c262")
+colors <- c("#000000","#d6231e", "#fd7e4b","#fae639","#d1d1c5","#cce041","#67c262")
 
-fig5b <- ggplot2::ggplot(data=uso2020, aes(x=log(range), y=(1-percNat), color=icmbio.cat, shape=taxa))+
+fig5b <- ggplot2::ggplot(data=uso2020, aes(x=log(range), y=(1-percNat), color=IUCN, shape=taxa))+
   geom_point(size=3)+
-  scale_color_manual(values=colors.icmbio)+
+  scale_color_manual(values=colors)+
   scale_shape_manual(values=c(16, 15, 17, 18))+
   scale_y_continuous(limits = c(0,1), breaks=c(0, 0.5, 1))+
   geom_hline(yintercept = 0.5)+
@@ -295,10 +319,12 @@ fig5b <- ggplot2::ggplot(data=uso2020, aes(x=log(range), y=(1-percNat), color=ic
   guides(color='none')
 fig5b
 
-fig_grid <- plot_grid(fig5a, fig5b, nrow=2, ncol=1, align="v", labels =NULL, axis="l")
+fig_grid <- plot_grid(fig5a, fig5b, nrow=2, ncol=1, align="v", axis="l",
+                      labels ="auto", label_size=10,
+                      label_fontface= "bold")
 fig_grid
 
-ggsave("Fig 5 to edit.png",
+ggsave("Fig 5.png",
        device = png,
        plot = fig_grid,
        path = here::here("outputs", "figures"),
@@ -308,7 +334,9 @@ ggsave("Fig 5 to edit.png",
        dpi = 300,
 )
 
+###########################################################################
 # SUPPLEMENTARY MATERIAL --------------------------------------------------
+###########################################################################
 
 # Supp. 1 - SPPAs area accumulation through time --------------------------
 
@@ -334,7 +362,6 @@ ucs_dec <- as.data.frame(tapply(ucs$REP_AREA, ucs$decade, sum))
 ucs_dec$decade <- rownames(ucs_dec)
 names(ucs_dec)[1] <- "area"
 ucs_dec$areasum <- cumsum(ucs_dec$area)/1000
-
 
 sup1 <- ggplot2::ggplot(data=ucs_dec, aes(x=decade, y=areasum))+
   geom_line(stat="identity", group=1)+

@@ -263,6 +263,30 @@ cor.test(x=analyses$year, y=analyses$rangesize, method = 'spearman')
 ## Outra pergunta seria testar se as sp ameacadas diferem ou não em termos de data de descrição.
 ## tb da pra usar DD X Dados Suficientes, em outra pergunta. As DDs tendem a ser as sp descritas agora (provavel que sim)
 
+###########################################################################
+# Session 4 - Discussion relevant data ------------------------------------
+###########################################################################
+
+# synthesis of taxa and IUCN category
+table(list$taxa, list$IUCN)
+
+apply(table(list$taxa, list$IUCN)[,c(2,4,8)], 1, sum)
+
+round((apply(table(list$taxa, list$IUCN)[,c(2,4,8)], 1, sum)/table(list$taxa))*100, digits=2)
+
+# synthesis of taxa assessed as DD
+table(list$taxa, list$IUCN)[,3]
+
+# proportion of potentially threatened DD species per taxa according to Borgelt et al. 2022
+round(table(list$taxa, list$IUCN)[,3]* c(0.85, 0, 0.61, 0.59))
+
+# percentual increase in threatened species
+round(((sum(round(table(list$taxa, list$IUCN)[,3]* c(0.85, 0, 0.61, 0.59)))*100)/57), digits=2)
+
+# proportion of potentially threatened NE species per taxa according to Borgelt et al. 2022
+round(table(list$taxa, list$IUCN)[,1]*c(0.85, 0, 0.61, 0.59))
+
+
 ##############################################################################################################
 ##############################################################################################################
 
