@@ -3,14 +3,14 @@ library(cowplot)
 
 ###########################################################################
 # Fig. 1 - Endemism levels ------------------------------------------------
-
+head(sppRich)
 sppRich$class <- factor(sppRich$class, levels=c("Amphibians", "Reptiles", "Birds", "Mammals"))
 sppRich$year <- factor(sppRich$year)
 
 sppRich$labNe <- c(NA,NA,"Ne=45", "Ne=124", NA,NA,"Ne=24", "Ne=129", NA,NA,"Ne=29", "Ne=45", NA,NA,"Ne=19", "Ne=42")
 sppRich$labN <- c(NA,NA,"N=150", "N=292", NA,NA,"N=120", "N=419", NA,NA,"N=837", "N=982", NA,NA,"N=161", "N=354")
-sppRich$lab <- sppRich$lab*100
-sppRich$lab_perc <- paste(sppRich$lab, "%")
+sppRich$lab <- round(sppRich$lab*100, digits=2)
+sppRich$lab_perc <- sprintf("%0.2f%%", sppRich$lab)
 lab_pos <- c(NA, NA, 0.38, 0.505, NA, NA, 0.28, 0.39, NA, NA, 0.1146, 0.1358, NA, NA, 0.198, 0.198)
 sppRich$lab_pos <- lab_pos
 
@@ -41,6 +41,43 @@ fig1
 ggsave("Fig 1.png",
        device = png,
        plot = fig1,
+       path = here::here("outputs", "figures"),
+       width = 168,
+       height = 80,
+       units = "mm",
+       dpi = 300,
+)
+###########################################################################
+# Fig 1 Absolute numbers --------------------------------------------------
+lab_pos_abs <- c(NA, NA, 275, 408, NA, NA, 240, 540, NA, NA, 950, 1107, NA, NA, 280, 470)
+labN_pos <- lab_pos_abs+200
+labNe_pos <- lab_pos_abs+100
+
+fig1_abs <- ggplot2::ggplot(data=sppRich, aes(x=year, y=richness, fill=end))+
+  geom_bar(stat="identity", position=position_stack(reverse = TRUE), width = .7)+
+  facet_grid(~class)+
+  geom_text(aes(y=lab_pos_abs, label=lab_perc), vjust=1.6, 
+            color="black", size=3)+
+  geom_text(aes(y=labNe_pos, label=labNe), vjust=1.6, 
+            color="black", size=3)+
+  geom_text(aes(y=labN_pos, label=labN), vjust=1.6, 
+            color="black", size=3)+
+  labs(x= "Year", y= "Richness")+
+  scale_fill_manual(values=colors.book)+
+  scale_y_continuous(limits=c(0,1350), expand=c(0,0), breaks=c(0,250,500,750,1000,1250))+
+  theme_classic()+
+  theme(#panel.spacing = unit(-1, "lines"),
+    aspect.ratio = 1.3/1,
+    legend.position='none',
+    strip.text.x = element_blank(),
+    axis.title = element_text(size=10, margin = margin(t=0, r=0, b=0, l=0, unit="mm")), 
+    axis.text = element_text(size=10))
+
+fig1_abs
+
+ggsave("Fig 1_abs.png",
+       device = png,
+       plot = fig1_abs,
        path = here::here("outputs", "figures"),
        width = 168,
        height = 80,
