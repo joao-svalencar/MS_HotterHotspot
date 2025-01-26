@@ -1,6 +1,7 @@
 ###########################################################################
 # Vieira-Alencar et al. Hostspot getting hotter (manuscript) --------------
 ###########################################################################
+library(glmmTMB)
 
 ###########################################################################
 # Section 3.3 - Largest PAs Richness --------------------------------------
@@ -36,6 +37,9 @@ gap_explore$prot_perc[is.na(gap_explore$prot_perc)] <- 0
 #species with less than 17% protected
 sum(gap_explore$prot_perc<=0.17) #296 (87.05%) 
 
+#species with less than 30% protected
+sum(gap_explore$prot_perc<=0.30) #314 (92.35%) 
+
 #range-size category x habitat loss
 table(gap_explore$range.cat[gap_explore$prot_perc<=0.17]) 
 #Restricted: 129; Partial: 142; Wide: 25
@@ -67,6 +71,10 @@ round((table(gap_explore$IUCN[gap_explore$prot_perc==0])/51)*100, digits=2)
 round((29/51)*100, digits=2) #56.86%
 #threatened (VU + EN + CR): 4+5+4=13
 round((13/51)*100, digits=2) #25.49%
+round((4/51)*100, digits=2) #VU = 7.84%
+round((5/51)*100, digits=2) #EN = 9.8%
+round((4/51)*100, digits=2) #CR = 7.84%
+
 #not threatened (LC + NT): 8+1=9
 round((9/51)*100, digits=2) #17.65%)
 
@@ -87,7 +95,8 @@ percLoss <- loss/usoM$rangeNat[usoM$lulcYear==2000] # percentual loss
 
 hab.loss <- as.data.frame(cbind(spp, loss, percLoss))
 hab.loss$loss <- as.numeric(hab.loss$loss)
-hab.loss$percLoss <- round((as.numeric(hab.loss$percLoss))*100, digits=2)
+hab.loss$percLoss <- round(as.numeric(hab.loss$percLoss), digits=4)
+#hab.loss$percLoss <- round((as.numeric(hab.loss$percLoss))*100, digits=2)
 
 list <- merge(list, hab.loss, by.x="binomial", by.y="spp",  all.x = TRUE)
 
@@ -101,42 +110,49 @@ kruskal.test(log(rangesize)~taxa, data=list)
 ###########################################################################
 
 head(uso)
-unique(uso$binomial) #338 species
+unique(uso$binomial) #338 species have LULC data
 
-sum(hab.loss$loss>0) #number of species with habitat loss greater than 0 (no loss)
-#294
-
-round((sum(hab.loss$loss>0)/length(unique(usoM$binomial)))*100, digits=2)
-# 86.98% species lost natural habitats  
-
-round(summary(percLoss[percLoss>0])*100, digits=2)
+# Habitat loss ------------------------------------------------------------
+length(percLoss[percLoss>0]) #number of species with habitat loss greater than 0 (0 = no loss, nor gain)
+#294 species have lost natural habitats
+round((length(percLoss[percLoss>0])/length(unique(hab.loss$spp)))*100, digits=2)
+# 86.98% species have lost natural habitats  
+round(summary(percLoss[percLoss>0])*100, digits=2) #habitat loss
 # mean, min, max habitat loss percentage
 
-abs(round(summary(percLoss[percLoss<=0])*100, digits=2))
+# Habitat gain ------------------------------------------------------------
+length(percLoss[percLoss<0]) 
+#39 species have "gained" natural habitats
+round((length(percLoss[percLoss<0])/length(unique(hab.loss$spp)))*100, digits=2)
+# 11.54% species have gained natural habitats  
+abs(round(summary(percLoss[percLoss<=0])*100, digits=2)) #habitat gain
 # mean, min, max habitat gain percentage
 
-table(list$range.cat)
-table(list$range.cat[list$loss>0]) #habitat loss in range categories
+table(list$range.cat[!is.na(list$loss) & list$loss<0])
+round((table(list$range.cat[!is.na(list$loss) & list$loss<0])/table(list$range.cat))*100, digits=2)
+
+# "No changes" (loss-gain) in natural habitat -----------------------------
+length(percLoss[percLoss==0]) 
+#5 species with "no changes" on their natural habitats
+round((length(percLoss[percLoss==0])/length(unique(hab.loss$spp)))*100, digits=2)
+# 1.48% species with "no changes on their natural habitats
+
+# Habitat loss within range-size categories:
+list$range.cat <- factor(list$range.cat, levels = c("Restricted", "Partial", "Wide"))
+table(list$range.cat[list$loss>0])
 # Restricted    Partial       Wide 
 #     129        140           25
 
-round((table(list$range.cat[list$loss>0])/table(list$range.cat))*100, digits=2)
+round((table(list$range.cat[!is.na(list$loss) & list$loss>0])/table(list$range.cat[!is.na(list$loss)]))*100, digits=2)
 # Restricted    Partial       Wide 
 #  76.79        96.55       100.00 
-
-# Habitat gain ------------------------------------------------------------
-sum(hab.loss$loss<0) #sum of species with marginal habitat gain
-# 39
-round((sum(hab.loss$loss<0)/length(hab.loss$spp))*100, digits=2)
-
-abs(round(summary(percLoss[percLoss<0])*100, digits=2))
 
 ###########################################################################
 # Exploring IUCN assessment -----------------------------------------------
 ###########################################################################
 
-head(list)
-analyses <- list[,c(1,5,8,9,11,18)] #taxa, binomial, rangesize, range.cat, year, IUCN  
+head(list) #original file
+analyses <- list[,c(1,2,8,9,11,18,20)] #binomial, taxa, rangesize, range.cat, year, IUCN, percLoss
 
 # transforming interest variables in factors with specified levels
 head(analyses)
@@ -196,53 +212,71 @@ round((table(analyses_iucn$taxa, analyses_iucn$IUCN)[4,]/sum(table(analyses_iucn
 #EX    CR    EN    VU    DD    NT    LC 
 #3.03  0.00 15.15  3.03 27.27  6.06 45.45
 
-# Chisquared test of classes and IUCN categories ------------------------
-chisq.test(analyses_iucn$taxa, analyses_iucn$IUCN) # with DD
-
+###########################################################################
+# Chisquared test of classes and IUCN categories --------------------------
+###########################################################################
 analyses_iucn_noDD <- analyses_iucn[analyses_iucn$IUCN!="DD",] #removing 33 DD species; N=270
 
 chisq.test(analyses_iucn_noDD$taxa, analyses_iucn_noDD$threatened) # without DD
+#X-squared = 7.1173, df = 3, p-value = 0.06825
+
+chisq.test(analyses_iucn$taxa, analyses_iucn$IUCN) # with DD
+#X-squared = 60.622, df = 18, p-value = 1.623e-06
+
+###########################################################################
+# Continuous variables and IUCN categories --------------------------------
+###########################################################################
 
 # range-size versus IUCN categories
-analyses_iucn_noDD$threatened <- factor(analyses_iucn_noDD$threatened, levels=c("No", "Yes"))
-
 shapiro.test(analyses_iucn_noDD$rangesize) # not normal - non-parametric test required
 
 kruskal.test(rangesize~threatened, data=analyses_iucn_noDD)
+#Kruskal-Wallis chi-squared = 8.1894, df = 1, p-value = 0.004214
+
 kruskal.test(rangesize~IUCN, data=analyses_iucn)
+#Kruskal-Wallis chi-squared = 39.95, df = 6, p-value = 4.659e-07
+
+###########################################################################
+# tests with prop data: % of natural habitat and prot. ranges -------------
+###########################################################################
 
 # remaining habitat versus IUCN categories --------------------------------
-
 #sppNat created in D_hgh-iucn.R line 47
 analyses_iucn <- merge(analyses_iucn, sppNat, by="binomial") # remove Hylaeamys acritus and Juscelinomys huanchacae, see text for details
 analyses_iucn_noDD <- analyses_iucn[analyses_iucn$IUCN!="DD",] # removing 31 DD species; N=270
 
-analyses_iucn_noDD$threatened <- factor(analyses_iucn_noDD$threatened, levels=c("No", "Yes"))
+analyses_iucn_noDD$percNat[analyses_iucn_noDD$percNat==1] <- 0.9999 #
+analyses_iucn$percNat[analyses_iucn$percNat==1] <- 0.9999
 
-#normality test
-shapiro.test(analyses_iucn_noDD$percNat) # not normal - non-parametric test required
+natThreatMod <- betareg(percNat~threatened, data=analyses_iucn_noDD)#threatened species and remaining natural habitat
+summary(natThreatMod)
 
-kruskal.test(percNat~threatened, data=analyses_iucn_noDD)
-kruskal.test(percNat~IUCN, data=analyses_iucn)
+analyses_iucn <- analyses_iucn[analyses_iucn$IUCN!="EX",]
+natIUCNMod <- betareg(percNat~IUCN, data=analyses_iucn) #IUCN categories and remaining natural habitat
+
+summary(natIUCNMod)
 
 # range protection versus IUCN categories ---------------------------------
 # recreating analyses_iucn before continuing (re-add Hylaeamys acritus and Juscelinomys huanchacae)
 analyses_iucn <- analyses[analyses$IUCN!="-",] # removing not evaluated species
-head(analyses_iucn)
 
+#sppGap created in D_hgh-iucn.R line 82
 analyses_iucn <- merge(analyses_iucn, sppGap, by="binomial")
 analyses_iucn_noDD <- analyses_iucn[analyses_iucn$IUCN!="DD",] # removing 33 DD species; N=270
 
 analyses_iucn_noDD$threatened <- factor(analyses_iucn_noDD$threatened, levels=c("No", "Yes"))
 
-str(analyses_iucn)
-str(analyses_iucn_noDD)
+analyses_iucn_noDD$prot_perc[analyses_iucn_noDD$prot_perc==1] <- 0.9999 #
+analyses_iucn_noDD$prot_perc[is.na(analyses_iucn_noDD$prot_perc)] <- 0.0001 #
 
-# normality test
-shapiro.test(analyses_iucn_noDD$prot_perc) # not normal - non-parametric test required
+analyses_iucn$prot_perc[analyses_iucn$prot_perc==1] <- 0.9999
+analyses_iucn$prot_perc[is.na(analyses_iucn$prot_perc)|analyses_iucn$prot_perc==0] <- 0.0001
 
-kruskal.test(prot_perc~threatened, data=analyses_iucn_noDD)
-kruskal.test(prot_perc~IUCN, data=analyses_iucn)
+protThreatMod <- betareg(prot_perc~threatened, data=analyses_iucn_noDD)
+summary(protThreatMod)
+
+protIUCNMod <- betareg(prot_perc~IUCN, data=analyses_iucn)
+summary(protIUCNMod)
 
 ############################################################################
 # Section 3.5 - Vulnerability, Irreplaceability and Discovery -------------

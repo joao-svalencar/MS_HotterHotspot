@@ -47,43 +47,6 @@ ggsave("Fig 1.png",
        units = "mm",
        dpi = 300,
 )
-###########################################################################
-# Fig 1 Absolute numbers --------------------------------------------------
-lab_pos_abs <- c(NA, NA, 275, 408, NA, NA, 240, 540, NA, NA, 950, 1107, NA, NA, 280, 470)
-labN_pos <- lab_pos_abs+200
-labNe_pos <- lab_pos_abs+100
-
-fig1_abs <- ggplot2::ggplot(data=sppRich, aes(x=year, y=richness, fill=end))+
-  geom_bar(stat="identity", position=position_stack(reverse = TRUE), width = .7)+
-  facet_grid(~class)+
-  geom_text(aes(y=lab_pos_abs, label=lab_perc), vjust=1.6, 
-            color="black", size=3)+
-  geom_text(aes(y=labNe_pos, label=labNe), vjust=1.6, 
-            color="black", size=3)+
-  geom_text(aes(y=labN_pos, label=labN), vjust=1.6, 
-            color="black", size=3)+
-  labs(x= "Year", y= "Richness")+
-  scale_fill_manual(values=colors.book)+
-  scale_y_continuous(limits=c(0,1350), expand=c(0,0), breaks=c(0,250,500,750,1000,1250))+
-  theme_classic()+
-  theme(#panel.spacing = unit(-1, "lines"),
-    aspect.ratio = 1.3/1,
-    legend.position='none',
-    strip.text.x = element_blank(),
-    axis.title = element_text(size=10, margin = margin(t=0, r=0, b=0, l=0, unit="mm")), 
-    axis.text = element_text(size=10))
-
-fig1_abs
-
-ggsave("Fig 1_abs.png",
-       device = png,
-       plot = fig1_abs,
-       path = here::here("outputs", "figures"),
-       width = 168,
-       height = 80,
-       units = "mm",
-       dpi = 300,
-)
 
 ###########################################################################
 # Fig 2a ------------------------------------------------------------------
@@ -114,7 +77,6 @@ ggsave("Fig 2.png",
 )
 
 ###########################################################################
-
 # Fig. 4 Color ------------------------------------------------------------
 
 colors <- c("#000000","#d6231e", "#fd7e4b","#fae639","#d1d1c5","#cce041","#67c262")
@@ -124,7 +86,7 @@ colors <- c("#000000","#d6231e", "#fd7e4b","#fae639","#d1d1c5","#cce041","#67c26
 fig4a <- ggplot2::ggplot(data=iucn.class, aes(x=class, y=Freq, fill=category))+
   geom_bar(stat="identity", position=position_fill(reverse = TRUE), width = .8)+
   geom_text(aes(y=0.9, label=paste("N = ", labelN, sep="")), 
-            vjust=1.6, color="black", size=2.5)+
+            vjust=1.6, color="black", size=3)+
   scale_fill_manual(values=colors)+
   labs(x= "Class", y= "Frequency", fill="Threat Category")+
   scale_y_continuous(expand=c(0,0), breaks = c(0,0.5,1))+
@@ -148,7 +110,8 @@ fig4a <- ggplot2::ggplot(data=iucn.class, aes(x=class, y=Freq, fill=category))+
         axis.text = element_text(size=10))+
   guides(fill = guide_legend(title.position = "top", 
                              title.hjust = 0.5,
-                             label.position = "right")) 
+                             label.position = "right",
+                             reverse=TRUE)) 
 
 fig4a
 
@@ -171,7 +134,7 @@ ggsave("Fig 4a.png",
 fig4b <- ggplot2::ggplot(data=range.iucn, aes(x=range.cat, y=Freq, fill=category))+
   geom_bar(stat="identity", position=position_fill(reverse = TRUE), width = .7)+
   geom_text(aes(y=0.9, label=paste("N = ", labelN, sep="")), 
-            vjust=1.6, color="black", size=2.5)+
+            vjust=1.6, color="black", size=3)+
   scale_fill_manual(values=colors)+
   labs(x= "Range Size Category", y= "Frequency", fill="Threat Category")+
   scale_y_continuous(expand=c(0,0), breaks = c(0,0.5,1))+
@@ -208,7 +171,7 @@ ggsave("Fig 4b.png",
 fig4c <- ggplot2::ggplot(data=hab.cat, aes(x=loss, y=Freq, fill=category))+
   geom_bar(stat="identity", position=position_fill(reverse = TRUE), width = .8)+
   geom_text(aes(y=0.9, label=paste("N = ", labelN, sep="")), 
-            vjust=1.6, color="black", size=2.5)+
+            vjust=1.6, color="black", size=3)+
   scale_fill_manual(values=colors)+
   labs(x= "Remaining Habitat", y= "Frequency")+
   scale_y_continuous(expand=c(0,0))+
@@ -240,7 +203,7 @@ ggsave("Fig 4c.png",
 fig4d <- ggplot2::ggplot(data=gap.tab, aes(x=gap.cat, y=Freq, fill=IUCN))+
   geom_bar(stat="identity", position=position_fill(reverse = TRUE), width = .8)+
   geom_text(aes(y=0.9, label=paste("N = ", labelN, sep="")), 
-            vjust=1.6, color="black", size=2.5)+
+            vjust=1.6, color="black", size=3)+
   scale_fill_manual(values=colors)+
   labs(x= "Protected Range", y= "Frequency")+
   scale_y_continuous(expand=c(0,0))+
@@ -276,8 +239,8 @@ ggsave("Fig 4d.png",
 
 fig4 <- plot_grid(fig4a, fig4b, fig4c, fig4d, 
                   nrow=2, ncol=2, align = 'hv',
-                  labels = 'auto', label_size=10, 
-                  vjust=7,hjust=-5)
+                  labels = 'auto', label_size=12, 
+                  vjust=5,hjust=-5)
 fig4
 
 fig4_full <- plot_grid(fig4, legend, nrow=1, rel_widths = c(5,1))
@@ -317,7 +280,7 @@ fig5a <- ggplot2::ggplot(data=list.noNE, aes(x=year, y=log(rangesize), color=IUC
   theme(legend.position='right',
         axis.title = element_text(size=10, margin = margin(t=0, r=0, b=0, l=0, unit="mm")), 
         axis.text = element_text(size=10))+
-  guides(shape='none', fill=guide_legend(override.aes = list(shape=21, linetype=0, color="black")))
+  guides(shape='none', color = guide_legend(reverse=TRUE), fill = guide_legend(override.aes = list(shape=21,linetype=0,color="black")))
 fig5a
 
 # Fig. 5b - Range size versus habitat loss ---------------------------------
@@ -450,6 +413,7 @@ plots_iucn <- analyses_iucn[analyses_iucn$IUCN!="EX",]
 colors <- c("#d6231e", "#fd7e4b","#fae639","#d1d1c5", "#cce041","#67c262")
 
 sup3 <- ggplot2::ggplot(data=plots_iucn, aes(x=IUCN, y=log(rangesize),color=IUCN))+
+  geom_violin()+
   geom_point(position = position_jitter(.2))+
   scale_color_manual(values=colors)+
   labs(x= "Threat Categories" , y= bquote("Log species range size "(km^2)), color="Threat Category")+
@@ -476,7 +440,8 @@ plots_iucn <- analyses_iucn[analyses_iucn$IUCN!="EX",]
 colors <- c("#d6231e", "#fd7e4b","#fae639","#d1d1c5", "#cce041","#67c262")
 
 sup4 <- ggplot2::ggplot(data=plots_iucn, aes(x=IUCN, y=percNat,color=IUCN))+
-  geom_point(position=position_jitter(.2))+
+  geom_violin()+
+  geom_point(position = position_jitter(.2))+
   scale_color_manual(values=colors)+
   labs(x= "Threat Categories" , y= "Percentage of Remaining Habitat", color="Threat Category")+
   facet_wrap(~taxa)+

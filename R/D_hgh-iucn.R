@@ -30,11 +30,12 @@ names(range.iucn) <- c("range.cat", "category", "Freq")
 range.iucn <- range.iucn[range.iucn$category!="-",]
 range.iucn$category <- factor(range.iucn$category, levels = c("EX", "CR","EN","VU","DD","NT","LC"))
 
+list.noNE <- list[list$IUCN!="-",]
 range.iucn$labelN[range.iucn$range.cat==names(table(list.noNE$range.cat))] <- table(list.noNE$range.cat)
 range.iucn$range.cat <- factor(range.iucn$range.cat, levels = c("Restricted", "Partial", "Wide")) 
 
 head(range.iucn)
-list.noNE <- list[list$IUCN!="-",]
+
 table(list.noNE$range.cat, list.noNE$IUCN)
 
 # Object for fig 4c -------------------------------------------------------
