@@ -1,12 +1,16 @@
+###########################################################################
+# Vieira-Alencar et al. Hostspot getting hotter (manuscript) --------------
+###########################################################################
+
 library(tidyr)
 
 #exploring data
+head(list) #loaded in C_hgh.R line 6
 table(list$taxa)
 table(list$IUCN, list$taxa)
 round(apply(table(list$IUCN, list$taxa),2,function(x){x/sum(x)})*100, digits=2)
 
 # Object for fig 4a -------------------------------------------------------
-#ok
 
 sum(table(list$taxa, list$IUCN))
 
@@ -20,9 +24,8 @@ iucn.class$labelN[iucn.class$class==names(table(list$taxa))] <- table(list$taxa[
 iucn.class$category <- factor(iucn.class$category, levels = c("EX","CR","EN","VU","DD","NT","LC")) 
 iucn.class$class <- factor(iucn.class$class, levels = c("Amphibians", "Reptiles", "Birds", "Mammals"))
 
-
 # Object for fig 4b -------------------------------------------------------
-#ok
+
 range.iucn <- as.data.frame(table(list$range.cat, list$IUCN))
 names(range.iucn) <- c("range.cat", "category", "Freq")
 
@@ -38,8 +41,24 @@ head(range.iucn)
 
 table(list.noNE$range.cat, list.noNE$IUCN)
 
+# KBAs table --------------------------------------------------------------
+
+head(kba) #loaded in C_hgh.R line 7
+kba_rich <- as.data.frame(table(kba$NAME))
+kba_unique <- kba[!duplicated(kba$NAME),]
+
+head(kba_rich)
+names(kba_rich)[1] <- "NAME"
+
+kba_merge <- merge(kba_rich, kba_unique, by="NAME", )
+head(kba_merge)
+
+kba_merge <- kba_merge[,c(1,2,5:11)]
+names(kba_merge)[2] <- "richness"
+
 # Object for fig 4c -------------------------------------------------------
-#ok
+
+head(uso) #loaded in C_hgh.R line 8
 uso2020 <- uso[uso$lulcYear=="2020",]
 uso2020$percNatCat <- NA
 uso2020$percNatCat[uso2020$percNat>0.80] <- ">80%"
@@ -63,7 +82,7 @@ hab.cat$loss <- factor(hab.cat$loss, levels=c("<30%", "<50%", "<80%", ">80%"))
 
 # Object for fig 4d -------------------------------------------------------
 
-head(gap)
+head(gap) #loaded in C_hgh.R line 9
 gap$gap.cat <- NA
 
 gap$protected_range[is.na(gap$protected_range)] <- 0
@@ -102,7 +121,7 @@ gap.tab$gap.cat <- factor(gap.tab$gap.cat, levels=c("0%", "<1%", "<5%", "<17%", 
 # Filtering species by remaining habitat ----------------------------------
 # To create habitat loss category maps
 
-db_unique_perc <- merge(uso2020, db_unique, by="species")
+db_unique_perc <- merge(uso2020, db_unique, by="species") #db_unique loaded in C_hgh.R line 10
 
 spp30 <- db_unique_perc[db_unique_perc$percNatCat=="<30%",]
 write.csv(spp30, here::here("data", "processed", "baseunique_30-2.csv"), row.names = FALSE)
@@ -171,25 +190,3 @@ head(gap)
 table(gap$prot_perc_cat, gap$icmbio.cat)
 
 table(gap$prot_perc_cat, gap$range.cat)
-
-
-# IUCN processing ---------------------------------------------------------
-
-head(iucn)
-table(iucn$yearPublished)
-table(iucn$assessmentDate)
-
-min(list.iucn$assessmentDate)
-max(list.iucn$assessmentDate)
-
-head(list)
-
-list <- list[,c(6,11)]
-
-head(iucn)
-
-iucn <- iucn[,c(1,2,3,4)]
-
-list.iucn <- merge(list, iucn, by="species")
-
-list.iucn[list.iucn$assessmentDate=="2004-04-30 00:00:00 UTC",]

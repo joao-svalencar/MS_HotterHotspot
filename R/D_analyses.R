@@ -1,24 +1,10 @@
 ###########################################################################
 # Vieira-Alencar et al. Hostspot getting hotter (manuscript) --------------
 ###########################################################################
-library(glmmTMB)
 
 ###########################################################################
 # Section 3.3 - Largest PAs Richness --------------------------------------
 ###########################################################################
-
-head(kba)
-kba_rich <- as.data.frame(table(kba$NAME))
-kba_unique <- kba[!duplicated(kba$NAME),]
-
-head(kba_rich)
-names(kba_rich)[1] <- "NAME"
-
-kba_merge <- merge(kba_rich, kba_unique, by="NAME", )
-head(kba_merge)
-
-kba_merge <- kba_merge[,c(1,2,5:11)]
-names(kba_merge)[2] <- "richness"
 
 ###########################################################################
 # Section 3.3 - Gap species information -----------------------------------
@@ -241,7 +227,7 @@ kruskal.test(rangesize~IUCN, data=analyses_iucn)
 ###########################################################################
 
 # remaining habitat versus IUCN categories --------------------------------
-#sppNat created in D_hgh-iucn.R line 47
+#sppNat created in D_hgh-iucn.R line 55
 analyses_iucn <- merge(analyses_iucn, sppNat, by="binomial") # remove Hylaeamys acritus and Juscelinomys huanchacae, see text for details
 analyses_iucn_noDD <- analyses_iucn[analyses_iucn$IUCN!="DD",] # removing 31 DD species; N=270
 
