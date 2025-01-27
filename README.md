@@ -25,32 +25,32 @@ renv::restore()
 The provided code will automatically install the required packages, aligning them with the same versions used during the preparation of the scripts. This ensures the reproducibility of the analyses.
 
 ## The repository is organized as follow:
-  -HotterHotspot.Rproj: R project for the reproductibility of the analyses;
-  -data/
-    -processed/
-      -
-    -raw-data/
-      -baseunique.csv
-      -dbFull_endemics.csv
-      -iucn-new.csv
-      -list.csv
-      -sppList.csv
-      -sppRichnessTime.csv
-      -table hotspots refs.xlsx
-      -typeloc-percs.xlsx
-  -outputs/
-    -figures/
-    -rasters/
-    -shapes/
-    -tables/
-    -tests/
-    -uso-raw/
-  -QGIS/
-    -shapes/
-  -R/
-    -C_hgh.R: loading objects;
-    -D_analyses.R (working - review usefulness from line 99 forward)
-    -D_hgh-iucn.R
-    -D_iucn-update.R
-    -D_land-use.R
-    -S_Figs.R
+  - HotterHotspot.Rproj: R project for the reproductibility of the analyses;
+  - data/
+    - processed/
+      - comming...
+    - raw-data/
+      - baseunique.csv
+      - dbFull_endemics.csv
+      - iucn-new.csv
+      - list.csv
+      - sppList.csv
+      - sppRichnessTime.csv
+      - table hotspots refs.xlsx
+      - typeloc-percs.xlsx
+  - outputs/
+    - figures/
+    - rasters/
+    - shapes/
+    - tables/
+    - tests/
+    - uso-raw/
+  - QGIS/
+    - shapes/
+  - R/
+    - C_hgh.R: loading objects;
+    - D_analyses.R (working - review usefulness from line 99 forward)
+    - D_hgh-iucn.R
+    - D_iucn-update.R
+    - D_land-use.R
+    - S_Figs.R
